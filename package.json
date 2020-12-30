@@ -1,0 +1,19 @@
+{
+  "name": "zidinyerre_3_25122020",
+  "version": "1.0.0",
+  "description": "Projet numéro 3 de formation dans le but de devenir développeur web.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZidinyErre/ZidinyErre_3_25122020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZidinyErre/ZidinyErre_3_25122020/issues"
+  },
+  "homepage": "https://github.com/ZidinyErre/ZidinyErre_3_25122020#readme"
+}

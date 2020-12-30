@@ -1,4 +1,12 @@
-body
+
+@font-face
 {
-    
+    font-family: shrikhand;
+    src:url(shrikhand/Shrikhand-Regular.otf);
+    font-family: Roboto;
+    src:url(Roboto/Roboto-Regular.ttf);
+}
+#page
+{
+    font-family: 'Roboto';
 }
