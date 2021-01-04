@@ -1,11 +1,52 @@
-@font-face {
-  font-family: shrikhand;
-  src: url(shrikhand/Shrikhand-Regular.otf);
-  font-family: Roboto;
-  src: url(Roboto/Roboto-Regular.ttf);
-}
+/*$secondgray: ; */
+/*$black: ; */
+/*maps et list*/
+/*font-family: 'Shrikhand', cursive;*/
 #page {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
+  width: 1300px;
+  margin: auto;
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .lieu {
+    background-color: #bdb6b6;
+    text-align: center;
+  }
+}
+
+.fa-map-marker-alt {
+  margin-right: 2%;
+}
+
+.explor__reserv {
+  font-weight: bold;
+  /*font-size: ;*/
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .explor__reserv {
+    /*font-size: ;*/
+  }
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .restau-lapal__img {
+    width: 54%;
+    height: 420px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .restau-lapal__imgimg {
+    width: 54%;
+    height: 420px;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  headerfigure {
+    font-size: 1em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

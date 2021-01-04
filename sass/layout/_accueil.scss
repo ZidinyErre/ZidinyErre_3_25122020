@@ -1,0 +1,36 @@
+
+.lieu{
+    @include mobile {
+        background-color: $firstgray;
+        text-align: center;
+        }
+    }
+.fa-map-marker-alt{
+    margin-right: 2%;    
+}
+
+.explor__reserv{
+    font-weight: bold;
+    /*font-size: ;*/
+    @include mobile {
+         /*font-size: ;*/
+    }
+}
+
+
+.restau-lapal__img{
+    @include mobile{
+        width: 54%;
+        height: 420px;
+        overflow: hidden;
+        
+       
+    }
+    &img{
+    @include mobile{
+            
+        width:54%;
+        height: 420px;
+        }
+    } 
+}

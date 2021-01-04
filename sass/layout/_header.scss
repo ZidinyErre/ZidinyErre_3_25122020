@@ -1,0 +1,7 @@
+header{
+    &figure{
+        @include mobile {
+            font-size: 1em;
+        }
+    }
+}
