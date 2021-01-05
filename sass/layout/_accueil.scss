@@ -17,20 +17,44 @@
     }
 }
 
-
+.restau-lapal__img{
+    @include mobile {
+        width: 90%;
+    }
+}
 .restau-lapal__img{
     @include mobile{
         width: 54%;
         height: 420px;
-        overflow: hidden;
-        
-       
+        overflow: hidden;  
     }
-    &img{
+    @include imgaccueil;
+}
+
+.restau-lanot__img{
     @include mobile{
-            
-        width:54%;
+        width: 54%;
         height: 420px;
-        }
-    } 
+        overflow: hidden;  
+    }
+    @include imgaccueil;
+}
+
+.restau-àlafr__img{
+    @include mobile{
+        width: 54%;
+        height: 420px;
+        overflow: hidden;  
+    }
+    @include imgaccueil;
+}
+
+.restau-ledél__img{
+    @include mobile{
+        width: 54%;
+        height: 420px;
+        overflow: hidden;
+        @include imgaccueil;
+  
+    }
 }
