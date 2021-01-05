@@ -1,7 +1,10 @@
 @charset "UTF-8";
 /*$secondgray: ; */
-/*$black: ; */
 /*maps et list*/
+body {
+  margin: auto;
+}
+
 /*font-family: 'Shrikhand', cursive;*/
 #page {
   font-family: "Roboto", sans-serif;
@@ -164,6 +167,25 @@ header {
     height: 420px;
     object-fit: cover;
   }
+}
+
+footer {
+  background: #474545;
+  color: white;
+}
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  margin-left: 7%;
+  margin-bottom: 0.5%;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 6%;
+  margin-top: 2.5%;
+}
+footer ul li {
+  margin-bottom: 10%;
 }
 
 /*# sourceMappingURL=style.css.map */
