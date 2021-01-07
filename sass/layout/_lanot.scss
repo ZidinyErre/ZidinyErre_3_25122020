@@ -1,9 +1,0 @@
-.img-lanot{
-    figure {
-        @include mobile{
-            margin: 0;
-            width: 43%;
-        }
-        @include imgaccueil;
-    } 
-}
