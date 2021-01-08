@@ -1,19 +1,53 @@
-
+.explor-restau{
+    background-color: $thirdgray;
+}
 .lieu{
     @include mobile {
         background-color: $firstgray;
         text-align: center;
+        height: 40px;
+        padding-top: 8px;
+        padding-right: 25px;
+        color: $black;
         }
     }
 .fa-map-marker-alt{
     margin-right: 2%;    
 }
-
+.explor{
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .explor__reserv{
     font-weight: bold;
     /*font-size: ;*/
     @include mobile {
-         /*font-size: ;*/
+         font-size: 1.32em;
+         width: 56%;
+         text-align: center;
+    }
+}
+.explor__discov{
+    @include mobile{
+        width: 77%;
+        text-align: center;
+    }
+}
+.explor__btn{
+    @include mobile{
+        background-color: #b06ab3;
+        text-align: center;
+        width: 199px;
+        margin: 10px 0px 37px 0px;
+        padding: 16px;
+        border-radius: 27px;
+        a{
+            text-decoration: none;
+            color:whitesmoke;
+        }
     }
 }
 
@@ -61,4 +95,63 @@
     @include mobile{
         margin-bottom: 3%;
     }
+}
+
+.fonctionmt{
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            align-self: flex-start;
+            margin-left: 1%;
+        }
+    }
+}
+.fonctionmt__all{
+    background-color: $secondgray;
+    @include mobile{
+        width: 230px;
+        height: 14px;
+        padding: 6% 6% 6% 0%;
+        margin-bottom: 5%;
+        border-radius: 21px;
+        font-size: 0.89em;
+        font-weight: bold;
+        display: flex;
+        position: relative;
+        box-shadow: 0px 4px 10px gray;
+        .icon{
+            width: 9px;
+            height: 15px;
+            padding: 4px 7px 4px 8px;
+            margin: 0px;
+            border-radius: 30px;
+            background-color: #9356DC;
+            position: absolute;
+            left: -10px;
+            top: 16px;
+            color: whitesmoke;
+            font-size: 0.89em;
+        }
+    };
+}
+.fa-mobile-alt{
+    padding: 0% 4%;
+    margin-left: 12px;
+    color: #838080a6;
+}
+.fa-list-ul{
+    padding: 0% 5%;
+    margin-left: 10px;
+    color: #838080a6;
+
+
+}
+.fa-store{
+    padding: 0% 5%;
+    margin-left: 10px;
+    color: #838080a6;
+
+
 }
