@@ -51,52 +51,6 @@
     }
 }
 
-
-.restau-lapal__img{
-    @include mobile {
-        width: 90%;
-    }
-}
-.restau__img{
-    @include mobile{
-        width: 100%;
-        height: 386px;
-        overflow: hidden;
-        border-radius: 15px 15px 0px 0px;  
-    }
-}
-.restau-lapal__img{
-    @include imgaccueil;
-}
-.restau-lanot__img{
-    @include imgaccueil;
-}
-.restau-àlafr__img{
-    @include imgaccueil;
-}
-.restau-ledél__img{
-    @include imgaccueil;
-  
-}
-
-.restau-all{
-    @include mobile{
-        margin-left: 3%;
-        margin-right: 3%;
-        box-shadow: 0px 9px 9px gray;
-        border-radius: 0px 0px 15px 15px;
-        figure{
-        margin: auto;
-        }
-    }
-}
-
-.restau__info{
-    @include mobile{
-        margin-bottom: 3%;
-    }
-}
-
 .fonctionmt{
     @include mobile{
         display: flex;
@@ -152,6 +106,109 @@
     padding: 0% 5%;
     margin-left: 10px;
     color: #838080a6;
+}
 
 
+.restau{
+    background-color: $thirdgray;
+    @include mobile{
+        height: 1513px;
+        padding-top: 24px;
+        h2{
+            padding-left: 17px;
+            font-size: 1.5em;
+            }
+    }
+    
+}
+.restau-lapal__img{
+    @include mobile {
+        width: 90%;
+    }
+}
+.restau__img{
+    @include mobile{
+        width: 100%;
+        height: 222px;
+        overflow: hidden;
+        border-radius: 15px 15px 0px 0px;  
+    }
+}
+.restau-lapal__img{
+    @include imgaccueil;
+}
+.restau-lanot__img{
+    @include imgaccueil;
+}
+.restau-alafr__img{
+    @include imgaccueil;
+}
+.restau-ledel__img{
+    @include imgaccueil;
+  
+}
+
+.restau-all{
+    @include mobile{
+        margin-left: 3.5%;
+        margin-right: 3.5%;
+        margin-bottom: 30px;
+        box-shadow: 0px 9px 9px grey;
+        border-radius: 0px 0px 15px 15px;
+        width: 93%;
+        height: 311px;
+        overflow: hidden;
+        figure{
+        margin: auto;
+        }
+    }
+}
+
+.restau__info{
+    @include mobile{
+        background-color: white;
+        margin-top: 0%;
+        display: flex;
+        flex-direction: column;
+        height: 91px;
+        position: relative;
+        p{
+            margin-bottom: 1px;
+            margin-left: 15px;
+        }
+    }
+}
+.fa-heart{
+    position: absolute;
+    right: 41px;
+    top: 13px;
+}
+.restau-lapal__info1{
+    margin-top: 21px;
+    font-weight: bold;
+}
+.restau-lapal__info2{
+    margin-top: 2px;
+}
+.restau-lanot__info1{
+    margin-top: 21px;
+    font-weight: bold;
+
+}
+.restau-lanot__info2{
+    margin-top: 2px;
+}
+.restau-alafr__info1{
+    margin-top: 21px;
+    font-weight: bold;
+}
+.restau-alafr__info2{
+    margin-top: 2px;
+}
+.restau-ledel__info1{
+    margin-top: 21px;
+    font-weight: bold;
+}
+.restau-ledel__info2{
+    margin-top: 2px;
 }
