@@ -55,56 +55,54 @@
     @include mobile{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        margin: 30px 0px 35px 0px;
         h2{
             align-self: flex-start;
-            margin-left: 1%;
-        }
+            margin-left: 5%;
+            margin-bottom: 6%;        }
     }
 }
 .fonctionmt__all{
     background-color: $secondgray;
     @include mobile{
-        width: 230px;
-        height: 14px;
+        width: 77%;
         padding: 6% 6% 6% 0%;
-        margin-bottom: 5%;
+        margin-left: 26px;
+        margin-bottom: 8%;
         border-radius: 21px;
-        font-size: 0.89em;
+        font-size: 0.99em;
         font-weight: bold;
         display: flex;
         position: relative;
-        box-shadow: 0px 4px 10px gray;
+        box-shadow: 0px 4px 17px grey;
         .icon{
             width: 9px;
             height: 15px;
-            padding: 4px 7px 4px 8px;
+            padding: 4px 7px 6px 8px;
             margin: 0px;
             border-radius: 30px;
             background-color: #9356DC;
             position: absolute;
             left: -10px;
-            top: 16px;
+            top: 21px;
             color: whitesmoke;
             font-size: 0.89em;
         }
     };
 }
 .fa-mobile-alt{
-    padding: 0% 4%;
-    margin-left: 12px;
+    padding: 0% 8%;
+    margin-left: 7%;
     color: #838080a6;
 }
 .fa-list-ul{
-    padding: 0% 5%;
-    margin-left: 10px;
+    padding: 0% 6%;
+    margin-left: 27px;
     color: #838080a6;
-
-
 }
 .fa-store{
-    padding: 0% 5%;
-    margin-left: 10px;
+    padding: 0% 6%;
+    margin-left: 27px;
     color: #838080a6;
 }
 
