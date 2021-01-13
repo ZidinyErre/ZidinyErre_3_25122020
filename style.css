@@ -289,6 +289,20 @@ header {
   }
 }
 
+#restau-alafr {
+  /*position: relative;*/
+}
+
+header {
+  position: relative;
+}
+header .fa-arrow-left {
+  position: absolute;
+  color: #474545;
+  top: 24px;
+  left: 30px;
+}
+
 @media (max-width: 480px) and (min-width: 320px) {
   .img-restau figure {
     margin: 0;
@@ -307,7 +321,7 @@ header {
 
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-restau__btn {
-    background-color: #b06ab3;
+    background-color: #9356DC;
     text-align: center;
     margin: 10px 10px;
     width: 130px;
@@ -318,6 +332,36 @@ header {
     text-decoration: none;
     color: whitesmoke;
   }
+}
+
+.menu-alafr {
+  background-color: #d3cfcf7a;
+}
+.menu-alafr h3 {
+  font-family: "Shrikhand";
+  margin-top: 0;
+  padding-top: 50px;
+  padding-left: 27px;
+  font-size: 1.6em;
+}
+.menu-alafr h4 {
+  font-weight: normal;
+  border-bottom: 3px #99E2D0 solid;
+  width: 27px;
+  height: 27px;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  color: #474545;
+  margin-left: 12px;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-alafr {
+    border-radius: 50px 50px 0px 0px;
+  }
+}
+
+.menu-alafr__carte {
+  background-color: white;
 }
 
 footer {
