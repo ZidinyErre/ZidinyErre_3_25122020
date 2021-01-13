@@ -321,12 +321,14 @@ header .fa-arrow-left {
 
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-restau__btn {
-    background-color: #9356DC;
+    background: linear-gradient(to right bottom, #dd10e8ab, #9356dcd1);
     text-align: center;
-    margin: 10px 10px;
-    width: 130px;
+    margin: 40px 10px 70px 10px;
+    width: 144px;
     padding: 11px;
     border-radius: 27px;
+    box-shadow: 0px 3px 6px grey;
+    align-self: center;
   }
   .menu-restau__btn a {
     text-decoration: none;
@@ -336,6 +338,13 @@ header .fa-arrow-left {
 
 .menu-alafr {
   background-color: #d3cfcf7a;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-alafr {
+    border-radius: 50px 50px 0px 0px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .menu-alafr h3 {
   font-family: "Shrikhand";
@@ -354,14 +363,42 @@ header .fa-arrow-left {
   color: #474545;
   margin-left: 12px;
 }
-@media (max-width: 480px) and (min-width: 320px) {
-  .menu-alafr {
-    border-radius: 50px 50px 0px 0px;
-  }
-}
 
 .menu-alafr__carte {
   background-color: white;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-alafr__carte {
+    position: relative;
+    width: 93%;
+    margin: auto;
+    border-radius: 18px;
+    height: 65px;
+    box-shadow: 0px 3px 6px grey;
+  }
+  .menu-alafr__carte .price {
+    position: absolute;
+    left: 85%;
+    top: 27%;
+    font-weight: bold;
+    color: #272626fa;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-alafr__nourr1 {
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding-left: 4%;
+    padding-top: 3.5%;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-alafr__nourr2 {
+    margin: 0%;
+    padding: 0.5% 0% 0% 4%;
+  }
 }
 
 footer {

@@ -23,3 +23,12 @@ $blockcolor:(
     block: white,
     btn: $Firstcolor,
 );
+
+@mixin price {
+    position: absolute;
+    left: 85%;
+    top: 27%; 
+    font-weight: bold;
+    color: #272626fa;
+
+}
