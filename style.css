@@ -320,6 +320,17 @@ header .fa-arrow-left {
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
+  .menu-alafr__titre {
+    position: relative;
+  }
+  .menu-alafr__titre figure {
+    position: absolute;
+    left: 72%;
+    top: 37%;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
   .menu-restau__btn {
     background: linear-gradient(to right bottom, #dd10e8ab, #9356dcd1);
     text-align: center;
@@ -378,7 +389,7 @@ header .fa-arrow-left {
   }
   .menu-alafr__carte .price {
     position: absolute;
-    left: 85%;
+    left: 88%;
     top: 27%;
     font-weight: bold;
     color: #272626fa;
@@ -398,6 +409,7 @@ header .fa-arrow-left {
   .menu-alafr__nourr2 {
     margin: 0%;
     padding: 0.5% 0% 0% 4%;
+    font-size: 90%;
   }
 }
 
