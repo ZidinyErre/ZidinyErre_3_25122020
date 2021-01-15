@@ -2,24 +2,28 @@
     background-color: $thirdgray;
 }
 .lieu{
+    background-color: $firstgray;
+    text-align: center;
+    color: $black;
+    height: 56px;
+    padding-top: 16px;
+    padding-right: 27px;
     @include mobile {
-        background-color: $firstgray;
-        text-align: center;
         height: 40px;
         padding-top: 8px;
         padding-right: 25px;
-        color: $black;
         }
     }
 .fa-map-marker-alt{
-    margin-right: 2%;    
+    margin-right: 0.5%;    
+    @include mobile{
+        margin-right: 2%;    
+    }
 }
 .explor{
-    @include mobile{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .explor__reserv{
     font-weight: bold;
@@ -37,17 +41,15 @@
     }
 }
 .explor__btn{
-    @include mobile{
-        background-color: #b06ab3;
-        text-align: center;
-        width: 199px;
+    background: linear-gradient(to right bottom, #dd10e8ab, #9356dcd1);
+    text-align: center;
+    width: 199px;
         margin: 10px 0px 37px 0px;
         padding: 16px;
         border-radius: 27px;
-        a{
-            text-decoration: none;
-            color:whitesmoke;
-        }
+    a{
+        text-decoration: none;
+        color:whitesmoke;
     }
 }
 
@@ -59,22 +61,44 @@
         h2{
             align-self: flex-start;
             margin-left: 5%;
-            margin-bottom: 6%;        }
+            margin-bottom: 6%;        
+        }
     }
 }
 .fonctionmt__all{
     background-color: $secondgray;
+    width: 76%;
+    padding: 4% 4% 4% 0%;
+    margin-left: 67px;
+    margin-bottom: 8%;
+    border-radius: 21px;
+    font-size: 1.6em;
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    box-shadow: 0px 4px 17px grey;
+        .icon{
+            width: 9px;
+            height: 15px;
+            padding: 5px 15px 16px 11px;
+            margin: 0px;
+            border-radius: 30px;
+            background-color: #9356DC;
+            position: absolute;
+            left: -10px;
+            top: 44px;
+            color: whitesmoke;
+            font-size: 0.89em;
+        }
     @include mobile{
         width: 77%;
         padding: 6% 6% 6% 0%;
         margin-left: 26px;
         margin-bottom: 8%;
-        border-radius: 21px;
         font-size: 0.99em;
         font-weight: bold;
         display: flex;
         position: relative;
-        box-shadow: 0px 4px 17px grey;
         .icon{
             width: 9px;
             height: 15px;
@@ -88,7 +112,7 @@
             color: whitesmoke;
             font-size: 0.89em;
         }
-    };
+    }
 }
 .fa-mobile-alt{
     padding: 0% 8%;
@@ -96,26 +120,45 @@
     color: #838080a6;
 }
 .fa-list-ul{
-    padding: 0% 6%;
+    padding: 0% 12%;
     margin-left: 27px;
     color: #838080a6;
+    @include mobile{
+        padding: 0% 6%;
+        margin-left: 27px;
+    }
+    
 }
 .fa-store{
-    padding: 0% 6%;
+    padding: 0% 12%;
     margin-left: 27px;
     color: #838080a6;
+    @include mobile{
+        padding: 0% 6%;
+        margin-left: 27px;
+    }
 }
 
 
 .restau{
     background-color: $thirdgray;
+    height: auto;
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        padding-left: 17px;
+        font-size: 2.5em;
+    }
     @include mobile{
+        align-items: flex-start;
         height: 1513px;
         padding-top: 24px;
         h2{
             padding-left: 17px;
             font-size: 1.5em;
-            }
+        }
     }
     
 }
@@ -125,11 +168,38 @@
     }
 }
 .restau__img{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .ban-new{
+        position: absolute;
+        font-weight: bold;
+        padding: 2% 4% 2% 4%;
+        bottom: 68%;
+        left: 78%;
+        border-radius: 3px;
+        background-color: $Thirdcolor;
+        color: #0f730fed;
+    }
     @include mobile{
         width: 100%;
         height: 222px;
         overflow: hidden;
-        border-radius: 15px 15px 0px 0px;  
+        border-radius: 15px 15px 0px 0px;
+        .ban-new{
+            position: absolute;
+            padding: 2% 4% 2% 4%;
+            bottom: 79%;
+            left: 69%;
+            
+        }  
     }
 }
 .restau-lapal__img{
@@ -147,11 +217,23 @@
 }
 
 .restau-all{
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    margin-bottom: 30px;
+    box-shadow: 0px 9px 9px grey;
+    border-radius: 0px 0px 15px 15px;
+    width: 77%;
+    height: 453px;
+    overflow: hidden;
+    figure{
+        margin: auto;
+    }
+    a{
+        text-decoration: none;  
+    }
     @include mobile{
         margin-left: 3.5%;
         margin-right: 3.5%;
-        margin-bottom: 30px;
-        box-shadow: 0px 9px 9px grey;
         border-radius: 0px 0px 15px 15px;
         width: 93%;
         height: 311px;
@@ -163,24 +245,44 @@
 }
 
 .restau__info{
+    background-color: white;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    height: 141px;
+    position: relative;
+    img{
+        width: 5%;
+        position: absolute;
+        left: 87%;
+        bottom: 56%;
+    }
+    p{  
+        margin-bottom: 2px;
+        margin-left: 15px;
+        color: black;
+        font-size: 1.87em;
+    }
     @include mobile{
         background-color: white;
         margin-top: 0%;
-        display: flex;
-        flex-direction: column;
         height: 91px;
         position: relative;
+        img{
+            width: 6%;
+            position: absolute;
+            left: 79%;
+            bottom: 56%;
+        }
         p{
             margin-bottom: 1px;
             margin-left: 15px;
+            color: black;
+            font-size: 1em;
         }
     }
 }
-.fa-heart{
-    position: absolute;
-    right: 41px;
-    top: 13px;
-}
+
 .restau-lapal__info1{
     margin-top: 21px;
     font-weight: bold;
