@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/44a04334d0.js" crossorigin="anonymous"></script>
+    <title>Ohmyfood:La palette du goût</title>
 </head>
 <body>
     <div id="page">
         <header>
+            <a href="#"><i class="fas fa-arrow-left"></i></a>
             <figure> <img src="images/logo/ohmyfood.png" alt="logosite"></figure>
         </header>
         <section id="restau-lapal">
@@ -17,59 +24,65 @@
                 </figure>
             </div>
             <div class="menu-lapal">
-                <h3>La palette du goût</h3>
+                <div class="menu-lapal__titre">
+                    <h3>La palette du goût</h3>
+                    <figure>
+                        <img src="images/logo/iconmonstr-heart-thin.svg" alt="image-_du_coeur">
+                    </figure>
+                </div>
+                
                 <div class="menu-lapal__entr">
                     <h4>Entrées</h4>
-                    <div class="menu-lapal__entr1">
-                        <p>Fricassée d'escargot</p>
-                        <p>Au piment d'Espelette</p>
-                        <p>25€</p>
+                    <div class="menu-lapal__entr1 menu-lapal__carte">
+                        <p class="menu-lapal__nourr1">Fricassée d'escargot</p>
+                        <p class="menu-lapal__nourr2">Au piment d'Espelette</p>
+                        <p class="price">25€</p>
                     </div>
-                    <div class="menu-lapal__entr2">
-                        <p>Foie gras de canard mi-cuit</p>
-                        <p>Et ses copeaux de truffe noire</p>
-                        <p>35€</p>
+                    <div class="menu-lapal__entr2 menu-lapal__carte">
+                        <p class="menu-lapal__nourr1">Foie gras de canard mi-cuit</p>
+                        <p class="menu-lapal__nourr2">Et ses copeaux de truffe noire</p>
+                        <p class="price">35€</p>
                     </div>
-                    <div class="menu-lapal__entr3">
-                        <p>Oeuf au plat</p>
-                        <p>Assaisonné à la truffe sur lit de caviar</p>
-                        <p>20€</p>
+                    <div class="menu-lapal__entr3 menu-lapal__carte">
+                        <p class="menu-lapal__nourr1">Oeuf au plat</p>
+                        <p class="menu-lapal__nourr2">Assaisonné à la truffe sur lit de caviar</p>
+                        <p class="price">20€</p>
                     </div>
                 </div>
                 <div class="menu-lapal__plat">
                     <h4>Plats</h4>
-                    <div class="menu-lapal__plat1">
-                        <p>Filet de boeuf aux herbes</p>
-                        <p>Accompagné de sa ribambelle de légumes</p>
-                        <p>40€</p>
+                    <div class="menu-lapal__plat1 menu-lapal__carte">
+                        <p class="menu-lapal__nourr1">Filet de boeuf aux herbes</p>
+                        <p class="menu-lapal__nourr2">Accompagné de sa ribambelle de légumes</p>
+                        <p class="price">40€</p>
                     </div>
-                    <div class="menu-lapal__plat2">
-                        <p>Parmentier de queue de boeuf</p>
-                        <p>À la truffe noire sur sa purée de panais</p>
-                        <p>35€</p>
+                    <div class="menu-lapal__plat2 menu-lapal__carte">
+                        <p class="menu-lapal__nourr1">Parmentier de queue de boeuf</p>
+                        <p class="menu-lapal__nourr2">À la truffe noire sur sa purée de panais</p>
+                        <p class="price">35€</p>
                     </div>
-                    <div class="menu-lapal__plat3">
-                        <p>Filet de turbot</p>
-                        <p>Aux agrumes</p>
-                        <p>44€</p>
+                    <div class="menu-lapal__plat3 menu-lapal__carte">
+                        <p class="menu-lapal__nourr1">Filet de turbot</p>
+                        <p class="menu-lapal__nourr2">Aux agrumes</p>
+                        <p class="price">44€</p>
                     </div>
                 </div>
                 <div class="menu-lapal__dess">
                     <h4>Desserts</h4>
-                    <div class="menu-lapal__dess1">
-                        <p>Paris-Brest</p>
-                        <p>Revisité</p>
-                        <p>18€</p>
+                    <div class="menu-lapal__dess1 menu-lapal__carte">
+                        <p class="menu-lapal__nourr1">Paris-Brest</p>
+                        <p class="menu-lapal__nourr2">Revisité</p>
+                        <p class="price">18€</p>
                     </div>
-                    <div class="menu-lapal__dess2">
-                        <p>Macaron au chocolat d'exception</p>
-                        <p>Et glace à la vanille de Madagascar</p>
-                        <p>22€</p>
+                    <div class="menu-lapal__dess2 menu-lapal__carte">
+                        <p class="menu-lapal__nourr1">Macaron au chocolat d'exception</p>
+                        <p class="menu-lapal__nourr2">Et glace à la vanille de Madagascar</p>
+                        <p class="price">22€</p>
                     </div>
-                    <div class="menu-lapal__dess3">
-                        <p>Mousse au chocolat</p>
-                        <p>Au piment d'Espelette et à la truffe noire</p>
-                        <p>23€</p>
+                    <div class="menu-lapal__dess3 menu-lapal__carte">
+                        <p class="menu-lapal__nourr1">Mousse au chocolat</p>
+                        <p class="menu-lapal__nourr2">Au piment d'Espelette et à la truffe noire</p>
+                        <p class="price">23€</p>
                     </div>
                 </div>
                 <div class="menu-lapal__btn menu-restau__btn">
@@ -82,10 +95,10 @@
         <footer>
             <h3>Ohmyfood</h3>
             <ul>
-                <li> <i class="fas fa-utensils"></i>Proposer un restaurant</li>
-                <li> <i class="fas fa-hands-helping"></i> Devenir partenaire</li>
-                <li>Mentions légales</li>
-                <li>Contact</li> 
+                <li class="propsr"> <i class="fas fa-utensils"></i>Proposer un restaurant</li>
+                <li class="devnr"> <i class="fas fa-hands-helping"></i> Devenir partenaire</li>
+                <li class="ment°">Mentions légales</li>
+                <li class="contact"><a href="#">Contact</a></li>
             </ul>
         </footer>
     </div>
