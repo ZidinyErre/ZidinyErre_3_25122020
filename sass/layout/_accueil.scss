@@ -264,7 +264,7 @@
         background-color: white;
         margin-top: 0px;
         margin-bottom: 23px;
-        height: 76px;
+        height: 88px;
         border-radius: 0px 0px 15px 15px;
         overflow: hidden;
         display: flex;
@@ -274,7 +274,7 @@
             align-self: flex-end;
         }
         p{
-            margin-bottom: 1px;
+            margin-bottom: 0px;
             margin-left: 15px;
             color: black;
             font-size: 1em;
@@ -282,34 +282,14 @@
     }
 }
 
-.restau-lapal__info1{
-    margin-top: 0px;
+.restau-all__info1{
+    margin-top: 12px;
     margin-right: 1em;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
 }
-.restau-lapal__info2{
-    margin-top: 2px;
+.restau-all__info2{
+    margin-top: 0px;
 }
-.restau-lanot__info1{
-    margin-top: 21px;
-    font-weight: bold;
-}
-.restau-lanot__info2{
-    margin-top: 2px;
-}
-.restau-alafr__info1{
-    margin-top: 21px;
-    font-weight: bold;
-}
-.restau-alafr__info2{
-    margin-top: 2px;
-}
-.restau-ledel__info1{
-    margin-top: 21px;
-    font-weight: bold;
-}
-.restau-ledel__info2{
-    margin-top: 2px;
-}
+

@@ -327,7 +327,7 @@ body {
     background-color: white;
     margin-top: 0px;
     margin-bottom: 23px;
-    height: 76px;
+    height: 88px;
     border-radius: 0px 0px 15px 15px;
     overflow: hidden;
     display: flex;
@@ -338,50 +338,23 @@ body {
     align-self: flex-end;
   }
   .restau__info p {
-    margin-bottom: 1px;
+    margin-bottom: 0px;
     margin-left: 15px;
     color: black;
     font-size: 1em;
   }
 }
 
-.restau-lapal__info1 {
-  margin-top: 0px;
+.restau-all__info1 {
+  margin-top: 12px;
   margin-right: 1em;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
 }
 
-.restau-lapal__info2 {
-  margin-top: 2px;
-}
-
-.restau-lanot__info1 {
-  margin-top: 21px;
-  font-weight: bold;
-}
-
-.restau-lanot__info2 {
-  margin-top: 2px;
-}
-
-.restau-alafr__info1 {
-  margin-top: 21px;
-  font-weight: bold;
-}
-
-.restau-alafr__info2 {
-  margin-top: 2px;
-}
-
-.restau-ledel__info1 {
-  margin-top: 21px;
-  font-weight: bold;
-}
-
-.restau-ledel__info2 {
-  margin-top: 2px;
+.restau-all__info2 {
+  margin-top: 0px;
 }
 
 header {
@@ -486,13 +459,6 @@ header .fa-arrow-left {
     border-radius: 18px;
     height: 65px;
     box-shadow: 0px 3px 6px grey;
-  }
-  .menu-alafr__carte .price {
-    position: absolute;
-    left: 88%;
-    top: 27%;
-    font-weight: bold;
-    color: #272626fa;
   }
 }
 
@@ -607,13 +573,6 @@ header .fa-arrow-left {
     height: 65px;
     box-shadow: 0px 3px 6px grey;
   }
-  .menu-lanot__carte .price {
-    position: absolute;
-    left: 88%;
-    top: 27%;
-    font-weight: bold;
-    color: #272626fa;
-  }
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
@@ -661,7 +620,8 @@ header .fa-arrow-left {
 
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lapal__titre {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
   }
   .menu-lapal__titre figure {
     position: absolute;
@@ -682,10 +642,16 @@ header .fa-arrow-left {
 }
 .menu-lapal h3 {
   font-family: "Shrikhand";
-  margin-top: 0;
-  padding-top: 50px;
-  padding-left: 7%;
-  font-size: 156%;
+  margin-top: 34px;
+  padding-top: 0;
+  padding-left: 1em;
+  font-size: 1.72em;
+}
+.menu-lapal img {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 2em;
+  margin-top: 3em;
 }
 .menu-lapal h4 {
   font-weight: normal;
@@ -703,19 +669,12 @@ header .fa-arrow-left {
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lapal__carte {
-    position: relative;
-    width: 93%;
-    margin: auto;
+    margin-bottom: 20px;
+    margin-left: 1em;
+    margin-right: 1em;
     border-radius: 18px;
     height: 65px;
     box-shadow: 0px 3px 6px grey;
-  }
-  .menu-lapal__carte .price {
-    position: absolute;
-    left: 88%;
-    top: 27%;
-    font-weight: bold;
-    color: #272626fa;
   }
 }
 
@@ -723,16 +682,22 @@ header .fa-arrow-left {
   .menu-lapal__nourr1 {
     font-weight: bold;
     margin-bottom: 0px;
-    padding-left: 4%;
-    padding-top: 3.5%;
+    padding-left: 17px;
+    padding-top: 12px;
   }
 }
 
+.menu-lapal__nourr2 .price {
+  color: #474545;
+  font-weight: bold;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lapal__nourr2 {
-    margin: 0%;
-    padding: 1% 0% 0% 4%;
-    font-size: 81%;
+    margin: 0px 9px 0px 0px;
+    padding: 6px 0px 0px 17px;
+    font-size: 78%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -802,13 +767,6 @@ header .fa-arrow-left {
     border-radius: 18px;
     height: 65px;
     box-shadow: 0px 3px 6px grey;
-  }
-  .menu-ledel__carte .price {
-    position: absolute;
-    left: 88%;
-    top: 27%;
-    font-weight: bold;
-    color: #272626fa;
   }
 }
 

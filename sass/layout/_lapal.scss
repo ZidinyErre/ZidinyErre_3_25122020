@@ -21,7 +21,8 @@ header{
 
 .menu-lapal__titre{
     @include mobile{
-        position: relative;
+        display: flex;
+        justify-content: space-between;
         figure{
             position: absolute;
             left: 72%;
@@ -38,13 +39,20 @@ header{
         flex-direction: column;
     }
     h3{
-        font-family: 'Shrikhand';
-        margin-top: 0;
-        padding-top: 50px;
-        padding-left: 7%;
-        font-size: 156%;
+        font-family: "Shrikhand";
+        margin-top: 34px;
+        padding-top: 0;
+        padding-left: 1em;
+        font-size: 1.72em;
+        
     
     }
+    img{
+        width: 1.5em;
+        height: 1.5em;
+        margin-right: 2em;
+        margin-top: 3em;
+        }
     h4{
         font-weight: normal;
         border-bottom: 3px #99E2D0 solid;
@@ -55,35 +63,40 @@ header{
         color: $black;
         margin-left: 12px;
     }
+
     
 }
 .menu-lapal__carte{
     background-color:  map-get($map: $blockcolor, $key: block);
     @include mobile{
-        position: relative;
-        width: 93%;
-        margin: auto;
+        margin-bottom: 20px;
+        margin-left: 1em;
+        margin-right: 1em;
         border-radius: 18px;
         height: 65px;
         box-shadow: 0px 3px 6px grey;
-        .price{
-            @include price;
-        }
+        
     }
 }
 .menu-lapal__nourr1{
     @include mobile{
         font-weight: bold;
         margin-bottom: 0px;
-        padding-left: 4%;
-        padding-top: 3.5%;
+        padding-left: 17px;
+        padding-top: 12px;
     }
 }
 .menu-lapal__nourr2{ 
+    .price{
+        color: $black;
+        font-weight: bold;
+    }
     @include mobile {
-    margin: 0%;
-    padding: 1% 0% 0% 4%;
-    font-size: 81%;
+        margin: 0px 9px 0px 0px;
+        padding: 6px 0px 0px 17px;
+        font-size: 78%;
+        display: flex;
+        justify-content: space-between;
 
     }
 }

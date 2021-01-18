@@ -75,9 +75,7 @@ header{
         border-radius: 18px;
         height: 65px;
         box-shadow: 0px 3px 6px grey;
-        .price{
-            @include price;
-        }
+        
     }
 }
 .menu-alafr__nourr1{
