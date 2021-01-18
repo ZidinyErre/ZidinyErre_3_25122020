@@ -21,12 +21,12 @@ header{
         @include imgaccueil;
     } 
 }
-.img-alafr{
+/*.img-alafr{
     @include mobile{
         position: relative;
         z-index: 1;
     }
-}
+}*/
 .menu-alafr__titre{
     @include mobile{
         position: relative;

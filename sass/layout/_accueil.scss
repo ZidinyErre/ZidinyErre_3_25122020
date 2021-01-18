@@ -66,7 +66,7 @@
     }
 }
 .fonctionmt__all{
-    background-color: $secondgray;
+    /*background-color: $secondgray;
     width: 76%;
     padding: 4% 4% 4% 0%;
     margin-left: 67px;
@@ -89,15 +89,18 @@
             top: 44px;
             color: whitesmoke;
             font-size: 0.89em;
-        }
+        }*/
     @include mobile{
-        width: 77%;
-        padding: 6% 6% 6% 0%;
-        margin-left: 26px;
-        margin-bottom: 8%;
+        background-color: #d3d2d259;
+        padding: 23px 23px 23px 0px;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 23px;
         font-size: 0.99em;
         font-weight: bold;
         display: flex;
+        border-radius: 19px;
+        box-shadow: 0px 4px 17px grey;
         position: relative;
         .icon{
             width: 9px;
@@ -108,7 +111,7 @@
             background-color: #9356DC;
             position: absolute;
             left: -10px;
-            top: 21px;
+            top: 18px;
             color: whitesmoke;
             font-size: 0.89em;
         }
@@ -162,11 +165,7 @@
     }
     
 }
-.restau-lapal__img{
-    @include mobile {
-        width: 90%;
-    }
-}
+
 .restau__img{
     position: relative;
     width: 100%;
@@ -217,14 +216,14 @@
 }
 
 .restau-all{
-    margin-left: 3.5%;
+    /*margin-left: 3.5%;
     margin-right: 3.5%;
     margin-bottom: 30px;
     box-shadow: 0px 9px 9px grey;
     border-radius: 0px 0px 15px 15px;
     width: 77%;
     height: 453px;
-    overflow: hidden;
+    overflow: hidden;*/
     figure{
         margin: auto;
     }
@@ -232,12 +231,10 @@
         text-decoration: none;  
     }
     @include mobile{
-        margin-left: 3.5%;
-        margin-right: 3.5%;
         border-radius: 0px 0px 15px 15px;
-        width: 93%;
-        height: 311px;
         overflow: hidden;
+        margin-left: 1.1em;
+        margin-right: 1.1em;
         figure{
         margin: auto;
         }
@@ -245,13 +242,13 @@
 }
 
 .restau__info{
-    background-color: white;
+    /*background-color: white;
     margin-top: 0%;
     display: flex;
     flex-direction: column;
     height: 141px;
-    position: relative;
-    img{
+    position: relative;*/
+    /*img{
         width: 5%;
         position: absolute;
         left: 87%;
@@ -262,17 +259,19 @@
         margin-left: 15px;
         color: black;
         font-size: 1.87em;
-    }
+    }*/
     @include mobile{
         background-color: white;
-        margin-top: 0%;
-        height: 91px;
-        position: relative;
+        margin-top: 0px;
+        margin-bottom: 23px;
+        height: 76px;
+        border-radius: 0px 0px 15px 15px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
         img{
-            width: 6%;
-            position: absolute;
-            left: 79%;
-            bottom: 56%;
+            width: 26px;
+            align-self: flex-end;
         }
         p{
             margin-bottom: 1px;
@@ -284,8 +283,11 @@
 }
 
 .restau-lapal__info1{
-    margin-top: 21px;
+    margin-top: 0px;
+    margin-right: 1em;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
 }
 .restau-lapal__info2{
     margin-top: 2px;
@@ -293,7 +295,6 @@
 .restau-lanot__info1{
     margin-top: 21px;
     font-weight: bold;
-
 }
 .restau-lanot__info2{
     margin-top: 2px;

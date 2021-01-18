@@ -17,7 +17,7 @@ body {
 }
 
 .explor-restau {
-  background-color: #d3cfcf7a;
+  background-color: #f6f6f6;
 }
 
 .lieu {
@@ -97,7 +97,7 @@ body {
 }
 
 .fonctionmt__all {
-  background-color: #d3d2d259;
+  /*background-color: $secondgray;
   width: 76%;
   padding: 4% 4% 4% 0%;
   margin-left: 67px;
@@ -108,29 +108,32 @@ body {
   display: flex;
   position: relative;
   box-shadow: 0px 4px 17px grey;
-}
-.fonctionmt__all .icon {
-  width: 9px;
-  height: 15px;
-  padding: 5px 15px 16px 11px;
-  margin: 0px;
-  border-radius: 30px;
-  background-color: #9356DC;
-  position: absolute;
-  left: -10px;
-  top: 44px;
-  color: whitesmoke;
-  font-size: 0.89em;
+      .icon{
+          width: 9px;
+          height: 15px;
+          padding: 5px 15px 16px 11px;
+          margin: 0px;
+          border-radius: 30px;
+          background-color: #9356DC;
+          position: absolute;
+          left: -10px;
+          top: 44px;
+          color: whitesmoke;
+          font-size: 0.89em;
+      }*/
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .fonctionmt__all {
-    width: 77%;
-    padding: 6% 6% 6% 0%;
-    margin-left: 26px;
-    margin-bottom: 8%;
+    background-color: #d3d2d259;
+    padding: 23px 23px 23px 0px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 23px;
     font-size: 0.99em;
     font-weight: bold;
     display: flex;
+    border-radius: 19px;
+    box-shadow: 0px 4px 17px grey;
     position: relative;
   }
   .fonctionmt__all .icon {
@@ -142,7 +145,7 @@ body {
     background-color: #9356DC;
     position: absolute;
     left: -10px;
-    top: 21px;
+    top: 18px;
     color: whitesmoke;
     font-size: 0.89em;
   }
@@ -179,7 +182,7 @@ body {
 }
 
 .restau {
-  background-color: #d3cfcf7a;
+  background-color: #f6f6f6;
   height: auto;
   padding-top: 24px;
   display: flex;
@@ -199,12 +202,6 @@ body {
   .restau h2 {
     padding-left: 17px;
     font-size: 1.5em;
-  }
-}
-
-@media (max-width: 480px) and (min-width: 320px) {
-  .restau-lapal__img {
-    width: 90%;
   }
 }
 
@@ -278,14 +275,14 @@ body {
 }
 
 .restau-all {
-  margin-left: 3.5%;
+  /*margin-left: 3.5%;
   margin-right: 3.5%;
   margin-bottom: 30px;
   box-shadow: 0px 9px 9px grey;
   border-radius: 0px 0px 15px 15px;
   width: 77%;
   height: 453px;
-  overflow: hidden;
+  overflow: hidden;*/
 }
 .restau-all figure {
   margin: auto;
@@ -295,12 +292,10 @@ body {
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .restau-all {
-    margin-left: 3.5%;
-    margin-right: 3.5%;
     border-radius: 0px 0px 15px 15px;
-    width: 93%;
-    height: 311px;
     overflow: hidden;
+    margin-left: 1.1em;
+    margin-right: 1.1em;
   }
   .restau-all figure {
     margin: auto;
@@ -308,37 +303,39 @@ body {
 }
 
 .restau__info {
-  background-color: white;
+  /*background-color: white;
   margin-top: 0%;
   display: flex;
   flex-direction: column;
   height: 141px;
-  position: relative;
-}
-.restau__info img {
-  width: 5%;
-  position: absolute;
-  left: 87%;
-  bottom: 56%;
-}
-.restau__info p {
-  margin-bottom: 2px;
-  margin-left: 15px;
-  color: black;
-  font-size: 1.87em;
+  position: relative;*/
+  /*img{
+      width: 5%;
+      position: absolute;
+      left: 87%;
+      bottom: 56%;
+  }
+  p{  
+      margin-bottom: 2px;
+      margin-left: 15px;
+      color: black;
+      font-size: 1.87em;
+  }*/
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .restau__info {
     background-color: white;
-    margin-top: 0%;
-    height: 91px;
-    position: relative;
+    margin-top: 0px;
+    margin-bottom: 23px;
+    height: 76px;
+    border-radius: 0px 0px 15px 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
   .restau__info img {
-    width: 6%;
-    position: absolute;
-    left: 79%;
-    bottom: 56%;
+    width: 26px;
+    align-self: flex-end;
   }
   .restau__info p {
     margin-bottom: 1px;
@@ -349,8 +346,11 @@ body {
 }
 
 .restau-lapal__info1 {
-  margin-top: 21px;
+  margin-top: 0px;
+  margin-right: 1em;
   font-weight: bold;
+  display: flex;
+  justify-content: space-between;
 }
 
 .restau-lapal__info2 {
@@ -430,13 +430,12 @@ header .fa-arrow-left {
   }
 }
 
-@media (max-width: 480px) and (min-width: 320px) {
-  .img-alafr {
-    position: relative;
-    z-index: 1;
-  }
-}
-
+/*.img-alafr{
+    @include mobile{
+        position: relative;
+        z-index: 1;
+    }
+}*/
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-alafr__titre {
     position: relative;
@@ -449,7 +448,7 @@ header .fa-arrow-left {
 }
 
 .menu-alafr {
-  background-color: #d3cfcf7a;
+  background-color: #f6f6f6;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-alafr {
@@ -569,7 +568,7 @@ header .fa-arrow-left {
 }
 
 .menu-lanot {
-  background-color: #d3cfcf7a;
+  background-color: #f6f6f6;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lanot {
@@ -672,7 +671,7 @@ header .fa-arrow-left {
 }
 
 .menu-lapal {
-  background-color: #d3cfcf7a;
+  background-color: #f6f6f6;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lapal {
@@ -765,7 +764,7 @@ header .fa-arrow-left {
 }
 
 .menu-ledel {
-  background-color: #d3cfcf7a;
+  background-color: #f6f6f6;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-ledel {
