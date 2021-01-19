@@ -21,9 +21,9 @@ body {
 }
 
 .lieu {
-  background-color: #bdb6b64a;
+  background-color: #eaeaea;
   text-align: center;
-  color: #474545;
+  color: #353535;
   height: 56px;
   padding-top: 16px;
   padding-right: 27px;
@@ -49,6 +49,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f6f6f6;
 }
 
 .explor__reserv {
@@ -71,7 +72,7 @@ body {
 }
 
 .explor__btn {
-  background: linear-gradient(to right bottom, #dd10e8ab, #9356dcd1);
+  background: linear-gradient(to right bottom, #e470da, #ac5edb);
   text-align: center;
   width: 199px;
   margin: 10px 0px 37px 0px;
@@ -124,7 +125,7 @@ body {
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .fonctionmt__all {
-    background-color: #d3d2d259;
+    background-color: #f6f6f6;
     padding: 23px 23px 23px 0px;
     margin-left: 1em;
     margin-right: 1em;
@@ -247,6 +248,8 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background-color: #f6f6f6;
+    border-radius: 15px 15px 0px 0px;
   }
 }
 
@@ -255,6 +258,8 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background-color: #f6f6f6;
+    border-radius: 15px 15px 0px 0px;
   }
 }
 
@@ -263,6 +268,8 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background-color: #f6f6f6;
+    border-radius: 15px 15px 0px 0px;
   }
 }
 
@@ -271,6 +278,8 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background-color: #f6f6f6;
+    border-radius: 15px 15px 0px 0px;
   }
 }
 
@@ -296,6 +305,8 @@ body {
     overflow: hidden;
     margin-left: 1.1em;
     margin-right: 1.1em;
+    margin-bottom: 2em;
+    box-shadow: 0px 4px 17px grey;
   }
   .restau-all figure {
     margin: auto;
@@ -326,7 +337,6 @@ body {
   .restau__info {
     background-color: white;
     margin-top: 0px;
-    margin-bottom: 23px;
     height: 88px;
     border-radius: 0px 0px 15px 15px;
     overflow: hidden;
@@ -382,7 +392,7 @@ header {
 }
 header .fa-arrow-left {
   position: absolute;
-  color: #474545;
+  color: #353535;
   top: 37%;
   left: 10%;
 }
@@ -400,6 +410,8 @@ header .fa-arrow-left {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background-color: #f6f6f6;
+    border-radius: 15px 15px 0px 0px;
   }
 }
 
@@ -444,7 +456,7 @@ header .fa-arrow-left {
   height: 27px;
   font-size: 1.25em;
   text-transform: uppercase;
-  color: #474545;
+  color: #353535;
   margin-left: 12px;
 }
 
@@ -501,7 +513,7 @@ header {
 }
 header .fa-arrow-left {
   position: absolute;
-  color: #474545;
+  color: #353535;
   top: 37%;
   left: 10%;
 }
@@ -519,17 +531,15 @@ header .fa-arrow-left {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background-color: #f6f6f6;
+    border-radius: 15px 15px 0px 0px;
   }
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lanot__titre {
-    position: relative;
-  }
-  .menu-lanot__titre figure {
-    position: absolute;
-    left: 72%;
-    top: 37%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -541,6 +551,8 @@ header .fa-arrow-left {
     border-radius: 50px 50px 0px 0px;
     display: flex;
     flex-direction: column;
+    margin-top: -56px;
+    position: relative;
   }
 }
 .menu-lanot h3 {
@@ -550,6 +562,12 @@ header .fa-arrow-left {
   padding-left: 20px;
   font-size: 1.75em;
 }
+.menu-lanot img {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 2em;
+  margin-top: 3.6em;
+}
 .menu-lanot h4 {
   font-weight: normal;
   border-bottom: 3px #99E2D0 solid;
@@ -557,7 +575,7 @@ header .fa-arrow-left {
   height: 27px;
   font-size: 1.25em;
   text-transform: uppercase;
-  color: #474545;
+  color: #353535;
   margin-left: 12px;
 }
 
@@ -566,9 +584,9 @@ header .fa-arrow-left {
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lanot__carte {
-    position: relative;
-    width: 93%;
-    margin: auto;
+    margin-bottom: 20px;
+    margin-left: 1em;
+    margin-right: 1em;
     border-radius: 18px;
     height: 65px;
     box-shadow: 0px 3px 6px grey;
@@ -579,16 +597,39 @@ header .fa-arrow-left {
   .menu-lanot__nourr1 {
     font-weight: bold;
     margin-bottom: 0px;
-    padding-left: 4%;
-    padding-top: 3.5%;
+    padding-left: 17px;
+    padding-top: 12px;
+  }
+}
+
+.menu-lanot__nourr2 .price {
+  color: #353535;
+  font-weight: bold;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-lanot__nourr2 {
+    margin: 0px 9px 0px 0px;
+    padding: 6px 0px 0px 17px;
+    font-size: 78%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
-  .menu-lanot__nourr2 {
-    margin: 0%;
-    padding: 0.5% 0% 0% 4%;
-    font-size: 84%;
+  .menu-lanot__btn {
+    background: linear-gradient(to right bottom, #dd10e8ab, #9356dcd1);
+    text-align: center;
+    margin: 40px 10px 70px 10px;
+    width: 144px;
+    padding: 11px;
+    border-radius: 27px;
+    box-shadow: 0px 3px 6px grey;
+    align-self: center;
+  }
+  .menu-lanot__btn a {
+    text-decoration: none;
+    color: whitesmoke;
   }
 }
 
@@ -597,7 +638,7 @@ header {
 }
 header .fa-arrow-left {
   position: absolute;
-  color: #474545;
+  color: #353535;
   top: 37%;
   left: 10%;
 }
@@ -615,6 +656,8 @@ header .fa-arrow-left {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background-color: #f6f6f6;
+    border-radius: 15px 15px 0px 0px;
   }
 }
 
@@ -622,11 +665,6 @@ header .fa-arrow-left {
   .menu-lapal__titre {
     display: flex;
     justify-content: space-between;
-  }
-  .menu-lapal__titre figure {
-    position: absolute;
-    left: 72%;
-    top: 37%;
   }
 }
 
@@ -638,6 +676,8 @@ header .fa-arrow-left {
     border-radius: 50px 50px 0px 0px;
     display: flex;
     flex-direction: column;
+    margin-top: -56px;
+    position: relative;
   }
 }
 .menu-lapal h3 {
@@ -651,7 +691,7 @@ header .fa-arrow-left {
   width: 1.5em;
   height: 1.5em;
   margin-right: 2em;
-  margin-top: 3em;
+  margin-top: 2.7em;
 }
 .menu-lapal h4 {
   font-weight: normal;
@@ -660,7 +700,7 @@ header .fa-arrow-left {
   height: 27px;
   font-size: 1.25em;
   text-transform: uppercase;
-  color: #474545;
+  color: #353535;
   margin-left: 12px;
 }
 
@@ -688,7 +728,7 @@ header .fa-arrow-left {
 }
 
 .menu-lapal__nourr2 .price {
-  color: #474545;
+  color: #353535;
   font-weight: bold;
 }
 @media (max-width: 480px) and (min-width: 320px) {
@@ -714,6 +754,8 @@ header .fa-arrow-left {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background-color: #f6f6f6;
+    border-radius: 15px 15px 0px 0px;
   }
 }
 
@@ -752,7 +794,7 @@ header .fa-arrow-left {
   height: 27px;
   font-size: 1.25em;
   text-transform: uppercase;
-  color: #474545;
+  color: #353535;
   margin-left: 12px;
 }
 
@@ -788,7 +830,7 @@ header .fa-arrow-left {
 }
 
 footer {
-  background: #474545;
+  background: #353535;
   color: white;
 }
 footer h3 {

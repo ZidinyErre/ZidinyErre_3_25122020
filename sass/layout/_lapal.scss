@@ -23,11 +23,6 @@ header{
     @include mobile{
         display: flex;
         justify-content: space-between;
-        figure{
-            position: absolute;
-            left: 72%;
-            top: 37%;
-        }
     }
 }
 
@@ -37,6 +32,8 @@ header{
         border-radius: 50px 50px  0px 0px;
         display: flex;
         flex-direction: column;
+        margin-top: -56px;
+        position: relative;
     }
     h3{
         font-family: "Shrikhand";
@@ -44,15 +41,13 @@ header{
         padding-top: 0;
         padding-left: 1em;
         font-size: 1.72em;
-        
-    
     }
     img{
         width: 1.5em;
         height: 1.5em;
         margin-right: 2em;
-        margin-top: 3em;
-        }
+        margin-top: 2.7em;
+    }
     h4{
         font-weight: normal;
         border-bottom: 3px #99E2D0 solid;
