@@ -14,7 +14,7 @@ header{
             margin: 0;
             width: 100%;
             object-fit: cover;
-            height: 240px;
+            height: 300px;
         }
         @include imgaccueil;
     } 
@@ -33,7 +33,7 @@ header{
         border-radius: 50px 50px  0px 0px;
         display: flex;
         flex-direction: column;
-        margin-top: -56px;
+        margin-top: -48px;
         position: relative;
     }
     h3{
@@ -85,6 +85,8 @@ header{
     .price{
         color: $black;
         font-weight: bold;
+        margin: 0;
+
     }
     @include mobile {
         margin: 0px 9px 0px 0px;
@@ -96,9 +98,10 @@ header{
     }
 }
 
+
 .menu-lanot__btn{
     @include mobile{
-        background: linear-gradient(to right bottom, #dd10e8ab, #9356dcd1);
+        background: linear-gradient(to right bottom, #e470da, #ac5edb);        
         text-align: center;
         margin: 40px 10px 70px 10px;
         width: 144px;
@@ -109,6 +112,14 @@ header{
         a{
             text-decoration: none;
             color:whitesmoke;
+        }
+    }
+}
+
+footer{
+    @include mobile{
+        li{
+            font-family: 'Roboto', sans-serif;
         }
     }
 }

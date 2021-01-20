@@ -249,7 +249,6 @@ body {
     height: 100%;
     object-fit: cover;
     background-color: #f6f6f6;
-    border-radius: 15px 15px 0px 0px;
   }
 }
 
@@ -259,7 +258,6 @@ body {
     height: 100%;
     object-fit: cover;
     background-color: #f6f6f6;
-    border-radius: 15px 15px 0px 0px;
   }
 }
 
@@ -269,7 +267,6 @@ body {
     height: 100%;
     object-fit: cover;
     background-color: #f6f6f6;
-    border-radius: 15px 15px 0px 0px;
   }
 }
 
@@ -279,7 +276,6 @@ body {
     height: 100%;
     object-fit: cover;
     background-color: #f6f6f6;
-    border-radius: 15px 15px 0px 0px;
   }
 }
 
@@ -398,20 +394,19 @@ header .fa-arrow-left {
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
-  .img-restau figure {
+  .img-alafr figure {
     margin: 0;
     width: 100%;
     object-fit: cover;
-    height: 240px;
+    height: 279px;
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
-  .img-restau figure img {
+  .img-alafr figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     background-color: #f6f6f6;
-    border-radius: 15px 15px 0px 0px;
   }
 }
 
@@ -423,12 +418,8 @@ header .fa-arrow-left {
 }*/
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-alafr__titre {
-    position: relative;
-  }
-  .menu-alafr__titre figure {
-    position: absolute;
-    left: 72%;
-    top: 37%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -440,6 +431,8 @@ header .fa-arrow-left {
     border-radius: 50px 50px 0px 0px;
     display: flex;
     flex-direction: column;
+    margin-top: -50px;
+    position: relative;
   }
 }
 .menu-alafr h3 {
@@ -447,7 +440,13 @@ header .fa-arrow-left {
   margin-top: 0;
   padding-top: 50px;
   padding-left: 27px;
-  font-size: 1.6em;
+  font-size: 1.8em;
+}
+.menu-alafr img {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 3em;
+  margin-top: 3.7em;
 }
 .menu-alafr h4 {
   font-weight: normal;
@@ -465,9 +464,9 @@ header .fa-arrow-left {
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-alafr__carte {
-    position: relative;
-    width: 93%;
-    margin: auto;
+    margin-bottom: 20px;
+    margin-left: 1em;
+    margin-right: 1em;
     border-radius: 18px;
     height: 65px;
     box-shadow: 0px 3px 6px grey;
@@ -478,22 +477,27 @@ header .fa-arrow-left {
   .menu-alafr__nourr1 {
     font-weight: bold;
     margin-bottom: 0px;
-    padding-left: 4%;
-    padding-top: 3.5%;
+    padding-left: 17px;
+    padding-top: 12px;
   }
 }
 
+.menu-alafr__nourr2 .price {
+  font-weight: bold;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-alafr__nourr2 {
-    margin: 0%;
-    padding: 0.5% 0% 0% 4%;
-    font-size: 90%;
+    margin: 0px 9px 0px 0px;
+    padding: 6px 0px 0px 17px;
+    font-size: 78%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-restau__btn {
-    background: linear-gradient(to right bottom, #dd10e8ab, #9356dcd1);
+    background: linear-gradient(to right bottom, #e470da, #ac5edb);
     text-align: center;
     margin: 40px 10px 70px 10px;
     width: 144px;
@@ -523,7 +527,7 @@ header .fa-arrow-left {
     margin: 0;
     width: 100%;
     object-fit: cover;
-    height: 240px;
+    height: 300px;
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
@@ -532,7 +536,6 @@ header .fa-arrow-left {
     height: 100%;
     object-fit: cover;
     background-color: #f6f6f6;
-    border-radius: 15px 15px 0px 0px;
   }
 }
 
@@ -551,7 +554,7 @@ header .fa-arrow-left {
     border-radius: 50px 50px 0px 0px;
     display: flex;
     flex-direction: column;
-    margin-top: -56px;
+    margin-top: -48px;
     position: relative;
   }
 }
@@ -605,6 +608,7 @@ header .fa-arrow-left {
 .menu-lanot__nourr2 .price {
   color: #353535;
   font-weight: bold;
+  margin: 0;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lanot__nourr2 {
@@ -618,7 +622,7 @@ header .fa-arrow-left {
 
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lanot__btn {
-    background: linear-gradient(to right bottom, #dd10e8ab, #9356dcd1);
+    background: linear-gradient(to right bottom, #e470da, #ac5edb);
     text-align: center;
     margin: 40px 10px 70px 10px;
     width: 144px;
@@ -633,6 +637,12 @@ header .fa-arrow-left {
   }
 }
 
+@media (max-width: 480px) and (min-width: 320px) {
+  footer li {
+    font-family: "Roboto", sans-serif;
+  }
+}
+
 header {
   position: relative;
 }
@@ -644,7 +654,7 @@ header .fa-arrow-left {
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
-  .img-restau figure {
+  .img-lapal figure {
     margin: 0;
     width: 100%;
     object-fit: cover;
@@ -652,12 +662,11 @@ header .fa-arrow-left {
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
-  .img-restau figure img {
+  .img-lapal figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     background-color: #f6f6f6;
-    border-radius: 15px 15px 0px 0px;
   }
 }
 
@@ -742,31 +751,26 @@ header .fa-arrow-left {
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
-  .img-restau figure {
+  .img-ledel figure {
     margin: 0;
     width: 100%;
     object-fit: cover;
-    height: 240px;
+    height: 296px;
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
-  .img-restau figure img {
+  .img-ledel figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     background-color: #f6f6f6;
-    border-radius: 15px 15px 0px 0px;
   }
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-ledel__titre {
-    position: relative;
-  }
-  .menu-ledel__titre figure {
-    position: absolute;
-    left: 72%;
-    top: 37%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -778,6 +782,8 @@ header .fa-arrow-left {
     border-radius: 50px 50px 0px 0px;
     display: flex;
     flex-direction: column;
+    margin-top: -47px;
+    position: relative;
   }
 }
 .menu-ledel h3 {
@@ -785,7 +791,13 @@ header .fa-arrow-left {
   margin-top: 0;
   padding-top: 50px;
   padding-left: 27px;
-  font-size: 1.6em;
+  font-size: 1.9em;
+}
+.menu-ledel img {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 2.4em;
+  margin-top: 3.7em;
 }
 .menu-ledel h4 {
   font-weight: normal;
@@ -803,9 +815,9 @@ header .fa-arrow-left {
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-ledel__carte {
-    position: relative;
-    width: 93%;
-    margin: auto;
+    margin-bottom: 20px;
+    margin-left: 1em;
+    margin-right: 1em;
     border-radius: 18px;
     height: 65px;
     box-shadow: 0px 3px 6px grey;
@@ -816,16 +828,22 @@ header .fa-arrow-left {
   .menu-ledel__nourr1 {
     font-weight: bold;
     margin-bottom: 0px;
-    padding-left: 4%;
-    padding-top: 3.5%;
+    padding-left: 17px;
+    padding-top: 12px;
   }
 }
 
+.menu-ledel__nourr2 .price {
+  color: #353535;
+  font-weight: bold;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-ledel__nourr2 {
-    margin: 0%;
-    padding: 0.5% 0% 0% 4%;
-    font-size: 90%;
+    margin: 0px 9px 0px 0px;
+    padding: 6px 0px 0px 17px;
+    font-size: 78%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
