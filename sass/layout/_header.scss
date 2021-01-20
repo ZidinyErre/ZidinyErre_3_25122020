@@ -2,16 +2,16 @@ header{
     overflow: hidden;
     img{
         @include mobile {
-            width: 49%;
-            padding-left: 23%;
+            width: 11em;
         }
     }
     
 }
 header{
-    figure{
-        @include mobile{
-            margin-bottom: 9px;
+    @include mobile{
+        figure{
+            display: flex;
+            justify-content: center;
         }
     }
 }

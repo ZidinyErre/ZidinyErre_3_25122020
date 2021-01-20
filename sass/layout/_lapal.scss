@@ -1,17 +1,25 @@
 header{
-    position: relative;
-    .fa-arrow-left{
-        position: absolute;
-        color:$black;
-        top: 37%;
-        left: 10%;  
+    @include mobile{
+        width: 11em;
+        figure{
+            display: flex;
+            justify-content: space-around;
+        }
+        .fa-arrow-left{
+            color:$black; 
+        }
     }
+    
 }
 .img-lapal{
+    img{
+        width: 100%;
+        height: 100%;
+    }
     figure {
+        margin: 0 1em 0 1em;
         @include mobile{
             margin: 0;
-            width: 100%;
             object-fit: cover;
             height: 240px;
         }
@@ -28,6 +36,7 @@ header{
 
 .menu-lapal{
     background-color:  map-get($map: $blockcolor, $key: menu);
+    margin-top: -25px;
     @include mobile{
         border-radius: 50px 50px  0px 0px;
         display: flex;
@@ -93,5 +102,21 @@ header{
         display: flex;
         justify-content: space-between;
 
+    }
+}
+.menu-lapal__btn{
+    @include mobile{
+        background: linear-gradient(to right bottom, #e470da, #ac5edb);
+        text-align: center;
+        margin: 40px 10px 70px 10px;
+        width: 144px;
+        padding: 11px;
+        border-radius: 27px;
+        box-shadow: 0px 3px 6px grey;
+        align-self: center;
+        a{
+            text-decoration: none;
+            color:whitesmoke;
+        }
     }
 }

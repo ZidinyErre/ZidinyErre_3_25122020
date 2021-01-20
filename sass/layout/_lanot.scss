@@ -1,12 +1,4 @@
-header{
-    position: relative;
-    .fa-arrow-left{
-        position: absolute;
-        color:$black;
-        top: 37%;
-        left: 10%;
-    }
-}
+
 
 .img-lanot{
     figure {
@@ -101,14 +93,14 @@ header{
 
 .menu-lanot__btn{
     @include mobile{
-        background: linear-gradient(to right bottom, #e470da, #ac5edb);        
+        background: linear-gradient(to right bottom, #e470da, #ac5edb);
         text-align: center;
-        margin: 40px 10px 70px 10px;
-        width: 144px;
+        margin: 3em 8em 5em 8em;
+        /* width: 144px; */
         padding: 11px;
         border-radius: 27px;
         box-shadow: 0px 3px 6px grey;
-        align-self: center;
+        /* align-self: center;*/
         a{
             text-decoration: none;
             color:whitesmoke;

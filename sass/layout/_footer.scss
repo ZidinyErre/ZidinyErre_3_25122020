@@ -3,42 +3,66 @@ footer{
     color: white;
     h3{
         font-family: "Shrikhand", cursive;
-        margin-left: 6%;
-        margin-bottom: 0.5%;
+        margin-left: 27px;
+        margin-bottom: 0px;
         margin-top: 0;
-        padding-top: 4%;
-        font-size: 1.27em;
+        padding-top: 15px;
+        font-size: 2em;
     
+    }
+    @include mobile{
+        h3{
+            font-size: 1.27em; 
+        }
     }
 }
 
 .fa-utensils{
     padding-right: 10px;
+    font-size: 1.1em;
+    @include mobile{
+        font-size: 1em;
+    }
 }
 .propsr{
     margin-bottom: 10px;
+    font-size: 2em;
+    @include mobile{
+        font-size: 1em;
+    }
 }
 .devnr{
     margin-bottom: 10px;
+    font-size: 2em;
+    @include mobile{
+        font-size: 1em;
+    }
 
 }
 .ment°{
     margin-bottom: 10px;
+    font-size: 2em;
+    @include mobile{
+        font-size: 1em;
+    }
 
 }
 .contact{
     padding-bottom: 23px;
+    font-size: 2em;
     a{
         text-decoration: none;
         color: white;
+    }
+    @include mobile{
+        font-size: 1em;
     }
 }
 footer{
     ul{
         list-style: none;
-        padding-left: 6%;
-        margin-top: 2.5%;
+        padding-left: 28px;
+        margin-top: 9px;
         margin-bottom: 0;
-
     }
 }

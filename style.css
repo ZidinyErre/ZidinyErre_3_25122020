@@ -98,30 +98,29 @@ body {
 }
 
 .fonctionmt__all {
-  /*background-color: $secondgray;
-  width: 76%;
-  padding: 4% 4% 4% 0%;
+  background-color: #f6f6f6;
+  padding: 47px 47px 47px 0px;
   margin-left: 67px;
-  margin-bottom: 8%;
+  margin-bottom: 61px;
   border-radius: 21px;
   font-size: 1.6em;
   font-weight: bold;
   display: flex;
   position: relative;
   box-shadow: 0px 4px 17px grey;
-      .icon{
-          width: 9px;
-          height: 15px;
-          padding: 5px 15px 16px 11px;
-          margin: 0px;
-          border-radius: 30px;
-          background-color: #9356DC;
-          position: absolute;
-          left: -10px;
-          top: 44px;
-          color: whitesmoke;
-          font-size: 0.89em;
-      }*/
+}
+.fonctionmt__all .icon {
+  width: 9px;
+  height: 15px;
+  padding: 5px 15px 16px 11px;
+  margin: 0px;
+  border-radius: 30px;
+  background-color: #9356DC;
+  position: absolute;
+  left: -10px;
+  top: 44px;
+  color: whitesmoke;
+  font-size: 0.89em;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .fonctionmt__all {
@@ -280,14 +279,13 @@ body {
 }
 
 .restau-all {
-  /*margin-left: 3.5%;
-  margin-right: 3.5%;
+  margin-left: 20em;
+  margin-right: 20em;
   margin-bottom: 30px;
   box-shadow: 0px 9px 9px grey;
   border-radius: 0px 0px 15px 15px;
-  width: 77%;
   height: 453px;
-  overflow: hidden;*/
+  overflow: hidden;
 }
 .restau-all figure {
   margin: auto;
@@ -310,30 +308,29 @@ body {
 }
 
 .restau__info {
-  /*background-color: white;
-  margin-top: 0%;
+  background-color: white;
+  margin-top: 0px;
   display: flex;
   flex-direction: column;
   height: 141px;
-  position: relative;*/
-  /*img{
-      width: 5%;
-      position: absolute;
-      left: 87%;
-      bottom: 56%;
-  }
-  p{  
-      margin-bottom: 2px;
-      margin-left: 15px;
-      color: black;
-      font-size: 1.87em;
-  }*/
+  display: flex;
+  flex-direction: column;
+}
+.restau__info img {
+  width: 26px;
+  align-self: flex-end;
+}
+.restau__info p {
+  margin-bottom: 2px;
+  margin-left: 15px;
+  color: black;
+  font-size: 1.87em;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .restau__info {
     background-color: white;
     margin-top: 0px;
-    height: 88px;
+    height: 105px;
     border-radius: 0px 0px 15px 15px;
     overflow: hidden;
     display: flex;
@@ -368,29 +365,19 @@ header {
 }
 @media (max-width: 480px) and (min-width: 320px) {
   header img {
-    width: 49%;
-    padding-left: 23%;
+    width: 11em;
   }
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
   header figure {
-    margin-bottom: 9px;
+    display: flex;
+    justify-content: center;
   }
 }
 
 #restau-alafr {
   /*position: relative;*/
-}
-
-header {
-  position: relative;
-}
-header .fa-arrow-left {
-  position: absolute;
-  color: #353535;
-  top: 37%;
-  left: 10%;
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
@@ -496,7 +483,7 @@ header .fa-arrow-left {
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
-  .menu-restau__btn {
+  .menu-alafr__btn {
     background: linear-gradient(to right bottom, #e470da, #ac5edb);
     text-align: center;
     margin: 40px 10px 70px 10px;
@@ -506,20 +493,10 @@ header .fa-arrow-left {
     box-shadow: 0px 3px 6px grey;
     align-self: center;
   }
-  .menu-restau__btn a {
+  .menu-alafr__btn a {
     text-decoration: none;
     color: whitesmoke;
   }
-}
-
-header {
-  position: relative;
-}
-header .fa-arrow-left {
-  position: absolute;
-  color: #353535;
-  top: 37%;
-  left: 10%;
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
@@ -624,12 +601,12 @@ header .fa-arrow-left {
   .menu-lanot__btn {
     background: linear-gradient(to right bottom, #e470da, #ac5edb);
     text-align: center;
-    margin: 40px 10px 70px 10px;
-    width: 144px;
+    margin: 3em 8em 5em 8em;
+    /* width: 144px; */
     padding: 11px;
     border-radius: 27px;
     box-shadow: 0px 3px 6px grey;
-    align-self: center;
+    /* align-self: center;*/
   }
   .menu-lanot__btn a {
     text-decoration: none;
@@ -643,20 +620,29 @@ header .fa-arrow-left {
   }
 }
 
-header {
-  position: relative;
-}
-header .fa-arrow-left {
-  position: absolute;
-  color: #353535;
-  top: 37%;
-  left: 10%;
+@media (max-width: 480px) and (min-width: 320px) {
+  header {
+    width: 11em;
+  }
+  header figure {
+    display: flex;
+    justify-content: space-around;
+  }
+  header .fa-arrow-left {
+    color: #353535;
+  }
 }
 
+.img-lapal img {
+  width: 100%;
+  height: 100%;
+}
+.img-lapal figure {
+  margin: 0 1em 0 1em;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .img-lapal figure {
     margin: 0;
-    width: 100%;
     object-fit: cover;
     height: 240px;
   }
@@ -679,6 +665,7 @@ header .fa-arrow-left {
 
 .menu-lapal {
   background-color: #f6f6f6;
+  margin-top: -25px;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lapal {
@@ -747,6 +734,23 @@ header .fa-arrow-left {
     font-size: 78%;
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-lapal__btn {
+    background: linear-gradient(to right bottom, #e470da, #ac5edb);
+    text-align: center;
+    margin: 40px 10px 70px 10px;
+    width: 144px;
+    padding: 11px;
+    border-radius: 27px;
+    box-shadow: 0px 3px 6px grey;
+    align-self: center;
+  }
+  .menu-lapal__btn a {
+    text-decoration: none;
+    color: whitesmoke;
   }
 }
 
@@ -847,47 +851,99 @@ header .fa-arrow-left {
   }
 }
 
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-ledel__btn {
+    background: linear-gradient(to right bottom, #e470da, #ac5edb);
+    text-align: center;
+    margin: 40px 10px 70px 10px;
+    width: 144px;
+    padding: 11px;
+    border-radius: 27px;
+    box-shadow: 0px 3px 6px grey;
+    align-self: center;
+  }
+  .menu-ledel__btn a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+}
+
 footer {
   background: #353535;
   color: white;
 }
 footer h3 {
   font-family: "Shrikhand", cursive;
-  margin-left: 6%;
-  margin-bottom: 0.5%;
+  margin-left: 27px;
+  margin-bottom: 0px;
   margin-top: 0;
-  padding-top: 4%;
-  font-size: 1.27em;
+  padding-top: 15px;
+  font-size: 2em;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  footer h3 {
+    font-size: 1.27em;
+  }
 }
 
 .fa-utensils {
   padding-right: 10px;
+  font-size: 1.1em;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .fa-utensils {
+    font-size: 1em;
+  }
 }
 
 .propsr {
   margin-bottom: 10px;
+  font-size: 2em;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .propsr {
+    font-size: 1em;
+  }
 }
 
 .devnr {
   margin-bottom: 10px;
+  font-size: 2em;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .devnr {
+    font-size: 1em;
+  }
 }
 
 .ment° {
   margin-bottom: 10px;
+  font-size: 2em;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .ment° {
+    font-size: 1em;
+  }
 }
 
 .contact {
   padding-bottom: 23px;
+  font-size: 2em;
 }
 .contact a {
   text-decoration: none;
   color: white;
 }
+@media (max-width: 480px) and (min-width: 320px) {
+  .contact {
+    font-size: 1em;
+  }
+}
 
 footer ul {
   list-style: none;
-  padding-left: 6%;
-  margin-top: 2.5%;
+  padding-left: 28px;
+  margin-top: 9px;
   margin-bottom: 0;
 }
 
