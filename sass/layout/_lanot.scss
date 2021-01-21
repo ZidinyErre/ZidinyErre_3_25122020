@@ -1,7 +1,27 @@
-
+header{
+    @include mobile{
+        figure{
+            display: flex;
+        }
+        a{
+            padding: 1em 3em 1em 1em;
+            text-decoration: none;
+        }
+        .fa-arrow-left{
+            color:$black; 
+            width: 10px;
+            display: block;
+        }
+    }
+}
 
 .img-lanot{
+    img{
+        width: 100%;
+        height: 100%;
+    }
     figure {
+        margin: 0 1em 0 1em;
         @include mobile{
             margin: 0;
             width: 100%;
@@ -13,6 +33,8 @@
 }
 
 .menu-lanot__titre{
+    display: flex;
+    justify-content: space-between;
     @include mobile{
         display: flex;
         justify-content: space-between;
@@ -21,25 +43,20 @@
 
 .menu-lanot{
     background-color:  map-get($map: $blockcolor, $key: menu);
-    @include mobile{
-        border-radius: 50px 50px  0px 0px;
-        display: flex;
-        flex-direction: column;
-        margin-top: -48px;
-        position: relative;
-    }
+    margin-top: 4px;
+    height: 1416px;
     h3{
         font-family: "Shrikhand";
-        margin-top: 0;
-        padding-top: 50px;
-        padding-left: 20px;
-        font-size: 1.75em;
+        margin-top: 34px;
+        padding-top: 0;
+        padding-left: 1em;
+        font-size: 3em;
     }
     img{
-        width: 1.5em;
-        height: 1.5em;
-        margin-right: 2em;
-        margin-top: 3.6em;
+        width: 2.5em;
+        height: 2.5em;
+        margin-right: 8em;
+        margin-top: 3em;
     }
     h4{
         font-weight: normal;
@@ -47,14 +64,52 @@
         width: 27px;
         height: 27px;
         font-size: 1.25em;
+        margin-left: 40px;
         text-transform: uppercase;
         color: $black;
-        margin-left: 12px;
     }
+    @include mobile{
+        border-radius: 50px 50px  0px 0px;
+        display: flex;
+        flex-direction: column;
+        margin-top: -48px;
+        position: relative;
+        h3{
+            font-family: "Shrikhand";
+            margin-top: 0;
+            padding-top: 50px;
+            padding-left: 20px;
+            font-size: 1.75em;
+        }
+        img{
+            width: 1.5em;
+            height: 1.5em;
+            margin-right: 2em;
+            margin-top: 3.6em;
+        }
+        h4{
+            font-weight: normal;
+            border-bottom: 3px #99E2D0 solid;
+            width: 27px;
+            height: 27px;
+            font-size: 1.25em;
+            text-transform: uppercase;
+            color: $black;
+            margin-left: 12px;
+        }
+    }
+    
     
 }
 .menu-lanot__carte{
     background-color:  map-get($map: $blockcolor, $key: block);
+    background-color: white;
+    margin-bottom: 20px;
+    margin-left: 3em;
+    margin-right: 4em;
+    border-radius: 18px;
+    height: 77px;
+    box-shadow: 0px 3px 6px grey;
     @include mobile{
         margin-bottom: 20px;
         margin-left: 1em;
@@ -66,6 +121,11 @@
     }
 }
 .menu-lanot__nourr1{
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding-left: 17px;
+    padding-top: 12px;
+    font-size: 1.4em;
     @include mobile{
         font-weight: bold;
         margin-bottom: 0px;
@@ -78,8 +138,12 @@
         color: $black;
         font-weight: bold;
         margin: 0;
-
     }
+    margin: 0px 9px 0px 0px;
+    padding: 6px 0px 0px 17px;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
     @include mobile {
         margin: 0px 9px 0px 0px;
         padding: 6px 0px 0px 17px;
@@ -92,8 +156,18 @@
 
 
 .menu-lanot__btn{
+    background: linear-gradient(to right bottom, #e470da, #ac5edb);
+    text-align: center;
+    margin: 3em 31em 7em 31em;
+    padding: 19px;
+    border-radius: 27px;
+    box-shadow: 0px 3px 6px grey;
+    a{
+        text-decoration: none;
+        color:whitesmoke;
+        font-size: 1.2em;
+    }
     @include mobile{
-        background: linear-gradient(to right bottom, #e470da, #ac5edb);
         text-align: center;
         margin: 3em 8em 5em 8em;
         /* width: 144px; */

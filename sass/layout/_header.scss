@@ -1,17 +1,1 @@
-header{
-    overflow: hidden;
-    img{
-        @include mobile {
-            width: 11em;
-        }
-    }
-    
-}
-header{
-    @include mobile{
-        figure{
-            display: flex;
-            justify-content: center;
-        }
-    }
-}
+

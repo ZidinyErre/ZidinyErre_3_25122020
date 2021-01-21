@@ -1,3 +1,17 @@
+header{
+    @include mobile{
+        display: flex;
+        justify-content: center;
+        .fa-arrow-left{
+            display: none;        
+        }
+        img{
+            @include mobile {
+                width: 216px;
+            }
+        }
+    }
+}
 .explor-restau{
     background-color: $thirdgray;
 }

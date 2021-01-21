@@ -16,6 +16,21 @@ body {
   }
 }
 
+@media (max-width: 480px) and (min-width: 320px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  header .fa-arrow-left {
+    display: none;
+  }
+}
+@media (max-width: 480px) and (min-width: 320px) and (max-width: 480px) and (min-width: 320px) {
+  header img {
+    width: 216px;
+  }
+}
+
 .explor-restau {
   background-color: #f6f6f6;
 }
@@ -360,26 +375,28 @@ body {
   margin-top: 0px;
 }
 
-header {
-  overflow: hidden;
-}
-@media (max-width: 480px) and (min-width: 320px) {
-  header img {
-    width: 11em;
-  }
-}
-
 @media (max-width: 480px) and (min-width: 320px) {
   header figure {
     display: flex;
-    justify-content: center;
+  }
+  header a {
+    padding: 1em 3em 1em 1em;
+    text-decoration: none;
+  }
+  header .fa-arrow-left {
+    color: #353535;
+    width: 10px;
+    display: block;
   }
 }
 
-#restau-alafr {
-  /*position: relative;*/
+.img-alafr img {
+  width: 100%;
+  height: 100%;
 }
-
+.img-alafr figure {
+  margin: 0 1em 0 1em;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .img-alafr figure {
     margin: 0;
@@ -403,6 +420,10 @@ header {
         z-index: 1;
     }
 }*/
+.menu-alafr__titre {
+  display: flex;
+  justify-content: space-between;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-alafr__titre {
     display: flex;
@@ -412,6 +433,30 @@ header {
 
 .menu-alafr {
   background-color: #f6f6f6;
+  margin-top: 4px;
+  height: 1416px;
+}
+.menu-alafr h3 {
+  font-family: "Shrikhand";
+  margin-top: 34px;
+  padding-top: 0;
+  padding-left: 1em;
+  font-size: 3em;
+}
+.menu-alafr img {
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 8em;
+  margin-top: 3em;
+}
+.menu-alafr h4 {
+  font-weight: normal;
+  border-bottom: 3px #99E2D0 solid;
+  width: 27px;
+  height: 27px;
+  font-size: 1.25em;
+  margin-left: 40px;
+  text-transform: uppercase;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-alafr {
@@ -421,33 +466,40 @@ header {
     margin-top: -50px;
     position: relative;
   }
-}
-.menu-alafr h3 {
-  font-family: "Shrikhand";
-  margin-top: 0;
-  padding-top: 50px;
-  padding-left: 27px;
-  font-size: 1.8em;
-}
-.menu-alafr img {
-  width: 1.5em;
-  height: 1.5em;
-  margin-right: 3em;
-  margin-top: 3.7em;
-}
-.menu-alafr h4 {
-  font-weight: normal;
-  border-bottom: 3px #99E2D0 solid;
-  width: 27px;
-  height: 27px;
-  font-size: 1.25em;
-  text-transform: uppercase;
-  color: #353535;
-  margin-left: 12px;
+  .menu-alafr h3 {
+    font-family: "Shrikhand";
+    margin-top: 0;
+    padding-top: 50px;
+    padding-left: 27px;
+    font-size: 1.8em;
+  }
+  .menu-alafr img {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 3em;
+    margin-top: 3.7em;
+  }
+  .menu-alafr h4 {
+    font-weight: normal;
+    border-bottom: 3px #99E2D0 solid;
+    width: 27px;
+    height: 27px;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    color: #353535;
+    margin-left: 12px;
+  }
 }
 
 .menu-alafr__carte {
   background-color: white;
+  background-color: white;
+  margin-bottom: 20px;
+  margin-left: 3em;
+  margin-right: 4em;
+  border-radius: 18px;
+  height: 77px;
+  box-shadow: 0px 3px 6px grey;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-alafr__carte {
@@ -460,6 +512,13 @@ header {
   }
 }
 
+.menu-alafr__nourr1 {
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding-left: 17px;
+  padding-top: 12px;
+  font-size: 1.4em;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-alafr__nourr1 {
     font-weight: bold;
@@ -469,7 +528,15 @@ header {
   }
 }
 
+.menu-alafr__nourr2 {
+  margin: 0px 9px 0px 0px;
+  padding: 6px 0px 0px 17px;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+}
 .menu-alafr__nourr2 .price {
+  color: #353535;
   font-weight: bold;
 }
 @media (max-width: 480px) and (min-width: 320px) {
@@ -482,9 +549,21 @@ header {
   }
 }
 
+.menu-alafr__btn {
+  background: linear-gradient(to right bottom, #e470da, #ac5edb);
+  text-align: center;
+  margin: 3em 31em 7em 31em;
+  padding: 19px;
+  border-radius: 27px;
+  box-shadow: 0px 3px 6px grey;
+}
+.menu-alafr__btn a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.2em;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-alafr__btn {
-    background: linear-gradient(to right bottom, #e470da, #ac5edb);
     text-align: center;
     margin: 40px 10px 70px 10px;
     width: 144px;
@@ -499,6 +578,28 @@ header {
   }
 }
 
+@media (max-width: 480px) and (min-width: 320px) {
+  header figure {
+    display: flex;
+  }
+  header a {
+    padding: 1em 3em 1em 1em;
+    text-decoration: none;
+  }
+  header .fa-arrow-left {
+    color: #353535;
+    width: 10px;
+    display: block;
+  }
+}
+
+.img-lanot img {
+  width: 100%;
+  height: 100%;
+}
+.img-lanot figure {
+  margin: 0 1em 0 1em;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .img-lanot figure {
     margin: 0;
@@ -516,6 +617,10 @@ header {
   }
 }
 
+.menu-lanot__titre {
+  display: flex;
+  justify-content: space-between;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lanot__titre {
     display: flex;
@@ -525,6 +630,31 @@ header {
 
 .menu-lanot {
   background-color: #f6f6f6;
+  margin-top: 4px;
+  height: 1416px;
+}
+.menu-lanot h3 {
+  font-family: "Shrikhand";
+  margin-top: 34px;
+  padding-top: 0;
+  padding-left: 1em;
+  font-size: 3em;
+}
+.menu-lanot img {
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 8em;
+  margin-top: 3em;
+}
+.menu-lanot h4 {
+  font-weight: normal;
+  border-bottom: 3px #99E2D0 solid;
+  width: 27px;
+  height: 27px;
+  font-size: 1.25em;
+  margin-left: 40px;
+  text-transform: uppercase;
+  color: #353535;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lanot {
@@ -534,33 +664,40 @@ header {
     margin-top: -48px;
     position: relative;
   }
-}
-.menu-lanot h3 {
-  font-family: "Shrikhand";
-  margin-top: 0;
-  padding-top: 50px;
-  padding-left: 20px;
-  font-size: 1.75em;
-}
-.menu-lanot img {
-  width: 1.5em;
-  height: 1.5em;
-  margin-right: 2em;
-  margin-top: 3.6em;
-}
-.menu-lanot h4 {
-  font-weight: normal;
-  border-bottom: 3px #99E2D0 solid;
-  width: 27px;
-  height: 27px;
-  font-size: 1.25em;
-  text-transform: uppercase;
-  color: #353535;
-  margin-left: 12px;
+  .menu-lanot h3 {
+    font-family: "Shrikhand";
+    margin-top: 0;
+    padding-top: 50px;
+    padding-left: 20px;
+    font-size: 1.75em;
+  }
+  .menu-lanot img {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 2em;
+    margin-top: 3.6em;
+  }
+  .menu-lanot h4 {
+    font-weight: normal;
+    border-bottom: 3px #99E2D0 solid;
+    width: 27px;
+    height: 27px;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    color: #353535;
+    margin-left: 12px;
+  }
 }
 
 .menu-lanot__carte {
   background-color: white;
+  background-color: white;
+  margin-bottom: 20px;
+  margin-left: 3em;
+  margin-right: 4em;
+  border-radius: 18px;
+  height: 77px;
+  box-shadow: 0px 3px 6px grey;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lanot__carte {
@@ -573,6 +710,13 @@ header {
   }
 }
 
+.menu-lanot__nourr1 {
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding-left: 17px;
+  padding-top: 12px;
+  font-size: 1.4em;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lanot__nourr1 {
     font-weight: bold;
@@ -582,6 +726,13 @@ header {
   }
 }
 
+.menu-lanot__nourr2 {
+  margin: 0px 9px 0px 0px;
+  padding: 6px 0px 0px 17px;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+}
 .menu-lanot__nourr2 .price {
   color: #353535;
   font-weight: bold;
@@ -597,9 +748,21 @@ header {
   }
 }
 
+.menu-lanot__btn {
+  background: linear-gradient(to right bottom, #e470da, #ac5edb);
+  text-align: center;
+  margin: 3em 31em 7em 31em;
+  padding: 19px;
+  border-radius: 27px;
+  box-shadow: 0px 3px 6px grey;
+}
+.menu-lanot__btn a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.2em;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lanot__btn {
-    background: linear-gradient(to right bottom, #e470da, #ac5edb);
     text-align: center;
     margin: 3em 8em 5em 8em;
     /* width: 144px; */
@@ -621,15 +784,17 @@ header {
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
-  header {
-    width: 11em;
-  }
   header figure {
     display: flex;
-    justify-content: space-around;
+  }
+  header a {
+    padding: 1em 3em 1em 1em;
+    text-decoration: none;
   }
   header .fa-arrow-left {
     color: #353535;
+    width: 10px;
+    display: block;
   }
 }
 
@@ -656,6 +821,10 @@ header {
   }
 }
 
+.menu-lapal__titre {
+  display: flex;
+  justify-content: space-between;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lapal__titre {
     display: flex;
@@ -665,7 +834,31 @@ header {
 
 .menu-lapal {
   background-color: #f6f6f6;
-  margin-top: -25px;
+  margin-top: 4px;
+  height: 1416px;
+}
+.menu-lapal h3 {
+  font-family: "Shrikhand";
+  margin-top: 34px;
+  padding-top: 0;
+  padding-left: 1em;
+  font-size: 3em;
+}
+.menu-lapal img {
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 8em;
+  margin-top: 3em;
+}
+.menu-lapal h4 {
+  font-weight: normal;
+  border-bottom: 3px #99E2D0 solid;
+  width: 27px;
+  height: 27px;
+  font-size: 1.25em;
+  margin-left: 40px;
+  text-transform: uppercase;
+  color: #353535;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lapal {
@@ -674,34 +867,42 @@ header {
     flex-direction: column;
     margin-top: -56px;
     position: relative;
+    height: auto;
   }
-}
-.menu-lapal h3 {
-  font-family: "Shrikhand";
-  margin-top: 34px;
-  padding-top: 0;
-  padding-left: 1em;
-  font-size: 1.72em;
-}
-.menu-lapal img {
-  width: 1.5em;
-  height: 1.5em;
-  margin-right: 2em;
-  margin-top: 2.7em;
-}
-.menu-lapal h4 {
-  font-weight: normal;
-  border-bottom: 3px #99E2D0 solid;
-  width: 27px;
-  height: 27px;
-  font-size: 1.25em;
-  text-transform: uppercase;
-  color: #353535;
-  margin-left: 12px;
+  .menu-lapal h3 {
+    margin-top: 34px;
+    padding-top: 0;
+    padding-left: 1em;
+    font-size: 1.72em;
+  }
+  .menu-lapal img {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 2em;
+    margin-top: 2.7em;
+  }
+  .menu-lapal h4 {
+    font-weight: normal;
+    border-bottom: 3px #99E2D0 solid;
+    width: 27px;
+    height: 27px;
+    font-size: 1.25em;
+    margin-left: 12px;
+    text-transform: uppercase;
+    color: #353535;
+    margin-left: 12px;
+  }
 }
 
 .menu-lapal__carte {
   background-color: white;
+  background-color: white;
+  margin-bottom: 20px;
+  margin-left: 3em;
+  margin-right: 4em;
+  border-radius: 18px;
+  height: 77px;
+  box-shadow: 0px 3px 6px grey;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lapal__carte {
@@ -714,15 +915,30 @@ header {
   }
 }
 
+.menu-lapal__nourr1 {
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding-left: 17px;
+  padding-top: 12px;
+  font-size: 1.4em;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lapal__nourr1 {
     font-weight: bold;
     margin-bottom: 0px;
     padding-left: 17px;
     padding-top: 12px;
+    font-size: 1em;
   }
 }
 
+.menu-lapal__nourr2 {
+  margin: 0px 9px 0px 0px;
+  padding: 6px 0px 0px 17px;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+}
 .menu-lapal__nourr2 .price {
   color: #353535;
   font-weight: bold;
@@ -737,9 +953,21 @@ header {
   }
 }
 
+.menu-lapal__btn {
+  background: linear-gradient(to right bottom, #e470da, #ac5edb);
+  text-align: center;
+  margin: 3em 31em 7em 31em;
+  padding: 19px;
+  border-radius: 27px;
+  box-shadow: 0px 3px 6px grey;
+}
+.menu-lapal__btn a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.2em;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lapal__btn {
-    background: linear-gradient(to right bottom, #e470da, #ac5edb);
     text-align: center;
     margin: 40px 10px 70px 10px;
     width: 144px;
@@ -754,6 +982,28 @@ header {
   }
 }
 
+@media (max-width: 480px) and (min-width: 320px) {
+  header figure {
+    display: flex;
+  }
+  header a {
+    padding: 1em 3em 1em 1em;
+    text-decoration: none;
+  }
+  header .fa-arrow-left {
+    color: #353535;
+    width: 10px;
+    display: block;
+  }
+}
+
+.img-ledel img {
+  width: 100%;
+  height: 100%;
+}
+.img-ledel figure {
+  margin: 0 1em 0 1em;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .img-ledel figure {
     margin: 0;
@@ -771,6 +1021,10 @@ header {
   }
 }
 
+.menu-ledel__titre {
+  display: flex;
+  justify-content: space-between;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-ledel__titre {
     display: flex;
@@ -780,6 +1034,31 @@ header {
 
 .menu-ledel {
   background-color: #f6f6f6;
+  margin-top: 4px;
+  height: 1416px;
+}
+.menu-ledel h3 {
+  font-family: "Shrikhand";
+  margin-top: 34px;
+  padding-top: 0;
+  padding-left: 1em;
+  font-size: 3em;
+}
+.menu-ledel img {
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 8em;
+  margin-top: 3em;
+}
+.menu-ledel h4 {
+  font-weight: normal;
+  border-bottom: 3px #99E2D0 solid;
+  width: 27px;
+  height: 27px;
+  font-size: 1.25em;
+  margin-left: 40px;
+  text-transform: uppercase;
+  color: #353535;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-ledel {
@@ -789,33 +1068,40 @@ header {
     margin-top: -47px;
     position: relative;
   }
-}
-.menu-ledel h3 {
-  font-family: "Shrikhand";
-  margin-top: 0;
-  padding-top: 50px;
-  padding-left: 27px;
-  font-size: 1.9em;
-}
-.menu-ledel img {
-  width: 1.5em;
-  height: 1.5em;
-  margin-right: 2.4em;
-  margin-top: 3.7em;
-}
-.menu-ledel h4 {
-  font-weight: normal;
-  border-bottom: 3px #99E2D0 solid;
-  width: 27px;
-  height: 27px;
-  font-size: 1.25em;
-  text-transform: uppercase;
-  color: #353535;
-  margin-left: 12px;
+  .menu-ledel h3 {
+    font-family: "Shrikhand";
+    margin-top: 0;
+    padding-top: 50px;
+    padding-left: 27px;
+    font-size: 1.9em;
+  }
+  .menu-ledel img {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 2.4em;
+    margin-top: 3.7em;
+  }
+  .menu-ledel h4 {
+    font-weight: normal;
+    border-bottom: 3px #99E2D0 solid;
+    width: 27px;
+    height: 27px;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    color: #353535;
+    margin-left: 12px;
+  }
 }
 
 .menu-ledel__carte {
   background-color: white;
+  background-color: white;
+  margin-bottom: 20px;
+  margin-left: 3em;
+  margin-right: 4em;
+  border-radius: 18px;
+  height: 77px;
+  box-shadow: 0px 3px 6px grey;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-ledel__carte {
@@ -828,6 +1114,13 @@ header {
   }
 }
 
+.menu-ledel__nourr1 {
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding-left: 17px;
+  padding-top: 12px;
+  font-size: 1.4em;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-ledel__nourr1 {
     font-weight: bold;
@@ -837,6 +1130,13 @@ header {
   }
 }
 
+.menu-ledel__nourr2 {
+  margin: 0px 9px 0px 0px;
+  padding: 6px 0px 0px 17px;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+}
 .menu-ledel__nourr2 .price {
   color: #353535;
   font-weight: bold;
@@ -851,6 +1151,19 @@ header {
   }
 }
 
+.menu-ledel__btn {
+  background: linear-gradient(to right bottom, #e470da, #ac5edb);
+  text-align: center;
+  margin: 3em 31em 7em 31em;
+  padding: 19px;
+  border-radius: 27px;
+  box-shadow: 0px 3px 6px grey;
+}
+.menu-ledel__btn a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.2em;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-ledel__btn {
     background: linear-gradient(to right bottom, #e470da, #ac5edb);
