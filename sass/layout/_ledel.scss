@@ -1,4 +1,16 @@
 header{
+    figure{
+        display: flex;
+    }
+    a{
+        padding: 2em 3em 1em 1em;
+        text-decoration: none;
+    }
+    .fa-arrow-left{
+        color:$black; 
+        width: 10px;
+        display: block;
+    }
     @include mobile{
         figure{
             display: flex;
@@ -15,12 +27,15 @@ header{
     }
 }
 .img-ledel{
+    height: 490px;
     img{
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
     figure {
         margin: 0 1em 0 1em;
+        height: 100%;
         @include mobile{
             margin: 0;
             width: 100%;
