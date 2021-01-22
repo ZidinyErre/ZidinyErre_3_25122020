@@ -144,6 +144,14 @@ header .fa-arrow-left {
   }
 }
 
+@media (max-width: 768px) {
+  .fonctionmt h2 {
+    align-self: flex-start;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    font-size: 2.7em;
+  }
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .fonctionmt {
     display: flex;
@@ -152,8 +160,9 @@ header .fa-arrow-left {
   }
   .fonctionmt h2 {
     align-self: flex-start;
-    margin-left: 5%;
-    margin-bottom: 6%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    font-size: 1.6em;
   }
 }
 
@@ -181,6 +190,34 @@ header .fa-arrow-left {
   top: 44px;
   color: whitesmoke;
   font-size: 0.89em;
+}
+@media (max-width: 768px) {
+  .fonctionmt__all {
+    background-color: #f6f6f6;
+    padding: 40px 40px 40px 0px;
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-bottom: 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    border-radius: 19px;
+    box-shadow: 0px 4px 17px grey;
+    position: relative;
+  }
+  .fonctionmt__all .icon {
+    width: 14px;
+    height: 22px;
+    padding: 10px 15px 11px 17px;
+    margin: 0px;
+    border-radius: 30px;
+    background-color: #9356DC;
+    position: absolute;
+    left: -18px;
+    top: 31px;
+    color: whitesmoke;
+    font-size: 0.89em;
+  }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .fonctionmt__all {
@@ -531,13 +568,20 @@ header .fa-arrow-left {
   margin-left: 40px;
   text-transform: uppercase;
 }
+@media (max-width: 768px) {
+  .menu-alafr h4 {
+    height: 33px;
+    font-size: 1.5em;
+  }
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-alafr {
     border-radius: 50px 50px 0px 0px;
     display: flex;
     flex-direction: column;
-    margin-top: -50px;
+    margin-top: -253px;
     position: relative;
+    height: auto;
   }
   .menu-alafr h3 {
     font-family: "Shrikhand";
@@ -592,12 +636,18 @@ header .fa-arrow-left {
   padding-top: 12px;
   font-size: 1.4em;
 }
+@media (max-width: 768px) {
+  .menu-alafr__nourr1 {
+    font-size: 1.49em;
+  }
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-alafr__nourr1 {
     font-weight: bold;
     margin-bottom: 0px;
     padding-left: 17px;
     padding-top: 12px;
+    font-size: 1em;
   }
 }
 
@@ -611,6 +661,11 @@ header .fa-arrow-left {
 .menu-alafr__nourr2 .price {
   color: #353535;
   font-weight: bold;
+}
+@media (max-width: 768px) {
+  .menu-alafr__nourr2 {
+    font-size: 1.4em;
+  }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-alafr__nourr2 {
@@ -634,6 +689,11 @@ header .fa-arrow-left {
   text-decoration: none;
   color: whitesmoke;
   font-size: 1.2em;
+}
+@media (max-width: 768px) {
+  .menu-alafr__btn a {
+    font-size: 1.4em;
+  }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-alafr__btn {
@@ -746,13 +806,20 @@ header .fa-arrow-left {
   text-transform: uppercase;
   color: #353535;
 }
+@media (max-width: 768px) {
+  .menu-lanot h4 {
+    height: 33px;
+    font-size: 1.5em;
+  }
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lanot {
     border-radius: 50px 50px 0px 0px;
     display: flex;
     flex-direction: column;
-    margin-top: -48px;
+    margin-top: -230px;
     position: relative;
+    height: auto;
   }
   .menu-lanot h3 {
     font-family: "Shrikhand";
@@ -807,12 +874,18 @@ header .fa-arrow-left {
   padding-top: 12px;
   font-size: 1.4em;
 }
+@media (max-width: 768px) {
+  .menu-lanot__nourr1 {
+    font-size: 1.49em;
+  }
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lanot__nourr1 {
     font-weight: bold;
     margin-bottom: 0px;
     padding-left: 17px;
     padding-top: 12px;
+    font-size: 1em;
   }
 }
 
@@ -827,6 +900,11 @@ header .fa-arrow-left {
   color: #353535;
   font-weight: bold;
   margin: 0;
+}
+@media (max-width: 768px) {
+  .menu-lanot__nourr2 {
+    font-size: 1.4em;
+  }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lanot__nourr2 {
@@ -850,6 +928,11 @@ header .fa-arrow-left {
   text-decoration: none;
   color: whitesmoke;
   font-size: 1.2em;
+}
+@media (max-width: 768px) {
+  .menu-lanot__btn a {
+    font-size: 1.4em;
+  }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lanot__btn {
@@ -967,12 +1050,18 @@ header .fa-arrow-left {
   text-transform: uppercase;
   color: #353535;
 }
+@media (max-width: 768px) {
+  .menu-lapal h4 {
+    height: 33px;
+    font-size: 1.5em;
+  }
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lapal {
     border-radius: 50px 50px 0px 0px;
     display: flex;
     flex-direction: column;
-    margin-top: -56px;
+    margin-top: -295px;
     position: relative;
     height: auto;
   }
@@ -1029,6 +1118,11 @@ header .fa-arrow-left {
   padding-top: 12px;
   font-size: 1.4em;
 }
+@media (max-width: 768px) {
+  .menu-lapal__nourr1 {
+    font-size: 1.49em;
+  }
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lapal__nourr1 {
     font-weight: bold;
@@ -1049,6 +1143,11 @@ header .fa-arrow-left {
 .menu-lapal__nourr2 .price {
   color: #353535;
   font-weight: bold;
+}
+@media (max-width: 768px) {
+  .menu-lapal__nourr2 {
+    font-size: 1.4em;
+  }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lapal__nourr2 {
@@ -1072,6 +1171,11 @@ header .fa-arrow-left {
   text-decoration: none;
   color: whitesmoke;
   font-size: 1.2em;
+}
+@media (max-width: 768px) {
+  .menu-lapal__btn a {
+    font-size: 1.4em;
+  }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lapal__btn {
@@ -1184,13 +1288,20 @@ header .fa-arrow-left {
   text-transform: uppercase;
   color: #353535;
 }
+@media (max-width: 768px) {
+  .menu-ledel h4 {
+    height: 33px;
+    font-size: 1.5em;
+  }
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-ledel {
     border-radius: 50px 50px 0px 0px;
     display: flex;
     flex-direction: column;
-    margin-top: -47px;
+    margin-top: -229px;
     position: relative;
+    height: auto;
   }
   .menu-ledel h3 {
     font-family: "Shrikhand";
@@ -1245,12 +1356,18 @@ header .fa-arrow-left {
   padding-top: 12px;
   font-size: 1.4em;
 }
+@media (max-width: 768px) {
+  .menu-ledel__nourr1 {
+    font-size: 1.49em;
+  }
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-ledel__nourr1 {
     font-weight: bold;
     margin-bottom: 0px;
     padding-left: 17px;
     padding-top: 12px;
+    font-size: 1em;
   }
 }
 
@@ -1264,6 +1381,11 @@ header .fa-arrow-left {
 .menu-ledel__nourr2 .price {
   color: #353535;
   font-weight: bold;
+}
+@media (max-width: 768px) {
+  .menu-ledel__nourr2 {
+    font-size: 1.4em;
+  }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-ledel__nourr2 {
@@ -1287,6 +1409,11 @@ header .fa-arrow-left {
   text-decoration: none;
   color: whitesmoke;
   font-size: 1.2em;
+}
+@media (max-width: 768px) {
+  .menu-ledel__btn a {
+    font-size: 1.4em;
+  }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-ledel__btn {
