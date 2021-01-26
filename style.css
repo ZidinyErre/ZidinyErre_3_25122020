@@ -10,6 +10,11 @@ body {
   width: 1300px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  #page {
+    width: 100%;
+  }
+}
 @media (max-width: 480px) and (min-width: 320px) {
   #page {
     width: 100%;
@@ -29,15 +34,22 @@ header .fa-arrow-left {
 @media (max-width: 480px) and (min-width: 320px) {
   header {
     display: flex;
-    justify-content: center;
   }
   header .fa-arrow-left {
     display: none;
   }
+  header figure {
+    justify-content: center;
+    width: 179px;
+    margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media (max-width: 480px) and (min-width: 320px) and (max-width: 480px) and (min-width: 320px) {
   header img {
-    width: 216px;
+    width: 175px;
+    height: 33px;
   }
 }
 
@@ -342,36 +354,32 @@ header .fa-arrow-left {
 @media (max-width: 480px) and (min-width: 320px) {
   .restau-lapal__img img {
     width: 100%;
-    height: 100%;
+    height: 97%;
     object-fit: cover;
-    background-color: #f6f6f6;
   }
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
   .restau-lanot__img img {
     width: 100%;
-    height: 100%;
+    height: 97%;
     object-fit: cover;
-    background-color: #f6f6f6;
   }
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
   .restau-alafr__img img {
     width: 100%;
-    height: 100%;
+    height: 97%;
     object-fit: cover;
-    background-color: #f6f6f6;
   }
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
   .restau-ledel__img img {
     width: 100%;
-    height: 100%;
+    height: 97%;
     object-fit: cover;
-    background-color: #f6f6f6;
   }
 }
 
@@ -380,7 +388,7 @@ header .fa-arrow-left {
   margin-right: 20em;
   margin-bottom: 30px;
   box-shadow: 0px 9px 9px grey;
-  border-radius: 0px 0px 15px 15px;
+  border-radius: 15px;
   height: 453px;
   overflow: hidden;
 }
@@ -403,15 +411,19 @@ header .fa-arrow-left {
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .restau-all {
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 15px;
     overflow: hidden;
-    margin-left: 1.1em;
-    margin-right: 1.1em;
-    margin-bottom: 2em;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 44px;
     box-shadow: 0px 4px 17px grey;
+    height: 293px;
+    background-color: white;
   }
   .restau-all figure {
     margin: auto;
+    height: 228px;
+    background-color: white;
   }
 }
 
@@ -428,12 +440,6 @@ header .fa-arrow-left {
   width: 26px;
   align-self: flex-end;
 }
-.restau__info p {
-  margin-bottom: 2px;
-  margin-left: 15px;
-  color: black;
-  font-size: 1.87em;
-}
 @media (max-width: 480px) and (min-width: 320px) {
   .restau__info {
     background-color: white;
@@ -447,51 +453,34 @@ header .fa-arrow-left {
   .restau__info img {
     width: 26px;
     align-self: flex-end;
-  }
-  .restau__info p {
-    margin-bottom: 0px;
-    margin-left: 15px;
-    color: black;
-    font-size: 1em;
+    margin-right: 10px;
   }
 }
 
 .restau-all__info1 {
-  margin-top: 12px;
-  margin-right: 1em;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-}
-
-.restau-all__info2 {
-  margin-top: 0px;
-}
-
-header figure {
-  display: flex;
-}
-header a {
-  padding: 2em 3em 1em 1em;
-  text-decoration: none;
-}
-header .fa-arrow-left {
-  color: #353535;
-  width: 10px;
-  display: block;
+  margin-bottom: 2px;
+  margin-left: 15px;
+  color: black;
+  font-size: 1.87em;
 }
 @media (max-width: 480px) and (min-width: 320px) {
-  header figure {
+  .restau-all__info1 {
+    margin-top: 9.5px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    color: black;
+    font-size: 0.98em;
+    font-weight: bold;
     display: flex;
+    justify-content: space-between;
   }
-  header a {
-    padding: 1em 3em 1em 1em;
-    text-decoration: none;
-  }
-  header .fa-arrow-left {
-    color: #353535;
-    width: 10px;
-    display: block;
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .restau-all__info2 {
+    margin-top: 0px;
+    margin-left: 15px;
+    color: black;
   }
 }
 
@@ -518,9 +507,8 @@ header .fa-arrow-left {
 @media (max-width: 480px) and (min-width: 320px) {
   .img-alafr figure img {
     width: 100%;
-    height: 100%;
+    height: 97%;
     object-fit: cover;
-    background-color: #f6f6f6;
   }
 }
 
@@ -711,35 +699,8 @@ header .fa-arrow-left {
   }
 }
 
-header figure {
-  display: flex;
-}
-header a {
-  padding: 2em 3em 1em 1em;
-  text-decoration: none;
-}
-header .fa-arrow-left {
-  color: #353535;
-  width: 10px;
-  display: block;
-}
-@media (max-width: 480px) and (min-width: 320px) {
-  header figure {
-    display: flex;
-  }
-  header a {
-    padding: 1em 3em 1em 1em;
-    text-decoration: none;
-  }
-  header .fa-arrow-left {
-    color: #353535;
-    width: 10px;
-    display: block;
-  }
-}
-
 .img-lanot {
-  height: 490px;
+  height: 433px;
 }
 .img-lanot img {
   width: 100%;
@@ -747,7 +708,7 @@ header .fa-arrow-left {
   object-fit: cover;
 }
 .img-lanot figure {
-  margin: 0 1em 0 1em;
+  margin: 0;
   height: 100%;
 }
 @media (max-width: 480px) and (min-width: 320px) {
@@ -757,13 +718,15 @@ header .fa-arrow-left {
     object-fit: cover;
     height: 300px;
   }
+  .img-lanot figure figure {
+    margin: 0 1em 0 1em;
+  }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .img-lanot figure img {
     width: 100%;
-    height: 100%;
+    height: 97%;
     object-fit: cover;
-    background-color: #f6f6f6;
   }
 }
 
@@ -780,8 +743,10 @@ header .fa-arrow-left {
 
 .menu-lanot {
   background-color: #f6f6f6;
-  margin-top: 4px;
-  height: 1416px;
+  height: 1528px;
+  margin-top: -28px;
+  position: relative;
+  border-radius: 50px 50px 0px 0px;
 }
 .menu-lanot h3 {
   font-family: "Shrikhand";
@@ -956,11 +921,13 @@ header .fa-arrow-left {
   }
 }
 
-header figure {
-  display: flex;
+header {
+  position: relative;
 }
 header a {
-  padding: 2em 3em 1em 1em;
+  position: absolute;
+  top: 41%;
+  left: 5%;
   text-decoration: none;
 }
 header .fa-arrow-left {
@@ -969,11 +936,13 @@ header .fa-arrow-left {
   display: block;
 }
 @media (max-width: 480px) and (min-width: 320px) {
-  header figure {
-    display: flex;
+  header {
+    position: relative;
   }
   header a {
-    padding: 1em 3em 1em 1em;
+    position: absolute;
+    top: 41%;
+    left: 5%;
     text-decoration: none;
   }
   header .fa-arrow-left {
@@ -1005,9 +974,8 @@ header .fa-arrow-left {
 @media (max-width: 480px) and (min-width: 320px) {
   .img-lapal figure img {
     width: 100%;
-    height: 100%;
+    height: 97%;
     object-fit: cover;
-    background-color: #f6f6f6;
   }
 }
 
@@ -1193,33 +1161,6 @@ header .fa-arrow-left {
   }
 }
 
-header figure {
-  display: flex;
-}
-header a {
-  padding: 2em 3em 1em 1em;
-  text-decoration: none;
-}
-header .fa-arrow-left {
-  color: #353535;
-  width: 10px;
-  display: block;
-}
-@media (max-width: 480px) and (min-width: 320px) {
-  header figure {
-    display: flex;
-  }
-  header a {
-    padding: 1em 3em 1em 1em;
-    text-decoration: none;
-  }
-  header .fa-arrow-left {
-    color: #353535;
-    width: 10px;
-    display: block;
-  }
-}
-
 .img-ledel {
   height: 490px;
 }
@@ -1243,9 +1184,8 @@ header .fa-arrow-left {
 @media (max-width: 480px) and (min-width: 320px) {
   .img-ledel figure img {
     width: 100%;
-    height: 100%;
+    height: 97%;
     object-fit: cover;
-    background-color: #f6f6f6;
   }
 }
 

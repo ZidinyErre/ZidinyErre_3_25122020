@@ -1,31 +1,4 @@
-header{
-    figure{
-        display: flex;
-    }
-    a{
-        padding: 2em 3em 1em 1em;
-        text-decoration: none;
-    }
-    .fa-arrow-left{
-        color:$black; 
-        width: 10px;
-        display: block;
-    }
-    @include mobile{
-        figure{
-            display: flex;
-        }
-        a{
-            padding: 1em 3em 1em 1em;
-            text-decoration: none;
-        }
-        .fa-arrow-left{
-            color:$black; 
-            width: 10px;
-            display: block;
-        }
-    }
-}
+
 .img-ledel{
     height: 490px;
     img{

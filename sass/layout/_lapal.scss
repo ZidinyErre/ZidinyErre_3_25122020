@@ -1,9 +1,11 @@
 header{
+    position: relative;
     figure{
-        display: flex;
     }
     a{
-        padding: 2em 3em 1em 1em;
+        position: absolute;
+        top: 41%;
+        left: 5%;
         text-decoration: none;
     }
     .fa-arrow-left{
@@ -12,11 +14,14 @@ header{
         display: block;
     }
     @include mobile{
+        position: relative;
         figure{
-            display: flex;
+
         }
         a{
-            padding: 1em 3em 1em 1em;
+            position: absolute;
+            top: 41%;
+            left: 5%;
             text-decoration: none;
         }
         .fa-arrow-left{

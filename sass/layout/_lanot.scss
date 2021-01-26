@@ -1,47 +1,23 @@
-header{
-    figure{
-        display: flex;
-    }
-    a{
-        padding: 2em 3em 1em 1em;
-        text-decoration: none;
-    }
-    .fa-arrow-left{
-        color:$black; 
-        width: 10px;
-        display: block;
-    }
-    @include mobile{
-        figure{
-            display: flex;
-        }
-        a{
-            padding: 1em 3em 1em 1em;
-            text-decoration: none;
-        }
-        .fa-arrow-left{
-            color:$black; 
-            width: 10px;
-            display: block;
-        }
-    }
-}
+
 
 .img-lanot{
-    height: 490px;
+    height: 433px;
     img{
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
     figure {
-        margin: 0 1em 0 1em;
+        margin: 0;
         height: 100%;
         @include mobile{
             margin: 0;
             width: 100%;
             object-fit: cover;
             height: 300px;
+            figure {
+                margin: 0 1em 0 1em;
+            }
         }
         @include imgaccueil;
     } 
@@ -58,8 +34,11 @@ header{
 
 .menu-lanot{
     background-color:  map-get($map: $blockcolor, $key: menu);
-    margin-top: 4px;
-    height: 1416px;
+    height: 1528px;
+    margin-top: -28px;    
+    position: relative;
+    border-radius: 50px 50px  0px 0px;
+
     h3{
         font-family: "Shrikhand";
         margin-top: 34px;
