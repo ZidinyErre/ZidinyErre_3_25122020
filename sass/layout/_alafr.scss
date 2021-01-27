@@ -11,6 +11,11 @@
         margin: 0 10px 0 10px;
         height: 100%;
     }
+    @include tablet{
+        figure{
+            margin: 0;
+        } 
+     }
         @include mobile{
             margin: 0;
             width: 100%;
@@ -68,6 +73,7 @@
         text-transform: uppercase;
     }
     @include tablet{
+        margin-top: -51px;
         h4{
             height: 33px;
             font-size: 1.5em;

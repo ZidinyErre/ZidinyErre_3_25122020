@@ -142,10 +142,13 @@ header{
     display: flex;
     position: relative;
     box-shadow: 0px 4px 17px grey;
+    &:hover{
+        background-color: #f5edff;
+    }
     .icon{
         width: 9px;
         height: 15px;
-        padding: 5px 15px 16px 11px;
+        padding: 4px 15px 16px 11px;
         margin: 0px;
         border-radius: 30px;
         background-color: #9356DC;
@@ -161,22 +164,25 @@ header{
         margin-left: 100px;
         margin-right: 100px;
         margin-bottom: 40px;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-weight: bold;
         display: flex;
         border-radius: 19px;
         box-shadow: 0px 4px 17px grey;
         position: relative;
+        &:hover{
+            background-color: #f5edff;
+        }
         .icon{
             width: 14px;
             height: 22px;
-            padding: 10px 15px 11px 17px;
+            padding: 7px 12px 9px 13px;
             margin: 0px;
             border-radius: 30px;
             background-color: #9356DC;
             position: absolute;
             left: -18px;
-            top: 31px;
+            top: 33.5px;
             color: whitesmoke;
             font-size: 0.89em;
         }
@@ -184,15 +190,18 @@ header{
     @include mobile{
         background-color:$secondgray;
         padding: 23px 23px 23px 0px;
-        margin-left: 1em;
-        margin-right: 1em;
+        margin-left: 20px;
+        margin-right: 20px;
         margin-bottom: 23px;
-        font-size: 0.99em;
+        font-size: 0.97em;
         font-weight: bold;
         display: flex;
         border-radius: 19px;
         box-shadow: 0px 4px 17px grey;
         position: relative;
+        &:hover{
+            background-color: #f5edff;
+        }
         .icon{
             width: 9px;
             height: 15px;
@@ -209,27 +218,62 @@ header{
     }
 }
 .fa-mobile-alt{
-    padding: 0% 8%;
-    margin-left: 7%;
+    padding: 0px 120px;
+    margin-left: 55px;
     color: #838080a6;
+    &:hover{
+        color: #9356dc;
+    }
+    @include tablet{
+        padding: 0px 50px;
+        margin-left: 30px;
+    }
+    @include mobile {
+        padding: 0px 23px;
+        margin-left: 27px;
+        &:hover{
+            color: #9356dc;
+        }
+    }
+    
 }
 .fa-list-ul{
-    padding: 0% 12%;
-    margin-left: 27px;
+    padding: 0px 120px;
+    margin-left: 55px;
     color: #838080a6;
+    &:hover{
+        color: #9356dc;
+    }
+    @include tablet{
+        padding: 0px 50px;
+        margin-left: 30px;
+    }
     @include mobile{
-        padding: 0% 6%;
+        padding: 0px 23px;
         margin-left: 27px;
+        &:hover{
+            color: #9356dc;
+        }
     }
     
 }
 .fa-store{
-    padding: 0% 12%;
-    margin-left: 27px;
+    padding: 0px 120px;
+    margin-left: 55px;
     color: #838080a6;
+    &:hover{
+        color: #9356dc;
+    }
+    @include tablet{
+        padding: 0px 50px;
+        margin-left: 30px;
+    }
     @include mobile{
-        padding: 0% 6%;
+        padding: 0px 23px;
         margin-left: 27px;
+        &:hover{
+            color: #9356dc;
+        }
     }
 }
 
