@@ -8,19 +8,19 @@
         object-fit: cover;
     }
     figure {
-        margin: 0;
+        margin: 0 10px 0 10px;
         height: 100%;
+    }
         @include mobile{
             margin: 0;
             width: 100%;
             object-fit: cover;
             height: 300px;
             figure {
-                margin: 0 1em 0 1em;
+                margin: 0;
             }
+            @include imgaccueil;
         }
-        @include imgaccueil;
-    } 
 }
 
 .menu-lanot__titre{
@@ -72,7 +72,7 @@
         border-radius: 50px 50px  0px 0px;
         display: flex;
         flex-direction: column;
-        margin-top: -230px;
+        margin-top: -46px;
         position: relative;
         height: auto;
         h3{
@@ -166,39 +166,36 @@
 .menu-lanot__btn{
     background: linear-gradient(to right bottom, #e470da, #ac5edb);
     text-align: center;
-    margin: 3em 31em 7em 31em;
+    margin: 45px 511px 50px 511px;
     padding: 19px;
     border-radius: 27px;
     box-shadow: 0px 3px 6px grey;
     a{
         text-decoration: none;
         color:whitesmoke;
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
     @include tablet{
+        padding: 20px;
+        margin: 10px 230px 0px 230px;
         a{
-            font-size: 1.4em;
+            font-size: 1.4rem;
         }
     }
     @include mobile{
         text-align: center;
         margin: 3em 8em 5em 8em;
-        /* width: 144px; */
+        width: 144px; 
         padding: 11px;
         border-radius: 27px;
         box-shadow: 0px 3px 6px grey;
-        /* align-self: center;*/
+        align-self: center;
         a{
             text-decoration: none;
             color:whitesmoke;
+            font-size: 1rem;
+
         }
     }
 }
 
-footer{
-    @include mobile{
-        li{
-            font-family: 'Roboto', sans-serif;
-        }
-    }
-}

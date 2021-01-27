@@ -159,9 +159,9 @@ header .fa-arrow-left {
 @media (max-width: 768px) {
   .fonctionmt h2 {
     align-self: flex-start;
-    margin-left: 1em;
-    margin-bottom: 1em;
-    font-size: 2.7em;
+    margin-left: 15px;
+    margin-bottom: 21px;
+    font-size: 2.1rem;
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
@@ -207,10 +207,10 @@ header .fa-arrow-left {
   .fonctionmt__all {
     background-color: #f6f6f6;
     padding: 40px 40px 40px 0px;
-    margin-left: 10em;
-    margin-right: 10em;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-bottom: 40px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: bold;
     display: flex;
     border-radius: 19px;
@@ -305,7 +305,7 @@ header .fa-arrow-left {
 @media (max-width: 480px) and (min-width: 320px) {
   .restau {
     align-items: flex-start;
-    height: 1513px;
+    height: 1430px;
     padding-top: 24px;
   }
   .restau h2 {
@@ -384,8 +384,8 @@ header .fa-arrow-left {
 }
 
 .restau-all {
-  margin-left: 20em;
-  margin-right: 20em;
+  margin-left: 300px;
+  margin-right: 300px;
   margin-bottom: 30px;
   box-shadow: 0px 9px 9px grey;
   border-radius: 15px;
@@ -400,11 +400,11 @@ header .fa-arrow-left {
 }
 @media (max-width: 768px) {
   .restau-all {
-    margin-left: 6em;
-    margin-right: 6em;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-bottom: 30px;
     box-shadow: 0px 9px 9px grey;
-    border-radius: 79px;
+    border-radius: 30px;
     height: 453px;
     overflow: hidden;
   }
@@ -433,12 +433,11 @@ header .fa-arrow-left {
   display: flex;
   flex-direction: column;
   height: 141px;
-  display: flex;
-  flex-direction: column;
 }
 .restau__info img {
   width: 26px;
   align-self: flex-end;
+  margin-right: 35px;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .restau__info {
@@ -458,10 +457,13 @@ header .fa-arrow-left {
 }
 
 .restau-all__info1 {
+  font-weight: bold;
   margin-bottom: 2px;
   margin-left: 15px;
   color: black;
   font-size: 1.87em;
+  display: flex;
+  justify-content: space-between;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .restau-all__info1 {
@@ -476,9 +478,16 @@ header .fa-arrow-left {
   }
 }
 
+.restau-all__info2 {
+  margin-top: 13px;
+  font-size: 1.2rem;
+  margin-left: 15px;
+  color: black;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .restau-all__info2 {
     margin-top: 0px;
+    font-size: 1rem;
     margin-left: 15px;
     color: black;
   }
@@ -493,19 +502,22 @@ header .fa-arrow-left {
   object-fit: cover;
 }
 .img-alafr figure {
-  margin: 0 1em 0 1em;
+  margin: 0 10px 0 10px;
   height: 100%;
 }
 @media (max-width: 480px) and (min-width: 320px) {
-  .img-alafr figure {
+  .img-alafr {
     margin: 0;
     width: 100%;
     object-fit: cover;
-    height: 279px;
+    height: 300px;
+  }
+  .img-alafr figure {
+    margin: 0;
   }
 }
-@media (max-width: 480px) and (min-width: 320px) {
-  .img-alafr figure img {
+@media (max-width: 480px) and (min-width: 320px) and (max-width: 480px) and (min-width: 320px) {
+  .img-alafr img {
     width: 100%;
     height: 97%;
     object-fit: cover;
@@ -531,8 +543,10 @@ header .fa-arrow-left {
 
 .menu-alafr {
   background-color: #f6f6f6;
-  margin-top: 4px;
   height: 1416px;
+  margin-top: -28px;
+  position: relative;
+  border-radius: 50px 50px 0px 0px;
 }
 .menu-alafr h3 {
   font-family: "Shrikhand";
@@ -567,7 +581,7 @@ header .fa-arrow-left {
     border-radius: 50px 50px 0px 0px;
     display: flex;
     flex-direction: column;
-    margin-top: -253px;
+    margin-top: -46px;
     position: relative;
     height: auto;
   }
@@ -668,7 +682,7 @@ header .fa-arrow-left {
 .menu-alafr__btn {
   background: linear-gradient(to right bottom, #e470da, #ac5edb);
   text-align: center;
-  margin: 3em 31em 7em 31em;
+  margin: 45px 511px 50px 511px;
   padding: 19px;
   border-radius: 27px;
   box-shadow: 0px 3px 6px grey;
@@ -676,11 +690,15 @@ header .fa-arrow-left {
 .menu-alafr__btn a {
   text-decoration: none;
   color: whitesmoke;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 @media (max-width: 768px) {
+  .menu-alafr__btn {
+    padding: 20px;
+    margin: 10px 230px 0px 230px;
+  }
   .menu-alafr__btn a {
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
@@ -696,6 +714,7 @@ header .fa-arrow-left {
   .menu-alafr__btn a {
     text-decoration: none;
     color: whitesmoke;
+    font-size: 1rem;
   }
 }
 
@@ -708,22 +727,22 @@ header .fa-arrow-left {
   object-fit: cover;
 }
 .img-lanot figure {
-  margin: 0;
+  margin: 0 10px 0 10px;
   height: 100%;
 }
 @media (max-width: 480px) and (min-width: 320px) {
-  .img-lanot figure {
+  .img-lanot {
     margin: 0;
     width: 100%;
     object-fit: cover;
     height: 300px;
   }
-  .img-lanot figure figure {
-    margin: 0 1em 0 1em;
+  .img-lanot figure {
+    margin: 0;
   }
 }
-@media (max-width: 480px) and (min-width: 320px) {
-  .img-lanot figure img {
+@media (max-width: 480px) and (min-width: 320px) and (max-width: 480px) and (min-width: 320px) {
+  .img-lanot img {
     width: 100%;
     height: 97%;
     object-fit: cover;
@@ -782,7 +801,7 @@ header .fa-arrow-left {
     border-radius: 50px 50px 0px 0px;
     display: flex;
     flex-direction: column;
-    margin-top: -230px;
+    margin-top: -46px;
     position: relative;
     height: auto;
   }
@@ -884,7 +903,7 @@ header .fa-arrow-left {
 .menu-lanot__btn {
   background: linear-gradient(to right bottom, #e470da, #ac5edb);
   text-align: center;
-  margin: 3em 31em 7em 31em;
+  margin: 45px 511px 50px 511px;
   padding: 19px;
   border-radius: 27px;
   box-shadow: 0px 3px 6px grey;
@@ -892,32 +911,31 @@ header .fa-arrow-left {
 .menu-lanot__btn a {
   text-decoration: none;
   color: whitesmoke;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 @media (max-width: 768px) {
+  .menu-lanot__btn {
+    padding: 20px;
+    margin: 10px 230px 0px 230px;
+  }
   .menu-lanot__btn a {
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lanot__btn {
     text-align: center;
     margin: 3em 8em 5em 8em;
-    /* width: 144px; */
+    width: 144px;
     padding: 11px;
     border-radius: 27px;
     box-shadow: 0px 3px 6px grey;
-    /* align-self: center;*/
+    align-self: center;
   }
   .menu-lanot__btn a {
     text-decoration: none;
     color: whitesmoke;
-  }
-}
-
-@media (max-width: 480px) and (min-width: 320px) {
-  footer li {
-    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
   }
 }
 
@@ -961,18 +979,27 @@ header .fa-arrow-left {
   object-fit: cover;
 }
 .img-lapal figure {
-  margin: 0 1em 0 1em;
+  margin: 0 10px 0 10px;
   height: 100%;
 }
-@media (max-width: 480px) and (min-width: 320px) {
+@media (max-width: 768px) {
   .img-lapal figure {
     margin: 0;
-    object-fit: cover;
-    height: 240px;
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
-  .img-lapal figure img {
+  .img-lapal {
+    margin: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+  }
+  .img-lapal figure {
+    margin: 0;
+  }
+}
+@media (max-width: 480px) and (min-width: 320px) and (max-width: 480px) and (min-width: 320px) {
+  .img-lapal img {
     width: 100%;
     height: 97%;
     object-fit: cover;
@@ -992,8 +1019,10 @@ header .fa-arrow-left {
 
 .menu-lapal {
   background-color: #f6f6f6;
-  margin-top: 4px;
   height: 1416px;
+  margin-top: -28px;
+  position: relative;
+  border-radius: 50px 50px 0px 0px;
 }
 .menu-lapal h3 {
   font-family: "Shrikhand";
@@ -1019,6 +1048,9 @@ header .fa-arrow-left {
   color: #353535;
 }
 @media (max-width: 768px) {
+  .menu-lapal {
+    margin-top: -51px;
+  }
   .menu-lapal h4 {
     height: 33px;
     font-size: 1.5em;
@@ -1029,7 +1061,7 @@ header .fa-arrow-left {
     border-radius: 50px 50px 0px 0px;
     display: flex;
     flex-direction: column;
-    margin-top: -295px;
+    margin-top: -46px;
     position: relative;
     height: auto;
   }
@@ -1130,7 +1162,7 @@ header .fa-arrow-left {
 .menu-lapal__btn {
   background: linear-gradient(to right bottom, #e470da, #ac5edb);
   text-align: center;
-  margin: 3em 31em 7em 31em;
+  margin: 45px 511px 50px 511px;
   padding: 19px;
   border-radius: 27px;
   box-shadow: 0px 3px 6px grey;
@@ -1141,8 +1173,12 @@ header .fa-arrow-left {
   font-size: 1.2em;
 }
 @media (max-width: 768px) {
+  .menu-lapal__btn {
+    padding: 20px;
+    margin: 10px 230px 0px 230px;
+  }
   .menu-lapal__btn a {
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
@@ -1158,6 +1194,7 @@ header .fa-arrow-left {
   .menu-lapal__btn a {
     text-decoration: none;
     color: whitesmoke;
+    font-size: 1rem;
   }
 }
 
@@ -1170,19 +1207,22 @@ header .fa-arrow-left {
   object-fit: cover;
 }
 .img-ledel figure {
-  margin: 0 1em 0 1em;
+  margin: 0 10px 0 10px;
   height: 100%;
 }
 @media (max-width: 480px) and (min-width: 320px) {
-  .img-ledel figure {
+  .img-ledel {
     margin: 0;
     width: 100%;
     object-fit: cover;
-    height: 296px;
+    height: 300px;
+  }
+  .img-ledel figure {
+    margin: 0;
   }
 }
-@media (max-width: 480px) and (min-width: 320px) {
-  .img-ledel figure img {
+@media (max-width: 480px) and (min-width: 320px) and (max-width: 480px) and (min-width: 320px) {
+  .img-ledel img {
     width: 100%;
     height: 97%;
     object-fit: cover;
@@ -1202,8 +1242,10 @@ header .fa-arrow-left {
 
 .menu-ledel {
   background-color: #f6f6f6;
-  margin-top: 4px;
   height: 1416px;
+  margin-top: -21px;
+  position: relative;
+  border-radius: 50px 50px 0px 0px;
 }
 .menu-ledel h3 {
   font-family: "Shrikhand";
@@ -1239,7 +1281,7 @@ header .fa-arrow-left {
     border-radius: 50px 50px 0px 0px;
     display: flex;
     flex-direction: column;
-    margin-top: -229px;
+    margin-top: -46px;
     position: relative;
     height: auto;
   }
@@ -1340,7 +1382,7 @@ header .fa-arrow-left {
 .menu-ledel__btn {
   background: linear-gradient(to right bottom, #e470da, #ac5edb);
   text-align: center;
-  margin: 3em 31em 7em 31em;
+  margin: 45px 511px 50px 511px;
   padding: 19px;
   border-radius: 27px;
   box-shadow: 0px 3px 6px grey;
@@ -1348,11 +1390,15 @@ header .fa-arrow-left {
 .menu-ledel__btn a {
   text-decoration: none;
   color: whitesmoke;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 @media (max-width: 768px) {
+  .menu-ledel__btn {
+    padding: 20px;
+    margin: 10px 230px 0px 230px;
+  }
   .menu-ledel__btn a {
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
@@ -1369,6 +1415,7 @@ header .fa-arrow-left {
   .menu-ledel__btn a {
     text-decoration: none;
     color: whitesmoke;
+    font-size: 1rem;
   }
 }
 
