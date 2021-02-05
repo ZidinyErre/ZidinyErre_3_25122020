@@ -24,4 +24,12 @@ $blockcolor:(
     btn: $Firstcolor,
 );
 
+@keyframes loading1{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 
+}

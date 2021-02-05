@@ -144,6 +144,16 @@ header{
     box-shadow: 0px 4px 17px grey;
     &:hover{
         background-color: #f5edff;
+        
+    }
+    &:hover .fa-mobile-alt{
+        color: #9356dc;
+    }
+    &:hover .fa-list-ul{
+        color: #9356dc;
+    }
+    &:hover .fa-store{
+        color: #9356dc;
     }
     .icon{
         width: 9px;
@@ -202,6 +212,15 @@ header{
         &:hover{
             background-color: #f5edff;
         }
+        &:hover .fa-mobile-alt{
+            color: #9356dc;
+        }
+        &:hover .fa-list-ul{
+            color: #9356dc;
+        }
+        &:hover .fa-store{
+            color: #9356dc;
+        }
         .icon{
             width: 9px;
             height: 15px;
@@ -221,9 +240,6 @@ header{
     padding: 0px 120px;
     margin-left: 55px;
     color: #838080a6;
-    &:hover{
-        color: #9356dc;
-    }
     @include tablet{
         padding: 0px 50px;
         margin-left: 30px;
@@ -338,7 +354,6 @@ header{
 }
 .restau-lapal__img{
     @include imgaccueil;
-
 }
 .restau-lanot__img{
     @include imgaccueil;
@@ -401,6 +416,12 @@ header{
         width: 26px;
         align-self: flex-end;
         margin-right: 35px;
+        overflow: hidden;
+        &:hover{
+            transform: scale(1);
+            background-color: blueviolet;
+            transition: 10s;
+        }
     }
     
     @include mobile{

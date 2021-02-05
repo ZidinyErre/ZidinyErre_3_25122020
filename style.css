@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@keyframes loading1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*maps et list*/
 body {
   margin: auto;
@@ -9,6 +17,7 @@ body {
   font-family: "Roboto", sans-serif;
   width: 1300px;
   margin: auto;
+  animation: loading1 15s;
 }
 @media (max-width: 768px) {
   #page {
@@ -193,6 +202,15 @@ header .fa-arrow-left {
 .fonctionmt__all:hover {
   background-color: #f5edff;
 }
+.fonctionmt__all:hover .fa-mobile-alt {
+  color: #9356dc;
+}
+.fonctionmt__all:hover .fa-list-ul {
+  color: #9356dc;
+}
+.fonctionmt__all:hover .fa-store {
+  color: #9356dc;
+}
 .fonctionmt__all .icon {
   width: 9px;
   height: 15px;
@@ -254,6 +272,15 @@ header .fa-arrow-left {
   .fonctionmt__all:hover {
     background-color: #f5edff;
   }
+  .fonctionmt__all:hover .fa-mobile-alt {
+    color: #9356dc;
+  }
+  .fonctionmt__all:hover .fa-list-ul {
+    color: #9356dc;
+  }
+  .fonctionmt__all:hover .fa-store {
+    color: #9356dc;
+  }
   .fonctionmt__all .icon {
     width: 9px;
     height: 15px;
@@ -273,9 +300,6 @@ header .fa-arrow-left {
   padding: 0px 120px;
   margin-left: 55px;
   color: #838080a6;
-}
-.fa-mobile-alt:hover {
-  color: #9356dc;
 }
 @media (max-width: 768px) {
   .fa-mobile-alt {
@@ -489,6 +513,12 @@ header .fa-arrow-left {
   width: 26px;
   align-self: flex-end;
   margin-right: 35px;
+  overflow: hidden;
+}
+.restau__info img:hover {
+  transform: scale(1);
+  background-color: blueviolet;
+  transition: 10s;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .restau__info {
