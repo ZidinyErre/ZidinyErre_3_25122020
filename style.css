@@ -17,7 +17,7 @@ body {
   font-family: "Roboto", sans-serif;
   width: 1300px;
   margin: auto;
-  animation: loading1 15s;
+  /* animation: loading1 15s;*/
 }
 @media (max-width: 768px) {
   #page {
@@ -584,6 +584,12 @@ header .fa-arrow-left {
 .fa-heartopen:hover .fa-heartclose {
   color: #b160dc;
 }
+@media (max-width: 480px) and (min-width: 320px) {
+  .fa-heartopen {
+    font-size: 22px;
+  }
+}
+
 .fa-heartclose {
   position: absolute;
   left: 629.5px;
@@ -599,6 +605,41 @@ header .fa-arrow-left {
   transition-duration: 1.2s;
   transition-timing-function: ease-in;
 }
+@media (max-width: 768px) {
+  .fa-heartclose {
+    position: absolute;
+    left: 498px;
+    top: 15px;
+    color: #b160dc;
+    opacity: 0;
+    font-size: 10px;
+  }
+  .fa-heartclose:hover {
+    opacity: 1;
+    transform: scale(4.5);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+  }
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .fa-heartclose {
+    position: absolute;
+    left: 330px;
+    top: 8px;
+    color: #b160dc;
+    opacity: 0;
+    font-size: 10px;
+  }
+  .fa-heartclose:hover {
+    opacity: 1;
+    transform: scale(3.5);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+  }
+}
+
 .img-alafr {
   height: 490px;
 }
