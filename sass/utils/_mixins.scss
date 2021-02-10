@@ -33,3 +33,13 @@ $blockcolor:(
     }
 
 }
+
+@keyframes scale{
+    from {
+        transform: scaleY(1);
+    }
+    to{
+        transform: scaleY(2);
+    }
+
+}
