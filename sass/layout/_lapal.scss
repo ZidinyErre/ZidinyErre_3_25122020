@@ -85,8 +85,9 @@ header{
         position: absolute;
         left: 1215px;
         top: 82px;
-        color: #e470da;
-        background-color: linear-gradient(to right bottom, #e470da, #ac5edb);
+        background: linear-gradient(to right, #e470da, #ac5edb);
+    color: transparent;
+    -webkit-background-clip: text;
         opacity: 0;
         font-size: 13px;
         &:hover{
@@ -100,7 +101,9 @@ header{
             position: absolute;
             left: 682px;
             top: 68px;
-            background-color: linear-gradient(to right bottom, #e470da, #ac5edb);
+            background: linear-gradient(to right, #e470da, #ac5edb);
+    color: transparent;
+    -webkit-background-clip: text;
             opacity: 0;
             font-size: 10px;
             &:hover{
@@ -115,7 +118,9 @@ header{
             position: absolute;
             left: 330px;
             top: 8px;
-            background-color: linear-gradient(to right bottom, #e470da, #ac5edb);
+            background: linear-gradient(to right, #e470da, #ac5edb);
+            color: transparent;
+            -webkit-background-clip: text;
             opacity: 0;
             font-size: 10px;
             &:hover{
