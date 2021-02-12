@@ -7,14 +7,6 @@
     opacity: 1;
   }
 }
-@keyframes hardloading {
-  to {
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-  }
-}
 @keyframes rotate {
   0% {
     transform: rotate(0deg) scale(1);
@@ -60,25 +52,25 @@ body {
   }
 }
 
-body .loadblock {
+.loadblock {
   background-color: white;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  animation: loading1 0s ease-in 10s;
-}
-body .loadblock .loader {
-  width: 120px;
-  height: 120px;
-  margin: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  border: 12px solid #eaeaea;
-  border-top-color: #FF79DA;
-  border-radius: 50%;
-  animation: rotate 5s linear 0s infinite;
+  /*animation: loading1 15s ease-in  ;*/
+  /* .loader{
+       width: 120px;
+       height: 120px;
+       margin: auto;
+       margin-top: 100px;
+       margin-bottom: 100px;
+       border: 12px solid $firstgray;
+       border-top-color: $Secondcolor;
+       border-radius: 50%;
+       animation: rotate 5s linear 0s ;
+
+
+   }*/
 }
 
 header {
