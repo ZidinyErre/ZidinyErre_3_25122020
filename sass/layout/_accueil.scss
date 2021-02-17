@@ -4,9 +4,8 @@
     width: 100vw;
     height: 100vh;
     position: fixed;
-    animation: loading1 10s ease-in  ;
+    animation: loading1 5s ease-in  1  forwards;
     z-index: 9999;
-   
 }
 
 .loader{
@@ -16,7 +15,7 @@
     border: 12px solid #eaeaea;
     border-top-color: #FF79DA;
     border-radius: 50%;
-    animation: rotate 5s linear 0s infinite;
+    animation: rotate 5s linear 0s 1 forwards;
     position: absolute;
     top: 0;
     bottom: 0;

@@ -27,9 +27,11 @@ $blockcolor:(
 @keyframes loading1{
     from {
         opacity: 1;
+        display: block;
     }
     to{
         opacity: 0;
+        display: none;
     }
 
 }
@@ -65,7 +67,6 @@ $blockcolor:(
         transform: rotate(720deg) scale(1);
         border-top-color: $Thirdcolor;
         opacity: 0;
-
     }
 
 }
