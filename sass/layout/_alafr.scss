@@ -36,50 +36,53 @@
 .menu-alafr__titre{
     display: flex;
     justify-content: space-between;
-    position: relative;
     @include mobile{
         display: flex;
         justify-content: space-between;
     }
-    .fa-heartopenpg{
-        margin: 70px 61px 30px 30px;
-        height: 0;
-        font-size: 35px;
+}
+
+.heart__al{
+    position: relative;
+    .fa-heartopen__al{
+        margin: 66px 73px 36px 29px;
+        font-size: 38px;
         @include tablet{
             margin: 53px 61px 30px 30px;
         }
         @include mobile{
+            margin: 63px 61px 30px 30px;
             font-size: 22px;
         }
     }
-    .fa-heartclosepg{
+    .fa-heartclose__al{
         position: absolute;
-        left: 1215px;
-        top: 82px;
+        left: 42px;
+        top: 79px;
         background: linear-gradient(to right, #e470da, #ac5edb);
-    color: transparent;
-    -webkit-background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
         opacity: 0;
-        font-size: 13px;
+        font-size: 12px;
         &:hover{
             opacity: 1;
-            transform: scale(3.2);
+            transform: scale(3.4);
             transition-property: transform;
-            transition-duration: 1.20s;
+            transition-duration: 1s;
             transition-timing-function: ease-in;
         }
         @include tablet{
             position: absolute;
-            left: 682px;
+            left: 44px;
             top: 68px;
             background: linear-gradient(to right, #e470da, #ac5edb);
-    color: transparent;
-    -webkit-background-clip: text;
+            color: transparent;
+            -webkit-background-clip: text;
             opacity: 0;
             font-size: 10px;
             &:hover{
                 opacity: 1;
-                transform: scale(4.5);
+                transform: scale(4.3);
                 transition-property: transform;
                 transition-duration: 1s;
                 transition-timing-function: ease-in;
@@ -87,16 +90,16 @@
         }
         @include mobile{
             position: absolute;
-            left: 330px;
-            top: 8px;
+            left: 36px;
+            top: 69px;
             background: linear-gradient(to right, #e470da, #ac5edb);
-    color: transparent;
-    -webkit-background-clip: text;
+            color: transparent;
+            -webkit-background-clip: text;
             opacity: 0;
             font-size: 10px;
             &:hover{
                 opacity: 1;
-                transform: scale(3.5);
+                transform: scale(2.8);
                 transition-property: transform;
                 transition-duration: 1s;
                 transition-timing-function: ease-in;
@@ -104,8 +107,6 @@
         }
     }
 }
-
-
 
 .menu-alafr{
     background-color:  map-get($map: $blockcolor, $key: menu);

@@ -29,16 +29,17 @@
 
 .menu-ledel__titre{
     display: flex;
-    justify-content: space-between;
-    position: relative;
+    justify-content: space-between;    
     @include mobile{
         display: flex;
         justify-content: space-between;
     }
+}
 
-    .fa-heartopenpg{
-        margin: 70px 61px 30px 30px;
-        height: 0;
+.heart__ld{
+    position: relative;
+    .fa-heartopen__ld{
+        margin: 70px 80px 30px 30px;
         font-size: 35px;
         @include tablet{
             margin: 53px 61px 30px 30px;
@@ -49,15 +50,15 @@
 
         }
     }
-    .fa-heartclosepg{
+    .fa-heartclose__ld{
         position: absolute;
-        left: 1215px;
+        left: 41px;
         top: 82px;
         background: linear-gradient(to right, #e470da, #ac5edb);
-    color: transparent;
-    -webkit-background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
         opacity: 0;
-        font-size: 13px;
+        font-size: 12.5px;
         &:hover{
             opacity: 1;
             transform: scale(3.2);
@@ -67,11 +68,11 @@
         }
         @include tablet{
             position: absolute;
-            left: 682px;
+            left: 42px;
             top: 68px;
             background: linear-gradient(to right, #e470da, #ac5edb);
-    color: transparent;
-    -webkit-background-clip: text;
+            color: transparent;
+            -webkit-background-clip: text;
             opacity: 0;
             font-size: 10px;
             &:hover{
@@ -84,16 +85,16 @@
         }
         @include mobile{
             position: absolute;
-            left: 330px;
-            top: 8px;
+            left: 7px;
+            top: 73px;
             background: linear-gradient(to right, #e470da, #ac5edb);
-    color: transparent;
-    -webkit-background-clip: text;
+            color: transparent;
+            -webkit-background-clip: text;
             opacity: 0;
-            font-size: 10px;
+            font-size: 7px;
             &:hover{
                 opacity: 1;
-                transform: scale(3.5);
+                transform: scale(4);
                 transition-property: transform;
                 transition-duration: 1s;
                 transition-timing-function: ease-in;
@@ -101,8 +102,6 @@
         }
     }
 }
-
-
 
 .menu-ledel{
     background-color:  map-get($map: $blockcolor, $key: menu);

@@ -520,7 +520,7 @@ header{
     .fa-heartclose{
         position: absolute;
         left: 10px;
-        top: 13.9px;
+        top: 15px;
         background: linear-gradient(to right, #e470da, #ac5edb);
         color: transparent;
         -webkit-background-clip: text;
@@ -528,7 +528,7 @@ header{
         font-size: 10px;
         &:hover{
             opacity: 1;
-            transform: scale(3.2);
+            transform: scale(3.8);
             transition-property: transform;
             transition-duration: 1.20s;
             transition-timing-function: ease-in;

@@ -46,6 +46,30 @@
     opacity: 0;
   }
 }
+@keyframes arise {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+/*@keyframes up{
+    from{
+        transform: translateY(-0.5);
+    }
+    to{
+        transform: translateY(-0.3);
+    }
+}*/
 /*maps et list*/
 body {
   margin: auto;
@@ -657,7 +681,7 @@ header .fa-arrow-left {
 .heart .fa-heartclose {
   position: absolute;
   left: 10px;
-  top: 13.9px;
+  top: 15px;
   background: linear-gradient(to right, #e470da, #ac5edb);
   color: transparent;
   -webkit-background-clip: text;
@@ -666,7 +690,7 @@ header .fa-arrow-left {
 }
 .heart .fa-heartclose:hover {
   opacity: 1;
-  transform: scale(3.2);
+  transform: scale(3.8);
   transition-property: transform;
   transition-duration: 1.2s;
   transition-timing-function: ease-in;
@@ -754,7 +778,6 @@ header .fa-arrow-left {
 .menu-alafr__titre {
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-alafr__titre {
@@ -762,42 +785,46 @@ header .fa-arrow-left {
     justify-content: space-between;
   }
 }
-.menu-alafr__titre .fa-heartopenpg {
-  margin: 70px 61px 30px 30px;
-  height: 0;
-  font-size: 35px;
+
+.heart__al {
+  position: relative;
+}
+.heart__al .fa-heartopen__al {
+  margin: 66px 73px 36px 29px;
+  font-size: 38px;
 }
 @media (max-width: 768px) {
-  .menu-alafr__titre .fa-heartopenpg {
+  .heart__al .fa-heartopen__al {
     margin: 53px 61px 30px 30px;
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
-  .menu-alafr__titre .fa-heartopenpg {
+  .heart__al .fa-heartopen__al {
+    margin: 63px 61px 30px 30px;
     font-size: 22px;
   }
 }
-.menu-alafr__titre .fa-heartclosepg {
+.heart__al .fa-heartclose__al {
   position: absolute;
-  left: 1215px;
-  top: 82px;
+  left: 42px;
+  top: 79px;
   background: linear-gradient(to right, #e470da, #ac5edb);
   color: transparent;
   -webkit-background-clip: text;
   opacity: 0;
-  font-size: 13px;
+  font-size: 12px;
 }
-.menu-alafr__titre .fa-heartclosepg:hover {
+.heart__al .fa-heartclose__al:hover {
   opacity: 1;
-  transform: scale(3.2);
+  transform: scale(3.4);
   transition-property: transform;
-  transition-duration: 1.2s;
+  transition-duration: 1s;
   transition-timing-function: ease-in;
 }
 @media (max-width: 768px) {
-  .menu-alafr__titre .fa-heartclosepg {
+  .heart__al .fa-heartclose__al {
     position: absolute;
-    left: 682px;
+    left: 44px;
     top: 68px;
     background: linear-gradient(to right, #e470da, #ac5edb);
     color: transparent;
@@ -805,28 +832,28 @@ header .fa-arrow-left {
     opacity: 0;
     font-size: 10px;
   }
-  .menu-alafr__titre .fa-heartclosepg:hover {
+  .heart__al .fa-heartclose__al:hover {
     opacity: 1;
-    transform: scale(4.5);
+    transform: scale(4.3);
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease-in;
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
-  .menu-alafr__titre .fa-heartclosepg {
+  .heart__al .fa-heartclose__al {
     position: absolute;
-    left: 330px;
-    top: 8px;
+    left: 36px;
+    top: 69px;
     background: linear-gradient(to right, #e470da, #ac5edb);
     color: transparent;
     -webkit-background-clip: text;
     opacity: 0;
     font-size: 10px;
   }
-  .menu-alafr__titre .fa-heartclosepg:hover {
+  .heart__al .fa-heartclose__al:hover {
     opacity: 1;
-    transform: scale(3.5);
+    transform: scale(2.8);
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease-in;
@@ -1092,7 +1119,7 @@ header .fa-arrow-left {
 }
 .heart__ln .fa-heartclose__ln:hover {
   opacity: 1;
-  transform: scale(6);
+  transform: scale(3.7);
   transition-property: transform;
   transition-duration: 1.2s;
   transition-timing-function: ease-in;
@@ -1554,6 +1581,8 @@ header .fa-arrow-left {
   border-radius: 18px;
   height: 77px;
   box-shadow: 0px 3px 6px grey;
+  animation: arise 2s ease-out 0s 1 normal none;
+  /*animation: up 2s ease-out 0s 1 normal none;*/
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lapal__carte {
@@ -1692,7 +1721,6 @@ header .fa-arrow-left {
 .menu-ledel__titre {
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-ledel__titre {
@@ -1700,33 +1728,36 @@ header .fa-arrow-left {
     justify-content: space-between;
   }
 }
-.menu-ledel__titre .fa-heartopenpg {
-  margin: 70px 61px 30px 30px;
-  height: 0;
+
+.heart__ld {
+  position: relative;
+}
+.heart__ld .fa-heartopen__ld {
+  margin: 70px 80px 30px 30px;
   font-size: 35px;
 }
 @media (max-width: 768px) {
-  .menu-ledel__titre .fa-heartopenpg {
+  .heart__ld .fa-heartopen__ld {
     margin: 53px 61px 30px 30px;
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
-  .menu-ledel__titre .fa-heartopenpg {
+  .heart__ld .fa-heartopen__ld {
     font-size: 22px;
     margin: 65px 33px 0px 0px;
   }
 }
-.menu-ledel__titre .fa-heartclosepg {
+.heart__ld .fa-heartclose__ld {
   position: absolute;
-  left: 1215px;
+  left: 41px;
   top: 82px;
   background: linear-gradient(to right, #e470da, #ac5edb);
   color: transparent;
   -webkit-background-clip: text;
   opacity: 0;
-  font-size: 13px;
+  font-size: 12.5px;
 }
-.menu-ledel__titre .fa-heartclosepg:hover {
+.heart__ld .fa-heartclose__ld:hover {
   opacity: 1;
   transform: scale(3.2);
   transition-property: transform;
@@ -1734,9 +1765,9 @@ header .fa-arrow-left {
   transition-timing-function: ease-in;
 }
 @media (max-width: 768px) {
-  .menu-ledel__titre .fa-heartclosepg {
+  .heart__ld .fa-heartclose__ld {
     position: absolute;
-    left: 682px;
+    left: 42px;
     top: 68px;
     background: linear-gradient(to right, #e470da, #ac5edb);
     color: transparent;
@@ -1744,7 +1775,7 @@ header .fa-arrow-left {
     opacity: 0;
     font-size: 10px;
   }
-  .menu-ledel__titre .fa-heartclosepg:hover {
+  .heart__ld .fa-heartclose__ld:hover {
     opacity: 1;
     transform: scale(4.5);
     transition-property: transform;
@@ -1753,19 +1784,19 @@ header .fa-arrow-left {
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
-  .menu-ledel__titre .fa-heartclosepg {
+  .heart__ld .fa-heartclose__ld {
     position: absolute;
-    left: 330px;
-    top: 8px;
+    left: 7px;
+    top: 73px;
     background: linear-gradient(to right, #e470da, #ac5edb);
     color: transparent;
     -webkit-background-clip: text;
     opacity: 0;
-    font-size: 10px;
+    font-size: 7px;
   }
-  .menu-ledel__titre .fa-heartclosepg:hover {
+  .heart__ld .fa-heartclose__ld:hover {
     opacity: 1;
-    transform: scale(3.5);
+    transform: scale(4);
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease-in;
