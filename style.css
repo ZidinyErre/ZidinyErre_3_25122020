@@ -1060,41 +1060,47 @@ header .fa-arrow-left {
     justify-content: space-between;
   }
 }
-.menu-lanot__titre .fa-heartopenpg {
+
+.heart__ln {
+  position: relative;
+}
+.heart__ln .fa-heartopen__ln {
   margin: 70px 61px 30px 30px;
   height: 0;
   font-size: 35px;
 }
 @media (max-width: 768px) {
-  .menu-lanot__titre .fa-heartopenpg {
+  .heart__ln .fa-heartopen__ln {
     margin: 53px 61px 30px 30px;
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
-  .menu-lanot__titre .fa-heartopenpg {
+  .heart__ln .fa-heartopen__ln {
     font-size: 22px;
+    margin: 60px 32px 10px 10px;
   }
 }
-.menu-lanot__titre .fa-heartclosepg {
+.heart__ln .fa-heartclose__ln {
   position: absolute;
-  left: 1215px;
-  top: 82px;
+  left: 41px;
+  top: 84px;
   background: linear-gradient(to right, #e470da, #ac5edb);
   color: transparent;
   -webkit-background-clip: text;
-  font-size: 13px;
+  opacity: 0;
+  font-size: 11px;
 }
-.menu-lanot__titre .fa-heartclosepg:hover {
+.heart__ln .fa-heartclose__ln:hover {
   opacity: 1;
-  transform: scale(3.2);
+  transform: scale(6);
   transition-property: transform;
   transition-duration: 1.2s;
   transition-timing-function: ease-in;
 }
 @media (max-width: 768px) {
-  .menu-lanot__titre .fa-heartclosepg {
+  .heart__ln .fa-heartclose__ln {
     position: absolute;
-    left: 682px;
+    left: 42px;
     top: 68px;
     background: linear-gradient(to right, #e470da, #ac5edb);
     color: transparent;
@@ -1102,7 +1108,7 @@ header .fa-arrow-left {
     opacity: 0;
     font-size: 10px;
   }
-  .menu-lanot__titre .fa-heartclosepg:hover {
+  .heart__ln .fa-heartclose__ln:hover {
     opacity: 1;
     transform: scale(4.5);
     transition-property: transform;
@@ -1111,17 +1117,17 @@ header .fa-arrow-left {
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
-  .menu-lanot__titre .fa-heartclosepg {
+  .heart__ln .fa-heartclose__ln {
     position: absolute;
-    left: 330px;
-    top: 8px;
+    left: 16px;
+    top: 66px;
     background: linear-gradient(to right, #e470da, #ac5edb);
     color: transparent;
     -webkit-background-clip: text;
     opacity: 0;
     font-size: 10px;
   }
-  .menu-lanot__titre .fa-heartclosepg:hover {
+  .heart__ln .fa-heartclose__ln:hover {
     opacity: 1;
     transform: scale(3.5);
     transition-property: transform;

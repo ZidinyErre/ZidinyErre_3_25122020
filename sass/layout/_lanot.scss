@@ -36,7 +36,12 @@
         display: flex;
         justify-content: space-between;
     }
-    .fa-heartopenpg{
+    
+}
+
+.heart__ln{
+    position: relative;
+    .fa-heartopen__ln{
         margin: 70px 61px 30px 30px;
         height: 0;
         font-size: 35px;
@@ -45,30 +50,32 @@
         }
         @include mobile{
             font-size: 22px;
+            margin: 60px 32px 10px 10px;
         }
     }
-    .fa-heartclosepg{
+    .fa-heartclose__ln{
         position: absolute;
-        left: 1215px;
-        top: 82px;
+        left: 41px;
+        top: 84px;
         background: linear-gradient(to right, #e470da, #ac5edb);
-    color: transparent;
-    -webkit-background-clip: text;
-        font-size: 13px;
+        color: transparent;
+        -webkit-background-clip: text;
+        opacity: 0;
+        font-size: 11px;
         &:hover{
             opacity: 1;
-            transform: scale(3.2);
+            transform: scale(6);
             transition-property: transform;
             transition-duration: 1.20s;
             transition-timing-function: ease-in;
         }
         @include tablet{
             position: absolute;
-            left: 682px;
+            left: 42px;
             top: 68px;
             background: linear-gradient(to right, #e470da, #ac5edb);
-    color: transparent;
-    -webkit-background-clip: text;
+            color: transparent;
+            -webkit-background-clip: text;
             opacity: 0;
             font-size: 10px;
             &:hover{
@@ -81,11 +88,11 @@
         }
         @include mobile{
             position: absolute;
-            left: 330px;
-            top: 8px;
+            left: 16px;
+            top: 66px;
             background: linear-gradient(to right, #e470da, #ac5edb);
-    color: transparent;
-    -webkit-background-clip: text;
+            color: transparent;
+            -webkit-background-clip: text;
             opacity: 0;
             font-size: 10px;
             &:hover{
@@ -105,7 +112,6 @@
     margin-top: -28px;    
     position: relative;
     border-radius: 50px 50px  0px 0px;
-
     h3{
         font-family: "Shrikhand";
         margin-top: 34px;
