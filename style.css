@@ -1955,7 +1955,7 @@ header .fa-arrow-left {
 
 .menu-ledel__carte {
   background-color: white;
-  background-color: white;
+  /*background-color: white;*/
   margin-bottom: 20px;
   margin-left: 3em;
   margin-right: 4em;
@@ -1973,6 +1973,13 @@ header .fa-arrow-left {
     height: 65px;
     box-shadow: 0px 3px 6px grey;
   }
+}
+
+.check {
+  display: block;
+  width: 30px;
+  height: 77px;
+  background-color: blue;
 }
 
 .delay1 {
