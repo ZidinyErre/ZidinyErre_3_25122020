@@ -63,11 +63,22 @@
   }
 }
 @keyframes turn {
-  from {
+  0% {
     transform: rotate(0);
+    opacity: 0;
   }
-  to {
-    transform: rotate(-1turn);
+  20% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(1turn);
+    opacity: 1;
   }
 }
 /*maps et list*/
@@ -1826,13 +1837,14 @@ header .fa-arrow-left {
 }
 .heart__ld .fa-heartclose__ld {
   position: absolute;
-  left: 41px;
-  top: 82px;
+  left: 32px;
+  top: 70px;
   background: linear-gradient(to right, #e470da, #ac5edb);
   color: transparent;
   -webkit-background-clip: text;
   opacity: 0;
-  font-size: 12.5px;
+  font-size: 12px;
+  padding: 10px;
 }
 .heart__ld .fa-heartclose__ld:hover {
   opacity: 1;
@@ -1844,13 +1856,14 @@ header .fa-arrow-left {
 @media (max-width: 768px) {
   .heart__ld .fa-heartclose__ld {
     position: absolute;
-    left: 42px;
-    top: 68px;
+    left: 39px;
+    top: 60px;
     background: linear-gradient(to right, #e470da, #ac5edb);
     color: transparent;
     -webkit-background-clip: text;
     opacity: 0;
-    font-size: 10px;
+    font-size: 8.8px;
+    padding: 4px;
   }
   .heart__ld .fa-heartclose__ld:hover {
     opacity: 1;
@@ -1863,19 +1876,20 @@ header .fa-arrow-left {
 @media (max-width: 480px) and (min-width: 320px) {
   .heart__ld .fa-heartclose__ld {
     position: absolute;
-    left: 7px;
-    top: 73px;
+    left: 5px;
+    top: 71px;
     background: linear-gradient(to right, #e470da, #ac5edb);
     color: transparent;
     -webkit-background-clip: text;
     opacity: 0;
-    font-size: 7px;
+    font-size: 6.39px;
+    padding: 3px;
   }
   .heart__ld .fa-heartclose__ld:hover {
     opacity: 1;
-    transform: scale(4);
+    transform: scale(3.99);
     transition-property: transform;
-    transition-duration: 1s;
+    transition-duration: 0.7s;
     transition-timing-function: ease-in;
   }
 }
@@ -1955,7 +1969,6 @@ header .fa-arrow-left {
 
 .menu-ledel__carte {
   background-color: white;
-  /*background-color: white;*/
   margin-bottom: 20px;
   margin-left: 3em;
   margin-right: 4em;
@@ -1967,8 +1980,28 @@ header .fa-arrow-left {
   flex-direction: row;
   justify-content: space-between;
 }
-.menu-ledel__carte:hover {
-  transition: all 0.4s;
+.menu-ledel__carte:hover .check {
+  width: 100px;
+  transition: all 0.4s ease 0s;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-ledel__carte:hover .check {
+    width: 70px;
+  }
+}
+.menu-ledel__carte:hover .fa-check-circle {
+  opacity: 1;
+  animation: turn 2s ease-out 0s 1 normal backwards;
+  padding: 21px 27px 21px 32px;
+  color: white;
+  font-size: 32px;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-ledel__carte:hover .fa-check-circle {
+    font-size: 25px;
+    padding: 21px 0px 21px 22px;
+    animation: turn 700ms ease-out 0s 1 normal backwards;
+  }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-ledel__carte {
@@ -1983,22 +2016,14 @@ header .fa-arrow-left {
 
 .check {
   width: 0px;
-  border-radius: 18px;
+  border-radius: 0px 18px 18px 0px;
   background-color: #99E2D0;
 }
 .check .fa-check-circle {
-  padding: 21px 27px 21px 32px;
+  padding: 0px;
   color: white;
-  font-size: 32px;
+  font-size: 0px;
   opacity: 0;
-}
-.check .fa-check-circle:hover {
-  opacity: 1;
-  animation: turn 2s ease-out 0s 1 normal backwards;
-}
-.check:hover {
-  width: 100px;
-  transition: all 0.7s;
 }
 
 .delay1 {
@@ -2031,6 +2056,9 @@ header .fa-arrow-left {
   padding-left: 17px;
   padding-top: 12px;
   font-size: 1.4em;
+}
+.menu-ledel__nourr1 span {
+  font-weight: normal;
 }
 @media (max-width: 768px) {
   .menu-ledel__nourr1 {
@@ -2065,8 +2093,6 @@ header .fa-arrow-left {
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-ledel__nourr2 {
-    margin: 0px 9px 0px 0px;
-    padding: 6px 0px 0px 17px;
     font-size: 78%;
     display: flex;
     justify-content: space-between;
