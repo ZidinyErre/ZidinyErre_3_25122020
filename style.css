@@ -701,7 +701,7 @@ header .fa-arrow-left {
 }
 .heart .fa-heartclose:hover {
   opacity: 1;
-  transform: scale(3.8);
+  transform: scale(3);
   transition-property: transform;
   transition-duration: 1.2s;
   transition-timing-function: ease-in;
@@ -2071,7 +2071,7 @@ header .fa-arrow-left {
     margin-bottom: 0px;
     padding-left: 17px;
     padding-top: 12px;
-    font-size: 1em;
+    font-size: 0.9em;
   }
 }
 
