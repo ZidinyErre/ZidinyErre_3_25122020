@@ -62,14 +62,14 @@
     transform: scaleY(1);
   }
 }
-/*@keyframes up{
-    from{
-        transform: translateY(-0.5);
-    }
-    to{
-        transform: translateY(-0.3);
-    }
-}*/
+@keyframes turn {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-1turn);
+  }
+}
 /*maps et list*/
 body {
   margin: auto;
@@ -1963,6 +1963,12 @@ header .fa-arrow-left {
   height: 77px;
   box-shadow: 0px 3px 6px grey;
   animation: arise 2s ease-out 0s 1 normal backwards;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-ledel__carte:hover {
+  transition: all 0.4s;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-ledel__carte {
@@ -1976,10 +1982,23 @@ header .fa-arrow-left {
 }
 
 .check {
-  display: block;
-  width: 30px;
-  height: 77px;
-  background-color: blue;
+  width: 0px;
+  border-radius: 18px;
+  background-color: #99E2D0;
+}
+.check .fa-check-circle {
+  padding: 21px 27px 21px 32px;
+  color: white;
+  font-size: 32px;
+  opacity: 0;
+}
+.check .fa-check-circle:hover {
+  opacity: 1;
+  animation: turn 2s ease-out 0s 1 normal backwards;
+}
+.check:hover {
+  width: 100px;
+  transition: all 0.7s;
 }
 
 .delay1 {
@@ -2029,8 +2048,6 @@ header .fa-arrow-left {
 }
 
 .menu-ledel__nourr2 {
-  margin: 0px 9px 0px 0px;
-  padding: 6px 0px 0px 17px;
   font-size: 1.2em;
   display: flex;
   justify-content: space-between;
@@ -2038,6 +2055,8 @@ header .fa-arrow-left {
 .menu-ledel__nourr2 .price {
   color: #353535;
   font-weight: bold;
+  padding-top: 40px;
+  margin-right: 21px;
 }
 @media (max-width: 768px) {
   .menu-ledel__nourr2 {
