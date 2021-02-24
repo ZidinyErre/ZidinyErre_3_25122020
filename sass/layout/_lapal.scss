@@ -86,52 +86,50 @@ header{
     }
     .fa-heartclosepg{
         position: absolute;
-        left: 43px;
-        top: 76px;
+        left: 42px;
+        top: 74px;
         background: linear-gradient(to right, #e470da, #ac5edb);
         color: transparent;
         -webkit-background-clip: text;
         opacity: 0;
-        font-size: 15px;
+        font-size: 13px;
+        padding: 1px;
+        cursor: pointer;
         &:hover{
             opacity: 1;
             transform: scale(3.35);
             transition-property: transform;
-            transition-duration: 1.20s;
-            transition-timing-function: ease-in;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
         }
         @include tablet{
-            position: absolute;
-            left: 45px;
-            top: 68px;
-            background: linear-gradient(to right, #e470da, #ac5edb);
-            color: transparent;
-            -webkit-background-clip: text;
+            left: 44px;
+            top: 70px;
             opacity: 0;
-            font-size: 11px;
+            font-size: 9.9px;
             &:hover{
                 opacity: 1;
-                transform: scale(4.5);
+                transform: scale(4.4);
                 transition-property: transform;
                 transition-duration: 1s;
-                transition-timing-function: ease-in;
+                transition-timing-function: ease-out;
             }  
         }
         @include mobile{
             position: absolute;
-            left: 15px;
-            top: 48px;
+            left: 14px;
+            top: 49px;
             background: linear-gradient(to right, #e470da, #ac5edb);
             color: transparent;
             -webkit-background-clip: text;
             opacity: 0;
-            font-size: 11px;
+            font-size: 10.4px;
             &:hover{
                 opacity: 1;
-                transform: scale(3);
+                transform: scale(2.5);
                 transition-property: transform;
                 transition-duration: 1s;
-                transition-timing-function: ease-in;
+                transition-timing-function: ease-out;
             }
         }
     }
@@ -216,6 +214,29 @@ header{
     height: 77px;
     box-shadow: 0px 3px 6px grey;
     animation: arise 2s ease-out 0s 1 normal backwards;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    &:hover .check {
+        width: 100px;
+        transition: all 0.4s ease 0s;
+        @include mobile{
+            width: 70px;
+        }
+    }
+    &:hover .fa-check-circle{
+        opacity: 1;
+        animation: turn 2s ease-out 0s 1 normal backwards;
+        padding: 21px 27px 21px 32px;
+        color: white;
+        font-size: 32px;
+        @include mobile{
+            font-size: 25px;
+            padding: 21px 0px 21px 22px;
+            animation: turn 700ms ease-out 0s 1 normal backwards;
+        }
+    }
     @include mobile{
         margin-bottom: 20px;
         margin-left: 1em;
@@ -224,6 +245,17 @@ header{
         height: 65px;
         box-shadow: 0px 3px 6px grey;
         
+    }
+}
+.check{
+    width: 0px;
+    border-radius: 0px 18px 18px 0px;
+    background-color: $Thirdcolor;
+    .fa-check-circle{
+        padding: 0px;
+        color: white;
+        font-size: 0px;
+        opacity: 0;
     }
 }
 .delay1{
@@ -256,6 +288,11 @@ header{
     padding-left: 17px;
     padding-top: 12px;
     font-size: 1.4em;
+    overflow: hidden;
+    white-space: nowrap;
+    span{
+        font-weight: normal;
+    }
     @include tablet{
         font-size: 1.49em;
     }
@@ -264,16 +301,20 @@ header{
         margin-bottom: 0px;
         padding-left: 17px;
         padding-top: 12px;
-        font-size: 1em;
+        font-size: 0.9em;
+        text-overflow: ellipsis;
     }
 }
 .menu-lapal__nourr2{ 
     .price{
         color: $black;
         font-weight: bold;
+        padding-top: 40px;
+        margin-right: 21px;
+        @include mobile{
+            padding-top: 32px;
+        }
     }
-    margin: 0px 9px 0px 0px;
-    padding: 6px 0px 0px 17px;
     font-size: 1.2em;
     display: flex;
     justify-content: space-between;
@@ -281,8 +322,6 @@ header{
         font-size: 1.4em;
     }
     @include mobile {
-        margin: 0px 9px 0px 0px;
-        padding: 6px 0px 0px 17px;
         font-size: 78%;
         display: flex;
         justify-content: space-between;

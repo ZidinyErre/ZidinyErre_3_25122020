@@ -680,6 +680,7 @@ header .fa-arrow-left {
 }
 .heart .fa-heartopen {
   margin-right: 35px;
+  cursor: pointer;
 }
 .heart .fa-heartopen:hover .fa-heartclose {
   color: #b160dc;
@@ -698,28 +699,19 @@ header .fa-arrow-left {
   -webkit-background-clip: text;
   opacity: 0;
   font-size: 10px;
+  cursor: pointer;
 }
 .heart .fa-heartclose:hover {
   opacity: 1;
-  transform: scale(3);
+  transform: scale(3.3);
   transition-property: transform;
   transition-duration: 1.2s;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
 }
 @media (max-width: 768px) {
-  .heart .fa-heartclose {
-    position: absolute;
-    left: 10px;
-    top: 15px;
-    background: linear-gradient(to right, #e470da, #ac5edb);
-    color: transparent;
-    -webkit-background-clip: text;
-    opacity: 0;
-    font-size: 10px;
-  }
   .heart .fa-heartclose:hover {
     opacity: 1;
-    transform: scale(3.5);
+    transform: scale(3.3);
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease-out;
@@ -737,7 +729,7 @@ header .fa-arrow-left {
     font-size: 10px;
   }
   .heart .fa-heartclose:hover {
-    transform: scale(2.7);
+    transform: scale(2.6);
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease-0ut;
@@ -803,6 +795,7 @@ header .fa-arrow-left {
 .heart__al .fa-heartopen__al {
   margin: 66px 73px 36px 29px;
   font-size: 38px;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .heart__al .fa-heartopen__al {
@@ -824,47 +817,46 @@ header .fa-arrow-left {
   -webkit-background-clip: text;
   opacity: 0;
   font-size: 12px;
+  cursor: pointer;
 }
 .heart__al .fa-heartclose__al:hover {
   opacity: 1;
   transform: scale(3.4);
   transition-property: transform;
   transition-duration: 1s;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
 }
 @media (max-width: 768px) {
   .heart__al .fa-heartclose__al {
-    position: absolute;
-    left: 44px;
-    top: 68px;
-    background: linear-gradient(to right, #e470da, #ac5edb);
-    color: transparent;
-    -webkit-background-clip: text;
+    left: 34px;
+    top: 57px;
+    padding: 10px;
     opacity: 0;
-    font-size: 10px;
+    font-size: 11px;
   }
   .heart__al .fa-heartclose__al:hover {
     opacity: 1;
-    transform: scale(4.3);
+    transform: scale(3.9);
     transition-property: transform;
     transition-duration: 1s;
-    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .heart__al .fa-heartclose__al {
     position: absolute;
-    left: 36px;
+    left: 35px;
     top: 69px;
     background: linear-gradient(to right, #e470da, #ac5edb);
     color: transparent;
     -webkit-background-clip: text;
     opacity: 0;
-    font-size: 10px;
+    font-size: 9.7px;
+    padding: 1px;
   }
   .heart__al .fa-heartclose__al:hover {
     opacity: 1;
-    transform: scale(2.8);
+    transform: scale(2.6);
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease-in;
@@ -953,6 +945,33 @@ header .fa-arrow-left {
   height: 77px;
   box-shadow: 0px 3px 6px grey;
   animation: arise 2s ease-out 0s 1 normal backwards;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.menu-alafr__carte:hover .check {
+  width: 100px;
+  transition: all 0.4s ease 0s;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-alafr__carte:hover .check {
+    width: 70px;
+  }
+}
+.menu-alafr__carte:hover .fa-check-circle {
+  opacity: 1;
+  animation: turn 2s ease-out 0s 1 normal backwards;
+  padding: 21px 27px 21px 32px;
+  color: white;
+  font-size: 32px;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-alafr__carte:hover .fa-check-circle {
+    font-size: 25px;
+    padding: 21px 0px 21px 22px;
+    animation: turn 700ms ease-out 0s 1 normal backwards;
+  }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-alafr__carte {
@@ -963,6 +982,18 @@ header .fa-arrow-left {
     height: 65px;
     box-shadow: 0px 3px 6px grey;
   }
+}
+
+.check {
+  width: 0px;
+  border-radius: 0px 18px 18px 0px;
+  background-color: #99E2D0;
+}
+.check .fa-check-circle {
+  padding: 0px;
+  color: white;
+  font-size: 0px;
+  opacity: 0;
 }
 
 .delay1 {
@@ -995,6 +1026,11 @@ header .fa-arrow-left {
   padding-left: 17px;
   padding-top: 12px;
   font-size: 1.4em;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu-alafr__nourr1 span {
+  font-weight: normal;
 }
 @media (max-width: 768px) {
   .menu-alafr__nourr1 {
@@ -1007,13 +1043,12 @@ header .fa-arrow-left {
     margin-bottom: 0px;
     padding-left: 17px;
     padding-top: 12px;
-    font-size: 1em;
+    font-size: 0.9em;
+    text-overflow: ellipsis;
   }
 }
 
 .menu-alafr__nourr2 {
-  margin: 0px 9px 0px 0px;
-  padding: 6px 0px 0px 17px;
   font-size: 1.2em;
   display: flex;
   justify-content: space-between;
@@ -1021,6 +1056,13 @@ header .fa-arrow-left {
 .menu-alafr__nourr2 .price {
   color: #353535;
   font-weight: bold;
+  padding-top: 40px;
+  margin-right: 21px;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-alafr__nourr2 .price {
+    padding-top: 32px;
+  }
 }
 @media (max-width: 768px) {
   .menu-alafr__nourr2 {
@@ -1029,8 +1071,6 @@ header .fa-arrow-left {
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-alafr__nourr2 {
-    margin: 0px 9px 0px 0px;
-    padding: 6px 0px 0px 17px;
     font-size: 78%;
     display: flex;
     justify-content: space-between;
@@ -1145,44 +1185,41 @@ header .fa-arrow-left {
 }
 .heart__ln .fa-heartclose__ln {
   position: absolute;
-  left: 41px;
+  left: 42px;
   top: 84px;
   background: linear-gradient(to right, #e470da, #ac5edb);
   color: transparent;
   -webkit-background-clip: text;
   opacity: 0;
-  font-size: 11px;
+  font-size: 10px;
+  padding: 1px;
 }
 .heart__ln .fa-heartclose__ln:hover {
   opacity: 1;
-  transform: scale(3.7);
+  transform: scale(3.8);
   transition-property: transform;
   transition-duration: 1.2s;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
 }
 @media (max-width: 768px) {
   .heart__ln .fa-heartclose__ln {
-    position: absolute;
     left: 42px;
-    top: 68px;
-    background: linear-gradient(to right, #e470da, #ac5edb);
-    color: transparent;
-    -webkit-background-clip: text;
+    top: 65px;
     opacity: 0;
-    font-size: 10px;
+    font-size: 9px;
   }
   .heart__ln .fa-heartclose__ln:hover {
     opacity: 1;
-    transform: scale(4.5);
+    transform: scale(4.39);
     transition-property: transform;
     transition-duration: 1s;
-    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .heart__ln .fa-heartclose__ln {
     position: absolute;
-    left: 16px;
+    left: 15px;
     top: 66px;
     background: linear-gradient(to right, #e470da, #ac5edb);
     color: transparent;
@@ -1192,10 +1229,10 @@ header .fa-arrow-left {
   }
   .heart__ln .fa-heartclose__ln:hover {
     opacity: 1;
-    transform: scale(3.5);
+    transform: scale(2.55);
     transition-property: transform;
     transition-duration: 1s;
-    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
   }
 }
 
@@ -1282,6 +1319,33 @@ header .fa-arrow-left {
   height: 77px;
   box-shadow: 0px 3px 6px grey;
   animation: arise 2s ease-out 0s 1 normal backwards;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.menu-lanot__carte:hover .check {
+  width: 100px;
+  transition: all 0.4s ease 0s;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-lanot__carte:hover .check {
+    width: 70px;
+  }
+}
+.menu-lanot__carte:hover .fa-check-circle {
+  opacity: 1;
+  animation: turn 2s ease-out 0s 1 normal backwards;
+  padding: 21px 27px 21px 32px;
+  color: white;
+  font-size: 32px;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-lanot__carte:hover .fa-check-circle {
+    font-size: 25px;
+    padding: 21px 0px 21px 22px;
+    animation: turn 700ms ease-out 0s 1 normal backwards;
+  }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lanot__carte {
@@ -1292,6 +1356,18 @@ header .fa-arrow-left {
     height: 65px;
     box-shadow: 0px 3px 6px grey;
   }
+}
+
+.check {
+  width: 0px;
+  border-radius: 0px 18px 18px 0px;
+  background-color: #99E2D0;
+}
+.check .fa-check-circle {
+  padding: 0px;
+  color: white;
+  font-size: 0px;
+  opacity: 0;
 }
 
 .delay1 {
@@ -1328,6 +1404,11 @@ header .fa-arrow-left {
   padding-left: 17px;
   padding-top: 12px;
   font-size: 1.4em;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu-lanot__nourr1 span {
+  font-weight: normal;
 }
 @media (max-width: 768px) {
   .menu-lanot__nourr1 {
@@ -1340,13 +1421,12 @@ header .fa-arrow-left {
     margin-bottom: 0px;
     padding-left: 17px;
     padding-top: 12px;
-    font-size: 1em;
+    font-size: 0.9em;
+    text-overflow: ellipsis;
   }
 }
 
 .menu-lanot__nourr2 {
-  margin: 0px 9px 0px 0px;
-  padding: 6px 0px 0px 17px;
   font-size: 1.2em;
   display: flex;
   justify-content: space-between;
@@ -1354,7 +1434,13 @@ header .fa-arrow-left {
 .menu-lanot__nourr2 .price {
   color: #353535;
   font-weight: bold;
-  margin: 0;
+  padding-top: 40px;
+  margin-right: 21px;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-lanot__nourr2 .price {
+    padding-top: 32px;
+  }
 }
 @media (max-width: 768px) {
   .menu-lanot__nourr2 {
@@ -1363,8 +1449,6 @@ header .fa-arrow-left {
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lanot__nourr2 {
-    margin: 0px 9px 0px 0px;
-    padding: 6px 0px 0px 17px;
     font-size: 78%;
     display: flex;
     justify-content: space-between;
@@ -1510,57 +1594,55 @@ header .fa-arrow-left {
 }
 .heartpg .fa-heartclosepg {
   position: absolute;
-  left: 43px;
-  top: 76px;
+  left: 42px;
+  top: 74px;
   background: linear-gradient(to right, #e470da, #ac5edb);
   color: transparent;
   -webkit-background-clip: text;
   opacity: 0;
-  font-size: 15px;
+  font-size: 13px;
+  padding: 1px;
+  cursor: pointer;
 }
 .heartpg .fa-heartclosepg:hover {
   opacity: 1;
   transform: scale(3.35);
   transition-property: transform;
-  transition-duration: 1.2s;
-  transition-timing-function: ease-in;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
 }
 @media (max-width: 768px) {
   .heartpg .fa-heartclosepg {
-    position: absolute;
-    left: 45px;
-    top: 68px;
-    background: linear-gradient(to right, #e470da, #ac5edb);
-    color: transparent;
-    -webkit-background-clip: text;
+    left: 44px;
+    top: 70px;
     opacity: 0;
-    font-size: 11px;
+    font-size: 9.9px;
   }
   .heartpg .fa-heartclosepg:hover {
     opacity: 1;
-    transform: scale(4.5);
+    transform: scale(4.4);
     transition-property: transform;
     transition-duration: 1s;
-    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
   }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .heartpg .fa-heartclosepg {
     position: absolute;
-    left: 15px;
-    top: 48px;
+    left: 14px;
+    top: 49px;
     background: linear-gradient(to right, #e470da, #ac5edb);
     color: transparent;
     -webkit-background-clip: text;
     opacity: 0;
-    font-size: 11px;
+    font-size: 10.4px;
   }
   .heartpg .fa-heartclosepg:hover {
     opacity: 1;
-    transform: scale(3);
+    transform: scale(2.5);
     transition-property: transform;
     transition-duration: 1s;
-    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
   }
 }
 
@@ -1647,6 +1729,33 @@ header .fa-arrow-left {
   height: 77px;
   box-shadow: 0px 3px 6px grey;
   animation: arise 2s ease-out 0s 1 normal backwards;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.menu-lapal__carte:hover .check {
+  width: 100px;
+  transition: all 0.4s ease 0s;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-lapal__carte:hover .check {
+    width: 70px;
+  }
+}
+.menu-lapal__carte:hover .fa-check-circle {
+  opacity: 1;
+  animation: turn 2s ease-out 0s 1 normal backwards;
+  padding: 21px 27px 21px 32px;
+  color: white;
+  font-size: 32px;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-lapal__carte:hover .fa-check-circle {
+    font-size: 25px;
+    padding: 21px 0px 21px 22px;
+    animation: turn 700ms ease-out 0s 1 normal backwards;
+  }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lapal__carte {
@@ -1657,6 +1766,18 @@ header .fa-arrow-left {
     height: 65px;
     box-shadow: 0px 3px 6px grey;
   }
+}
+
+.check {
+  width: 0px;
+  border-radius: 0px 18px 18px 0px;
+  background-color: #99E2D0;
+}
+.check .fa-check-circle {
+  padding: 0px;
+  color: white;
+  font-size: 0px;
+  opacity: 0;
 }
 
 .delay1 {
@@ -1689,6 +1810,11 @@ header .fa-arrow-left {
   padding-left: 17px;
   padding-top: 12px;
   font-size: 1.4em;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu-lapal__nourr1 span {
+  font-weight: normal;
 }
 @media (max-width: 768px) {
   .menu-lapal__nourr1 {
@@ -1701,13 +1827,12 @@ header .fa-arrow-left {
     margin-bottom: 0px;
     padding-left: 17px;
     padding-top: 12px;
-    font-size: 1em;
+    font-size: 0.9em;
+    text-overflow: ellipsis;
   }
 }
 
 .menu-lapal__nourr2 {
-  margin: 0px 9px 0px 0px;
-  padding: 6px 0px 0px 17px;
   font-size: 1.2em;
   display: flex;
   justify-content: space-between;
@@ -1715,6 +1840,13 @@ header .fa-arrow-left {
 .menu-lapal__nourr2 .price {
   color: #353535;
   font-weight: bold;
+  padding-top: 40px;
+  margin-right: 21px;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-lapal__nourr2 .price {
+    padding-top: 32px;
+  }
 }
 @media (max-width: 768px) {
   .menu-lapal__nourr2 {
@@ -1723,8 +1855,6 @@ header .fa-arrow-left {
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lapal__nourr2 {
-    margin: 0px 9px 0px 0px;
-    padding: 6px 0px 0px 17px;
     font-size: 78%;
     display: flex;
     justify-content: space-between;
@@ -1979,6 +2109,7 @@ header .fa-arrow-left {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  cursor: pointer;
 }
 .menu-ledel__carte:hover .check {
   width: 100px;
@@ -2056,6 +2187,8 @@ header .fa-arrow-left {
   padding-left: 17px;
   padding-top: 12px;
   font-size: 1.4em;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu-ledel__nourr1 span {
   font-weight: normal;
@@ -2072,6 +2205,7 @@ header .fa-arrow-left {
     padding-left: 17px;
     padding-top: 12px;
     font-size: 0.9em;
+    text-overflow: ellipsis;
   }
 }
 
@@ -2085,6 +2219,11 @@ header .fa-arrow-left {
   font-weight: bold;
   padding-top: 40px;
   margin-right: 21px;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .menu-ledel__nourr2 .price {
+    padding-top: 32px;
+  }
 }
 @media (max-width: 768px) {
   .menu-ledel__nourr2 {

@@ -55,40 +55,37 @@
     }
     .fa-heartclose__ln{
         position: absolute;
-        left: 41px;
+        left: 42px;
         top: 84px;
         background: linear-gradient(to right, #e470da, #ac5edb);
         color: transparent;
         -webkit-background-clip: text;
         opacity: 0;
-        font-size: 11px;
+        font-size: 10px;
+        padding: 1px;
         &:hover{
             opacity: 1;
-            transform: scale(3.7);
+            transform: scale(3.8);
             transition-property: transform;
             transition-duration: 1.20s;
-            transition-timing-function: ease-in;
+            transition-timing-function: ease-out;
         }
         @include tablet{
-            position: absolute;
             left: 42px;
-            top: 68px;
-            background: linear-gradient(to right, #e470da, #ac5edb);
-            color: transparent;
-            -webkit-background-clip: text;
+            top: 65px;
             opacity: 0;
-            font-size: 10px;
+            font-size: 9px;
             &:hover{
                 opacity: 1;
-                transform: scale(4.5);
+                transform: scale(4.39);
                 transition-property: transform;
                 transition-duration: 1s;
-                transition-timing-function: ease-in;
+                transition-timing-function: ease-out;
             }  
         }
         @include mobile{
             position: absolute;
-            left: 16px;
+            left: 15px;
             top: 66px;
             background: linear-gradient(to right, #e470da, #ac5edb);
             color: transparent;
@@ -97,10 +94,10 @@
             font-size: 10px;
             &:hover{
                 opacity: 1;
-                transform: scale(3.5);
+                transform: scale(2.55);
                 transition-property: transform;
                 transition-duration: 1s;
-                transition-timing-function: ease-in;
+                transition-timing-function: ease-out;
             }
         }
     }
@@ -186,6 +183,29 @@
     height: 77px;
     box-shadow: 0px 3px 6px grey;
     animation: arise 2s ease-out 0s 1 normal backwards;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    &:hover .check {
+        width: 100px;
+        transition: all 0.4s ease 0s;
+        @include mobile{
+            width: 70px;
+        }
+    }
+    &:hover .fa-check-circle{
+        opacity: 1;
+        animation: turn 2s ease-out 0s 1 normal backwards;
+        padding: 21px 27px 21px 32px;
+        color: white;
+        font-size: 32px;
+        @include mobile{
+            font-size: 25px;
+            padding: 21px 0px 21px 22px;
+            animation: turn 700ms ease-out 0s 1 normal backwards;
+        }
+    }
     @include mobile{
         margin-bottom: 20px;
         margin-left: 1em;
@@ -194,6 +214,17 @@
         height: 65px;
         box-shadow: 0px 3px 6px grey;
         
+    }
+}
+.check{
+    width: 0px;
+    border-radius: 0px 18px 18px 0px;
+    background-color: $Thirdcolor;
+    .fa-check-circle{
+        padding: 0px;
+        color: white;
+        font-size: 0px;
+        opacity: 0;
     }
 }
 .delay1{
@@ -229,6 +260,11 @@
     padding-left: 17px;
     padding-top: 12px;
     font-size: 1.4em;
+    overflow: hidden;
+    white-space: nowrap;
+    span{
+        font-weight: normal;
+    }
     @include tablet{
         font-size: 1.49em;
     }
@@ -237,17 +273,20 @@
         margin-bottom: 0px;
         padding-left: 17px;
         padding-top: 12px;
-        font-size: 1em;
+        font-size: 0.9em;
+        text-overflow: ellipsis;
     }
 }
 .menu-lanot__nourr2{ 
     .price{
         color: $black;
         font-weight: bold;
-        margin: 0;
+        padding-top: 40px;
+        margin-right: 21px;
+        @include mobile{
+            padding-top: 32px;
+        }
     }
-    margin: 0px 9px 0px 0px;
-    padding: 6px 0px 0px 17px;
     font-size: 1.2em;
     display: flex;
     justify-content: space-between;
@@ -255,8 +294,6 @@
         font-size: 1.4em;
     }
     @include mobile {
-        margin: 0px 9px 0px 0px;
-        padding: 6px 0px 0px 17px;
         font-size: 78%;
         display: flex;
         justify-content: space-between;
