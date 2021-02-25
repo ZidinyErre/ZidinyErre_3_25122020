@@ -4,7 +4,8 @@
   "description": "Projet numéro 3 de formation dans le but de devenir développeur web.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./style.css"
+    "sass": "sass --watch ./sass/main.scss:./style.css",
+    "prefix": "postcss ./style.css --use autoprefixer -d .css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/ZidinyErre/ZidinyErre_3_25122020/issues"
   },
