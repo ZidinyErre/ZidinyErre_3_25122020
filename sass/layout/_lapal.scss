@@ -1,7 +1,7 @@
 header{
     position: relative;
-    figure{
-    }
+    /*figure{
+    }*/
     a{
         position: absolute;
         top: 41%;
@@ -15,9 +15,8 @@ header{
     }
     @include mobile{
         position: relative;
-        figure{
-
-        }
+        /*figure{
+        }*/
         a{
             position: absolute;
             top: 41%;
@@ -32,6 +31,7 @@ header{
     }
     
 }
+/* Photo de la page*/
 .img-lapal{
     height: 490px;
     img{
@@ -60,7 +60,7 @@ header{
     }
         
 }
-
+/*Titre*/
 .menu-lapal__titre{
     display: flex;
     justify-content: space-between;
@@ -69,6 +69,7 @@ header{
         justify-content: space-between;
     }   
 }
+/*Animation du coeur*/
 .heartpg{
     position: relative;
     .fa-heartopenpg{
@@ -134,8 +135,7 @@ header{
         }
     }
 }
-
-
+/*Div du menu*/
 .menu-lapal{
     background-color:  map-get($map: $blockcolor, $key: menu);
     height: 1416px;
@@ -149,12 +149,12 @@ header{
         padding-left: 1em;
         font-size: 3em;
     }
-    img{
+    /*img{
         width: 2.5em;
         height: 2.5em;
         margin-right: 8em;
         margin-top: 3em;
-    }
+    }*/
     h4{
         font-weight: normal;
         border-bottom: 3px #99E2D0 solid;
@@ -185,12 +185,12 @@ header{
             padding-left: 1em;
             font-size: 1.72em;
         }
-        img{
+        /*img{
             width: 1.5em;
             height: 1.5em;
             margin-right: 2em;
             margin-top: 2.7em;
-        }
+        }*/
         h4{
             font-weight: normal;
             border-bottom: 3px #99E2D0 solid;
@@ -204,6 +204,7 @@ header{
         }
     }
 }
+/*Carte */
 .menu-lapal__carte{
     background-color:  map-get($map: $blockcolor, $key: block);
     background-color: white;
@@ -247,6 +248,7 @@ header{
         
     }
 }
+/*Animation du check sur le menu*/
 .check{
     width: 0px;
     border-radius: 0px 18px 18px 0px;
@@ -258,6 +260,7 @@ header{
         opacity: 0;
     }
 }
+/*Animation apparition menu*/
 .delay1{
     animation-duration: 0.3s;
 }
@@ -281,7 +284,7 @@ header{
     animation: arise 1.9s ease-out 0s 1 normal backwards;
 
 }
-
+/*Premier div de la carte*/
 .menu-lapal__nourr1{
     font-weight: bold;
     margin-bottom: 0px;
@@ -305,6 +308,7 @@ header{
         text-overflow: ellipsis;
     }
 }
+/*Deuxième div de la carte*/
 .menu-lapal__nourr2{ 
     .price{
         color: $black;
@@ -328,6 +332,7 @@ header{
 
     }
 }
+/*Bouton commande*/
 .menu-lapal__btn{
     background: linear-gradient(to right bottom, #e470da, #ac5edb);
     text-align: center;

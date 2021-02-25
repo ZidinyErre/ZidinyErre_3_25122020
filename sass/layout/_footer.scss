@@ -16,7 +16,7 @@ footer{
         }
     }
 }
-
+/*Icône et div*/
 .fa-utensils{
     padding-right: 10px;
     font-size: 1.1em;
@@ -26,7 +26,7 @@ footer{
 }
 .propsr{
     margin-bottom: 10px;
-    font-size: 2em;
+    font-size: 1.8em;
     @include tablet{
         font-size: 1.7em;
     }
@@ -36,7 +36,7 @@ footer{
 }
 .devnr{
     margin-bottom: 10px;
-    font-size: 2em;
+    font-size: 1.8em;
     @include tablet{
         font-size: 1.7em;
     }
@@ -47,7 +47,7 @@ footer{
 }
 .ment°{
     margin-bottom: 10px;
-    font-size: 2em;
+    font-size: 1.8em;
     @include tablet{
         font-size: 1.7em;
     }
@@ -58,7 +58,7 @@ footer{
 }
 .contact{
     padding-bottom: 23px;
-    font-size: 2em;
+    font-size: 1.8em;
     a{
         text-decoration: none;
         color: white;

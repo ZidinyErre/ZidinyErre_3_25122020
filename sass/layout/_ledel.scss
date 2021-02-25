@@ -1,4 +1,4 @@
-
+/* Photo de la page*/
 .img-ledel{
     height: 490px;
     img{
@@ -26,7 +26,7 @@
         @include imgaccueil;
     }
 }
-
+/*Titre*/
 .menu-ledel__titre{
     display: flex;
     justify-content: space-between;    
@@ -35,12 +35,13 @@
         justify-content: space-between;
     }
 }
-
+/*Animation du coeur*/
 .heart__ld{
     position: relative;
     .fa-heartopen__ld{
         margin: 70px 80px 30px 30px;
         font-size: 35px;
+        cursor: pointer;
         @include tablet{
             margin: 53px 61px 30px 30px;
         }
@@ -60,6 +61,7 @@
         opacity: 0;
         font-size: 12px;
         padding: 10px;
+        cursor: pointer;
         &:hover{
             opacity: 1;
             transform: scale(3.2);
@@ -105,7 +107,7 @@
         }
     }
 }
-
+/*Div du menu*/
 .menu-ledel{
     background-color:  map-get($map: $blockcolor, $key: menu);
     height: 1416px;
@@ -119,12 +121,12 @@
         padding-left: 1em;
         font-size: 3em;
     }
-    img{
+    /*img{
         width: 2.5em;
         height: 2.5em;
         margin-right: 8em;
         margin-top: 3em;
-    }
+    }*/
     h4{
         font-weight: normal;
         border-bottom: 3px #99E2D0 solid;
@@ -156,12 +158,12 @@
             padding-left: 27px;
             font-size: 1.9em;
         }
-        img{
+        /*img{
             width: 1.5em;
             height: 1.5em;
             margin-right: 2.4em;
             margin-top: 3.7em;
-        }
+        }*/
         h4{
             font-weight: normal;
             border-bottom: 3px #99E2D0 solid;
@@ -173,9 +175,8 @@
             margin-left: 12px;
         }
     }
-    
-    
 }
+/*Carte */
 .menu-ledel__carte{
     background-color:  map-get($map: $blockcolor, $key: block);
     margin-bottom: 20px;
@@ -217,6 +218,7 @@
         box-shadow: 0px 3px 6px grey;
     }
 }
+/*Animation du check sur le menu*/
 .check{
     width: 0px;
     border-radius: 0px 18px 18px 0px;
@@ -228,6 +230,7 @@
         opacity: 0;
     }
 }
+/*Animation apparition menu*/
 .delay1{
     animation-duration: 0.3s;
 }
@@ -251,8 +254,7 @@
     animation: arise 1.9s ease-out 0s 1 normal backwards;
 
 }
-
-
+/*Premier div de la carte*/
 .menu-ledel__nourr1{
     font-weight: bold;
     margin-bottom: 0px;
@@ -276,6 +278,7 @@
         text-overflow: ellipsis;
     }
 }
+/*Deuxième div de la carte*/
 .menu-ledel__nourr2{
     .price{
         color: $black;
@@ -298,6 +301,7 @@
         justify-content: space-between;
     }
 }
+/*Bouton commande*/
 .menu-ledel__btn{
     background: linear-gradient(to right bottom, #e470da, #ac5edb);
     text-align: center;

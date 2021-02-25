@@ -1,5 +1,4 @@
-
-
+/* Photo de la page*/
 .img-lanot{
     height: 433px;
     img{
@@ -27,7 +26,7 @@
         @include imgaccueil;
     }
 }
-
+/*Titre*/
 .menu-lanot__titre{
     display: flex;
     justify-content: space-between;
@@ -38,13 +37,14 @@
     }
     
 }
-
+/*Animation du coeur*/
 .heart__ln{
     position: relative;
     .fa-heartopen__ln{
         margin: 70px 61px 30px 30px;
         height: 0;
         font-size: 35px;
+        cursor: pointer;
         @include tablet{
             margin: 53px 61px 30px 30px;
         }
@@ -63,6 +63,7 @@
         opacity: 0;
         font-size: 10px;
         padding: 1px;
+        cursor: pointer;
         &:hover{
             opacity: 1;
             transform: scale(3.8);
@@ -102,7 +103,7 @@
         }
     }
 }
-
+/*Div du menu*/
 .menu-lanot{
     background-color:  map-get($map: $blockcolor, $key: menu);
     height: 1528px;
@@ -116,12 +117,12 @@
         padding-left: 1em;
         font-size: 3em;
     }
-    img{
+    /*img{
         width: 2.5em;
         height: 2.5em;
         margin-right: 8em;
         margin-top: 3em;
-    }
+    }*/
     h4{
         font-weight: normal;
         border-bottom: 3px #99E2D0 solid;
@@ -153,12 +154,12 @@
             padding-left: 20px;
             font-size: 1.75em;
         }
-        img{
+        /*img{
             width: 1.5em;
             height: 1.5em;
             margin-right: 2em;
             margin-top: 3.6em;
-        }
+        }*/
         h4{
             font-weight: normal;
             border-bottom: 3px #99E2D0 solid;
@@ -170,9 +171,8 @@
             margin-left: 12px;
         }
     }
-    
-    
 }
+/*Carte */
 .menu-lanot__carte{
     background-color:  map-get($map: $blockcolor, $key: block);
     background-color: white;
@@ -216,6 +216,7 @@
         
     }
 }
+/*Animation du check sur le menu*/
 .check{
     width: 0px;
     border-radius: 0px 18px 18px 0px;
@@ -227,6 +228,7 @@
         opacity: 0;
     }
 }
+/*Animation apparition menu*/
 .delay1{
     animation-duration: 0.3s;
 }
@@ -253,7 +255,7 @@
     animation: arise 1.9s ease-out 0s 1 normal backwards;
 
 }
-
+/*Premier div de la carte*/
 .menu-lanot__nourr1{
     font-weight: bold;
     margin-bottom: 0px;
@@ -277,6 +279,7 @@
         text-overflow: ellipsis;
     }
 }
+/*Deuxième div de la carte*/
 .menu-lanot__nourr2{ 
     .price{
         color: $black;
@@ -300,8 +303,7 @@
 
     }
 }
-
-
+/*Bouton commande*/
 .menu-lanot__btn{
     background: linear-gradient(to right bottom, #e470da, #ac5edb);
     text-align: center;
@@ -333,7 +335,6 @@
             text-decoration: none;
             color:whitesmoke;
             font-size: 1rem;
-
         }
     }
 }

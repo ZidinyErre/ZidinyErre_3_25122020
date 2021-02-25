@@ -1,3 +1,4 @@
+/*mixin pour responsive*/
 @mixin mobile {
     @media (max-width: 480px) and (min-width: 320px){
         @content;
@@ -18,12 +19,13 @@
         }
     } 
 };
+/*maps*/
 $blockcolor:(
     menu: $thirdgray,
     block: white,
     btn: $Firstcolor,
 );
-
+/*keyframes loading acccueil*/
 @keyframes loading1{
     0% {
         opacity: 1;
@@ -47,9 +49,8 @@ $blockcolor:(
         transform: scaleX(0);
 
     }
-
 }
-
+/*rotation loading*/
 @keyframes rotate{
     0% {
         transform: rotate(0deg) scale(1);
@@ -76,7 +77,7 @@ $blockcolor:(
     }
 
 }
-
+/*keyframes apparitions des plats*/
 @keyframes arise{
     0%{
         opacity: 0;
@@ -95,6 +96,7 @@ $blockcolor:(
         transform: scaleY(1);
     }
 }
+/*keyframes check qui tourne*/
 @keyframes turn{
     0%{
         transform: rotate(0);
