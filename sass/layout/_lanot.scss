@@ -30,76 +30,68 @@
 .menu-lanot__titre{
     display: flex;
     justify-content: space-between;
-    position: relative;
+    padding: 20px;
     @include mobile{
         display: flex;
         justify-content: space-between;
-    }
-    
+        padding: 15px;
+    }   
 }
 /*Animation du coeur*/
 .heart__ln{
     position: relative;
+    height: 2.5em;
+    padding: 3em 2em 0em 0em;
+    &:hover .fa-heartclose__ln{
+        opacity: 1;
+        transform: scale(3);
+        transition-property: transform;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+    }
+    @include mobile{
+        height: 1.5em;
+        padding: 4em 0.5em 0em 0em;
+        &:hover .fa-heartclose__ln{
+            opacity: 1;
+            transform: scale(2.3);
+            transition-property: transform;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+        }
+    }
+    
     .fa-heartopen__ln{
-        margin: 70px 61px 30px 30px;
-        height: 0;
-        font-size: 35px;
+        font-size: 40px;
+        position: relative;
+        z-index: 2;
         cursor: pointer;
         @include tablet{
-            margin: 53px 61px 30px 30px;
         }
         @include mobile{
             font-size: 22px;
-            margin: 60px 32px 10px 10px;
         }
     }
     .fa-heartclose__ln{
         position: absolute;
-        left: 42px;
-        top: 84px;
+        left: 13px;
+        top: 62px;
         background: linear-gradient(to right, #e470da, #ac5edb);
         color: transparent;
         -webkit-background-clip: text;
         opacity: 0;
-        font-size: 10px;
+        font-size: 13px;
         padding: 1px;
         cursor: pointer;
-        &:hover{
-            opacity: 1;
-            transform: scale(3.8);
-            transition-property: transform;
-            transition-duration: 1.20s;
-            transition-timing-function: ease-out;
-        }
-        @include tablet{
-            left: 42px;
-            top: 65px;
-            opacity: 0;
-            font-size: 9px;
-            &:hover{
-                opacity: 1;
-                transform: scale(4.39);
-                transition-property: transform;
-                transition-duration: 1s;
-                transition-timing-function: ease-out;
-            }  
-        }
         @include mobile{
             position: absolute;
-            left: 15px;
-            top: 66px;
+            left: 6px;
+            top: 69px;
             background: linear-gradient(to right, #e470da, #ac5edb);
             color: transparent;
             -webkit-background-clip: text;
             opacity: 0;
-            font-size: 10px;
-            &:hover{
-                opacity: 1;
-                transform: scale(2.55);
-                transition-property: transform;
-                transition-duration: 1s;
-                transition-timing-function: ease-out;
-            }
+            font-size: 8.8px;
         }
     }
 }

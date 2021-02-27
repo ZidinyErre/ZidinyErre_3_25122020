@@ -617,26 +617,31 @@ header .fa-arrow-left {
   display: flex;
   flex-direction: column;
   height: 141px;
+  padding: 15px;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .restau__info {
+    padding: 10px;
+  }
 }
 
 .restau-all__info1 {
   font-weight: bold;
-  margin-top: 17px;
   margin-bottom: 2px;
-  margin-left: 15px;
   color: black;
   font-size: 1.87em;
   display: flex;
   justify-content: space-between;
+}
+.restau-all__info1 p {
+  margin: 0;
 }
 .restau-all__info1 a {
   color: black;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .restau-all__info1 {
-    margin-top: 9.5px;
     margin-bottom: 0px;
-    margin-left: 15px;
     color: black;
     font-size: 0.98em;
     font-weight: bold;
@@ -648,14 +653,15 @@ header .fa-arrow-left {
 .restau-all__info2 {
   margin-top: 13px;
   font-size: 1.2rem;
-  margin-left: 15px;
   color: black;
+}
+.restau-all__info2 p {
+  margin: 0;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .restau-all__info2 {
     margin-top: 0px;
     font-size: 1rem;
-    margin-left: 15px;
     color: black;
   }
 }
@@ -664,9 +670,26 @@ header .fa-arrow-left {
 .heart {
   position: relative;
 }
+.heart:hover .fa-heartclose {
+  opacity: 1;
+  transform: scale(1.89);
+  transition-property: transform;
+  transition-duration: 1.2s;
+  transition-timing-function: ease-out;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .heart:hover .fa-heartclose {
+    transform: scale(2.1);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
+}
 .heart .fa-heartopen {
-  margin-right: 35px;
+  position: relative;
+  z-index: 2;
   cursor: pointer;
+  font-size: 1em;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .heart .fa-heartopen {
@@ -675,48 +698,26 @@ header .fa-arrow-left {
 }
 .heart .fa-heartclose {
   position: absolute;
-  left: 9px;
-  top: 13.5px;
+  left: 6.9px;
+  top: 11px;
   background: linear-gradient(to right, #e470da, #ac5edb);
   color: transparent;
   -webkit-background-clip: text;
   opacity: 0;
-  font-size: 10px;
+  font-size: 0.5em;
   padding: 1px;
   cursor: pointer;
-}
-.heart .fa-heartclose:hover {
-  opacity: 1;
-  transform: scale(3.4);
-  transition-property: transform;
-  transition-duration: 1.2s;
-  transition-timing-function: ease-out;
-}
-@media (max-width: 768px) {
-  .heart .fa-heartclose:hover {
-    opacity: 1;
-    transform: scale(3.3);
-    transition-property: transform;
-    transition-duration: 1s;
-    transition-timing-function: ease-out;
-  }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .heart .fa-heartclose {
     position: absolute;
-    left: 6px;
+    left: 5.5px;
     top: 6.9px;
     background: linear-gradient(to right, #e470da, #ac5edb);
     color: transparent;
     -webkit-background-clip: text;
     opacity: 0;
     font-size: 10px;
-  }
-  .heart .fa-heartclose:hover {
-    transform: scale(2.6);
-    transition-property: transform;
-    transition-duration: 1s;
-    transition-timing-function: ease-out;
   }
 }
 
@@ -767,86 +768,75 @@ header .fa-arrow-left {
 .menu-alafr__titre {
   display: flex;
   justify-content: space-between;
+  padding: 20px;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-alafr__titre {
     display: flex;
     justify-content: space-between;
+    padding: 15px;
   }
 }
 
 /*Animation du coeur*/
 .heart__al {
   position: relative;
+  height: 2.5em;
+  padding: 3em 2em 0em 0em;
 }
-.heart__al .fa-heartopen__al {
-  margin: 66px 73px 36px 29px;
-  font-size: 38px;
-  cursor: pointer;
-}
-@media (max-width: 768px) {
-  .heart__al .fa-heartopen__al {
-    margin: 53px 61px 30px 30px;
-  }
-}
-@media (max-width: 480px) and (min-width: 320px) {
-  .heart__al .fa-heartopen__al {
-    margin: 63px 61px 30px 30px;
-    font-size: 22px;
-  }
-}
-.heart__al .fa-heartclose__al {
-  position: absolute;
-  left: 42px;
-  top: 79px;
-  background: linear-gradient(to right, #e470da, #ac5edb);
-  color: transparent;
-  -webkit-background-clip: text;
-  opacity: 0;
-  font-size: 12px;
-  cursor: pointer;
-}
-.heart__al .fa-heartclose__al:hover {
+.heart__al:hover .fa-heartclose__al {
   opacity: 1;
-  transform: scale(3.4);
+  transform: scale(3);
   transition-property: transform;
   transition-duration: 1s;
   transition-timing-function: ease-out;
 }
-@media (max-width: 768px) {
-  .heart__al .fa-heartclose__al {
-    left: 34px;
-    top: 57px;
-    padding: 10px;
-    opacity: 0;
-    font-size: 11px;
+@media (max-width: 480px) and (min-width: 320px) {
+  .heart__al {
+    height: 1.5em;
+    padding: 4em 0.5em 0em 0em;
   }
-  .heart__al .fa-heartclose__al:hover {
+  .heart__al:hover .fa-heartclose__al {
     opacity: 1;
-    transform: scale(3.9);
+    transform: scale(2.3);
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease-out;
   }
 }
+.heart__al .fa-heartopen__al {
+  font-size: 40px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .heart__al .fa-heartopen__al {
+    font-size: 22px;
+  }
+}
+.heart__al .fa-heartclose__al {
+  position: absolute;
+  left: 13px;
+  top: 62px;
+  background: linear-gradient(to right, #e470da, #ac5edb);
+  color: transparent;
+  -webkit-background-clip: text;
+  opacity: 0;
+  font-size: 13px;
+  padding: 1px;
+  cursor: pointer;
+}
 @media (max-width: 480px) and (min-width: 320px) {
   .heart__al .fa-heartclose__al {
     position: absolute;
-    left: 35px;
+    left: 6px;
     top: 69px;
     background: linear-gradient(to right, #e470da, #ac5edb);
     color: transparent;
     -webkit-background-clip: text;
     opacity: 0;
-    font-size: 9.7px;
-    padding: 1px;
-  }
-  .heart__al .fa-heartclose__al:hover {
-    opacity: 1;
-    transform: scale(2.6);
-    transition-property: transform;
-    transition-duration: 1s;
-    transition-timing-function: ease-in;
+    font-size: 8.8px;
   }
 }
 
@@ -1151,87 +1141,75 @@ header .fa-arrow-left {
 .menu-lanot__titre {
   display: flex;
   justify-content: space-between;
-  position: relative;
+  padding: 20px;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lanot__titre {
     display: flex;
     justify-content: space-between;
+    padding: 15px;
   }
 }
 
 /*Animation du coeur*/
 .heart__ln {
   position: relative;
+  height: 2.5em;
+  padding: 3em 2em 0em 0em;
+}
+.heart__ln:hover .fa-heartclose__ln {
+  opacity: 1;
+  transform: scale(3);
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .heart__ln {
+    height: 1.5em;
+    padding: 4em 0.5em 0em 0em;
+  }
+  .heart__ln:hover .fa-heartclose__ln {
+    opacity: 1;
+    transform: scale(2.3);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
 }
 .heart__ln .fa-heartopen__ln {
-  margin: 70px 61px 30px 30px;
-  height: 0;
-  font-size: 35px;
+  font-size: 40px;
+  position: relative;
+  z-index: 2;
   cursor: pointer;
-}
-@media (max-width: 768px) {
-  .heart__ln .fa-heartopen__ln {
-    margin: 53px 61px 30px 30px;
-  }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .heart__ln .fa-heartopen__ln {
     font-size: 22px;
-    margin: 60px 32px 10px 10px;
   }
 }
 .heart__ln .fa-heartclose__ln {
   position: absolute;
-  left: 42px;
-  top: 84px;
+  left: 13px;
+  top: 62px;
   background: linear-gradient(to right, #e470da, #ac5edb);
   color: transparent;
   -webkit-background-clip: text;
   opacity: 0;
-  font-size: 10px;
+  font-size: 13px;
   padding: 1px;
   cursor: pointer;
-}
-.heart__ln .fa-heartclose__ln:hover {
-  opacity: 1;
-  transform: scale(3.8);
-  transition-property: transform;
-  transition-duration: 1.2s;
-  transition-timing-function: ease-out;
-}
-@media (max-width: 768px) {
-  .heart__ln .fa-heartclose__ln {
-    left: 42px;
-    top: 65px;
-    opacity: 0;
-    font-size: 9px;
-  }
-  .heart__ln .fa-heartclose__ln:hover {
-    opacity: 1;
-    transform: scale(4.39);
-    transition-property: transform;
-    transition-duration: 1s;
-    transition-timing-function: ease-out;
-  }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .heart__ln .fa-heartclose__ln {
     position: absolute;
-    left: 15px;
-    top: 66px;
+    left: 6px;
+    top: 69px;
     background: linear-gradient(to right, #e470da, #ac5edb);
     color: transparent;
     -webkit-background-clip: text;
     opacity: 0;
-    font-size: 10px;
-  }
-  .heart__ln .fa-heartclose__ln:hover {
-    opacity: 1;
-    transform: scale(2.55);
-    transition-property: transform;
-    transition-duration: 1s;
-    transition-timing-function: ease-out;
+    font-size: 8.8px;
   }
 }
 
@@ -1576,39 +1554,57 @@ header .fa-arrow-left {
 .menu-lapal__titre {
   display: flex;
   justify-content: space-between;
+  padding: 20px;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-lapal__titre {
     display: flex;
     justify-content: space-between;
+    padding: 15px;
   }
 }
 
 /*Animation du coeur*/
 .heartpg {
   position: relative;
+  height: 2.5em;
+  padding: 3em 2em 0em 0em;
+}
+.heartpg:hover .fa-heartclosepg {
+  opacity: 1;
+  transform: scale(3);
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .heartpg {
+    height: 1.5em;
+    padding: 3em 0.5em 0em 0em;
+  }
+  .heartpg:hover .fa-heartclosepg {
+    opacity: 1;
+    transform: scale(2.3);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
 }
 .heartpg .fa-heartopenpg {
-  margin: 61px 61px 30px 30px;
-  height: 0;
-  width: auto;
   font-size: 40px;
-}
-@media (max-width: 768px) {
-  .heartpg .fa-heartopenpg {
-    margin: 53px 61px 30px 30px;
-  }
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .heartpg .fa-heartopenpg {
-    margin: 43px 32px 11px 10px;
     font-size: 22px;
   }
 }
 .heartpg .fa-heartclosepg {
   position: absolute;
-  left: 42px;
-  top: 74px;
+  left: 13px;
+  top: 62px;
   background: linear-gradient(to right, #e470da, #ac5edb);
   color: transparent;
   -webkit-background-clip: text;
@@ -1617,45 +1613,16 @@ header .fa-arrow-left {
   padding: 1px;
   cursor: pointer;
 }
-.heartpg .fa-heartclosepg:hover {
-  opacity: 1;
-  transform: scale(3.35);
-  transition-property: transform;
-  transition-duration: 1s;
-  transition-timing-function: ease-out;
-}
-@media (max-width: 768px) {
-  .heartpg .fa-heartclosepg {
-    left: 44px;
-    top: 70px;
-    opacity: 0;
-    font-size: 9.9px;
-  }
-  .heartpg .fa-heartclosepg:hover {
-    opacity: 1;
-    transform: scale(4.4);
-    transition-property: transform;
-    transition-duration: 1s;
-    transition-timing-function: ease-out;
-  }
-}
 @media (max-width: 480px) and (min-width: 320px) {
   .heartpg .fa-heartclosepg {
     position: absolute;
-    left: 14px;
-    top: 49px;
+    left: 6px;
+    top: 53px;
     background: linear-gradient(to right, #e470da, #ac5edb);
     color: transparent;
     -webkit-background-clip: text;
     opacity: 0;
-    font-size: 10.4px;
-  }
-  .heartpg .fa-heartclosepg:hover {
-    opacity: 1;
-    transform: scale(2.7);
-    transition-property: transform;
-    transition-duration: 1s;
-    transition-timing-function: ease-out;
+    font-size: 8.8px;
   }
 }
 
@@ -1694,6 +1661,9 @@ header .fa-arrow-left {
   .menu-lapal {
     margin-top: -51px;
   }
+  .menu-lapal h3 {
+    font-size: 2.6em;
+  }
   .menu-lapal h4 {
     height: 33px;
     font-size: 1.5em;
@@ -1717,7 +1687,7 @@ header .fa-arrow-left {
   .menu-lapal h3 {
     margin-top: 34px;
     padding-top: 0;
-    padding-left: 1em;
+    padding-left: 0.5em;
     font-size: 1.72em;
   }
   .menu-lapal h4 {
@@ -1961,91 +1931,75 @@ header .fa-arrow-left {
 .menu-ledel__titre {
   display: flex;
   justify-content: space-between;
+  padding: 20px;
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .menu-ledel__titre {
     display: flex;
     justify-content: space-between;
+    padding: 15px;
   }
 }
 
 /*Animation du coeur*/
 .heart__ld {
   position: relative;
+  height: 2.5em;
+  padding: 3em 2em 0em 0em;
+}
+.heart__ld:hover .fa-heartclose__ld {
+  opacity: 1;
+  transform: scale(3);
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .heart__ld {
+    height: 1.5em;
+    padding: 4em 0.5em 0em 0em;
+  }
+  .heart__ld:hover .fa-heartclose__ld {
+    opacity: 1;
+    transform: scale(2.3);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
 }
 .heart__ld .fa-heartopen__ld {
-  margin: 70px 80px 30px 30px;
-  font-size: 35px;
+  font-size: 40px;
+  position: relative;
+  z-index: 2;
   cursor: pointer;
-}
-@media (max-width: 768px) {
-  .heart__ld .fa-heartopen__ld {
-    margin: 53px 61px 30px 30px;
-  }
 }
 @media (max-width: 480px) and (min-width: 320px) {
   .heart__ld .fa-heartopen__ld {
     font-size: 22px;
-    margin: 65px 33px 0px 0px;
   }
 }
 .heart__ld .fa-heartclose__ld {
   position: absolute;
-  left: 32px;
-  top: 70px;
+  left: 13px;
+  top: 62px;
   background: linear-gradient(to right, #e470da, #ac5edb);
   color: transparent;
   -webkit-background-clip: text;
   opacity: 0;
-  font-size: 12px;
-  padding: 10px;
+  font-size: 13px;
+  padding: 1px;
   cursor: pointer;
 }
-.heart__ld .fa-heartclose__ld:hover {
-  opacity: 1;
-  transform: scale(3.2);
-  transition-property: transform;
-  transition-duration: 1.2s;
-  transition-timing-function: ease-in;
-}
-@media (max-width: 768px) {
+@media (max-width: 480px) and (min-width: 320px) {
   .heart__ld .fa-heartclose__ld {
     position: absolute;
-    left: 39px;
-    top: 60px;
+    left: 6px;
+    top: 69px;
     background: linear-gradient(to right, #e470da, #ac5edb);
     color: transparent;
     -webkit-background-clip: text;
     opacity: 0;
     font-size: 8.8px;
-    padding: 4px;
-  }
-  .heart__ld .fa-heartclose__ld:hover {
-    opacity: 1;
-    transform: scale(4.5);
-    transition-property: transform;
-    transition-duration: 1s;
-    transition-timing-function: ease-in;
-  }
-}
-@media (max-width: 480px) and (min-width: 320px) {
-  .heart__ld .fa-heartclose__ld {
-    position: absolute;
-    left: 5px;
-    top: 71px;
-    background: linear-gradient(to right, #e470da, #ac5edb);
-    color: transparent;
-    -webkit-background-clip: text;
-    opacity: 0;
-    font-size: 6.39px;
-    padding: 3px;
-  }
-  .heart__ld .fa-heartclose__ld:hover {
-    opacity: 1;
-    transform: scale(3.99);
-    transition-property: transform;
-    transition-duration: 0.7s;
-    transition-timing-function: ease-in;
   }
 }
 
@@ -2108,7 +2062,7 @@ header .fa-arrow-left {
     font-family: "Shrikhand";
     margin-top: 0;
     padding-top: 50px;
-    padding-left: 27px;
+    padding-left: 18px;
     font-size: 1.9em;
   }
   .menu-ledel h4 {
